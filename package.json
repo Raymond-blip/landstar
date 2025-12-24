@@ -1,0 +1,24 @@
+{
+  "name": "www.landstar.com",
+  "version": "1.0.0",
+  "description": "This project is a local clone of the Landstar public site, customized with a **Werner truck driver signup flow**:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymond-blip/landstar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymond-blip/landstar/issues"
+  },
+  "homepage": "https://github.com/Raymond-blip/landstar#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,23 +1,8 @@
 [
-  {
-    "kind": "applicant",
-    "payload": {
-      "firstName": "Omoteloye",
-      "lastName": "Oluwanifemi",
-      "email": "ffffffffffffffffffff@gmail.com",
-      "phone": "09138118328",
-      "city": "Akure.",
-      "state": "Ondo",
-      "licenseNumber": "28282",
-      "experience": "<1",
-      "endorsements": "tanker",
-      "equipment": "van",
-      "homeTime": "daily",
-      "regions": "midwest",
-      "startDate": "2000-07-12",
-      "notes": "medical restrictions"
-    },
-    "ip": "::1",
-    "ts": "2025-12-23T13:23:41.092Z"
-  }
+    {
+        "email": "test@example.com",
+        "password": "password",
+        "firstName": "Test",
+        "lastName": "User"
+    }
 ]

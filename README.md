@@ -10,14 +10,29 @@ This project is a local clone of the Landstar public site, customized with a **W
 
 ### Requirements
 
-- Node.js (already installed on your machine).
+- Node.js (v14+ recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+First, install the dependencies:
+
+```bash
+cd "C:\Downloaded Web Sites\www.landstar.com"
+npm install
+```
 
 ### Running the site with backend
 
 From the project root:
 
 ```bash
-cd "C:\Downloaded Web Sites\www.landstar.com"
+npm start
+```
+
+Or directly:
+
+```bash
 node server.js
 ```
 
@@ -30,12 +45,22 @@ Then open in your browser:
 ### How form submissions work
 
 - Frontend forms send JSON via `fetch` to:
-  - `POST /api/applicant`
-  - `POST /api/immigrant`
-- The Node server writes all submissions to:
-  - `data/submissions.json`
+  - `POST /api/applicant` - Standard truck driver applications
+  - `POST /api/immigrant` - Immigrant truck driver applications
+- The Node server stores all submissions in **SQLite database**:
+  - Database file: `data/submissions.db`
+  - Two tables: `applicants` and `immigrants`
 
-You can open that file to review all submitted applications.
+### Viewing submissions
+
+You can view all submissions via the API:
+
+- `GET /api/submissions?type=applicant` - View applicant submissions
+- `GET /api/submissions?type=immigrant` - View immigrant submissions  
+- `GET /api/submissions?type=all` - View all submissions
+- `GET /api/submissions?type=applicant&limit=10` - Limit results
+
+Or use a SQLite browser tool (like DB Browser for SQLite) to open `data/submissions.db` directly.
 
 ### Customizing backend integration
 
@@ -45,3 +70,16 @@ If you later add a real backend API:
   - `applicant-signup.htm`
   - `immigrant-signup.htm`
 - Point them to your real URLs (e.g. `https://api.yourdomain.com/applicants`) and adjust field names or headers as needed.
+
+### Authentication (added demo)
+
+- `POST /api/set-password` — set a password for an existing applicant (body: `{ "email": "...", "password": "..." }`).
+- `POST /api/login` — login with `{ "email": "...", "password": "..." }` and receive `{ ok: true, token, user }` on success.
+- `GET /api/me` — return current user when sent `Authorization: Bearer <token>` header.
+- `POST /api/logout` — invalidate a token (accepts `Authorization: Bearer <token>` header or `{ "token": "..." }` body).
+
+Client notes:
+
+- Use the web UI at `/login.html` to sign in. Successful sign-in redirects to `/dashboard.html`.
+- Sessions are stored in-memory (demo). Restarting the server clears sessions.
+- Password hashing uses SHA-256 for this demo — do not use this in production without proper salting and stronger password handling.

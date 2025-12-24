@@ -54,6 +54,10 @@
                         <input id="email" name="email" type="email" required />
                     </div>
                     <div>
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input id="password" name="password" type="password" required />
+                    </div>
+                    <div>
                         <label for="phone">Phone <span class="required">*</span></label>
                         <input id="phone" name="phone" type="tel" placeholder="555-123-4567" required />
                     </div>
@@ -137,7 +141,6 @@
     <script>
         const form = document.getElementById('applicantForm');
         const success = document.getElementById('successMessage');
-        const endpoint = '/api/applicant';
 
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
@@ -146,18 +149,47 @@
                 return;
             }
 
-            const formData = Object.fromEntries(new FormData(form).entries());
+            const fd = Object.fromEntries(new FormData(form).entries());
+            const payload = {
+                firstName: fd.firstName || '',
+                lastName: fd.lastName || '',
+                email: fd.email || '',
+                password: fd.password || '',
+                phone: fd.phone || '',
+                address: fd.address || '',
+                city: fd.city || '',
+                state: fd.state || '',
+                zipCode: fd.zipCode || '',
+                dateOfBirth: fd.dateOfBirth || '',
+                licenseNumber: fd.licenseNumber || '',
+                licenseState: fd.licenseState || '',
+                licenseExpiry: fd.licenseExpiry || '',
+                yearsExperience: fd.experience || '',
+                preferredRoutes: fd.regions || '',
+                availability: fd.homeTime || ''
+            };
 
             try {
-                const res = await fetch(endpoint, {
+                const res = await fetch('/api/applicant', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify(payload)
                 });
+
+                if (res.status === 409) {
+                    const j = await res.json();
+                    alert(j.error || 'An account with this email already exists.');
+                    return;
+                }
+
                 if (!res.ok) throw new Error('Request failed');
+
+                success.textContent = 'Thanks! Your application was submitted successfully.';
                 success.style.display = 'block';
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                form.reset();
             } catch (err) {
+                console.error(err);
                 alert('Could not submit right now. Please try again.');
             }
         });

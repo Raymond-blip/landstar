@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/layout.css" />
+  <style>
+    .wrap{max-width:880px;margin:48px auto;padding:18px;background:#fff;border:1px solid #e5e7eb;border-radius:8px}
+    .actions{margin-top:12px}
+    .btn{padding:8px 12px;border-radius:6px;border:0;background:#0b63ce;color:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Dashboard</h1>
+    <div id="info">Loading...</div>
+    <div class="actions">
+      <button id="logoutBtn" class="btn">Logout</button>
+    </div>
+  </main>
+  <script>
+    async function fetchMe(){
+      const token = localStorage.getItem('authToken');
+      if (!token) return location.href = '/login.html';
+      try{
+        const r = await fetch('/api/me', { headers: { 'Authorization': 'Bearer ' + token } });
+        const j = await r.json();
+        if (!j.ok){
+          localStorage.removeItem('authToken');
+          localStorage.removeItem('user');
+          return location.href = '/login.html';
+        }
+        document.getElementById('info').textContent = `Signed in as ${j.user.firstName} ${j.user.lastName} (${j.user.email})`;
+      }catch(e){
+        console.error(e);
+        location.href = '/login.html';
+      }
+    }
+
+    document.getElementById('logoutBtn').addEventListener('click', async ()=>{
+      const token = localStorage.getItem('authToken');
+      try{
+        await fetch('/api/logout', { method: 'POST', headers: { 'Content-Type':'application/json' }, body: JSON.stringify({ token }) });
+      }catch(e){ }
+      localStorage.removeItem('authToken');
+      localStorage.removeItem('user');
+      location.href = '/login.html';
+    });
+
+    fetchMe();
+  </script>
+</body>
+</html>

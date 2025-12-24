@@ -96,6 +96,28 @@ piHostname = 'engage.landstar.com';
 
     
     <link rel="stylesheet" href="/css/layout.css" />
+    <style>
+      /* Navbar Auth Styles */
+      .topNavigation.authSection { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .authSection li { list-style: none; margin: 0; }
+      .authSection a { text-decoration: none; color: #111; font-size: 14px; padding: 8px 12px; }
+      .authSection a.btn { background: #0b63ce; color: #fff; border-radius: 6px; padding: 10px 16px; font-weight: 600; display: inline-block; }
+      .authSection a.btn:hover { background: #0a52b0; }
+      
+      /* User Menu Styles */
+      .userMenuContainer { position: relative; display: inline-block; }
+      .userMenuBtn { background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: opacity 0.2s; }
+      .userMenuBtn:hover { opacity: 0.8; }
+      .avatar { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; font-weight: 700; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .userDropdown { display: none; position: absolute; top: 100%; right: 0; background: #fff; border: 1px solid #d1d5db; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 2000; margin-top: 8px; overflow: hidden; }
+      .userDropdown.show { display: block; animation: slideDown 0.2s ease-out; }
+      @keyframes slideDown { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+      .userInfo { padding: 12px 16px; border-bottom: 1px solid #e5e7eb; background: #f9fafb; font-size: 13px; }
+      .userInfo > div:first-child { font-weight: 700; color: #111; margin-bottom: 2px; }
+      .userInfo > div:last-child { color: #666; font-weight: 400; }
+      .userDropdown a { display: block; padding: 12px 16px; color: #111; text-decoration: none; transition: background 0.15s; font-size: 14px; font-weight: 500; }
+      .userDropdown a:hover { background: #f3f4f6; }
+    </style>
     
 </head>
 <body class="homepage">
@@ -195,25 +217,20 @@ piHostname = 'engage.landstar.com';
 
         
 
-<ul class="topNavigation _white" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://www.landstaronline.com/public/login.aspx" class="" target="_blank">Login</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://websphere.landstar.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://websphere.landstar.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://investor.landstar.com/" class="" target="_blank">Investors</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://www.landstar.com/request-a-quote/" class="" target="">Request A Quote</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="/#signup" class="btn _outline _noarrow" data-modal_trigger="joinUs">Sign up</a>
-        </li>
+<ul class="topNavigation _white authSection" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNavAuth">
+    <li><a rel="canonical" itemprop="url" href="login.html">Login</a></li>
+    <li><a rel="canonical" itemprop="url" href="https://investor.landstar.com/" target="_blank">Investors</a></li>
+    <li><a rel="canonical" itemprop="url" href="https://www.landstar.com/request-a-quote/">Request A Quote</a></li>
+    <li id="signupLi"><a rel="canonical" itemprop="url" href="/#signup" class="btn" data-modal_trigger="joinUs">Sign up</a></li>
+    <li id="userMenuLi" style="display:none;">
+      <div class="userMenuContainer">
+        <button class="userMenuBtn" id="userMenuBtn"></button>
+        <div class="userDropdown" id="userDropdown">
+          <div class="userInfo" id="userEmail"></div>
+          <a href="#" id="logoutLink">Logout</a>
+        </div>
+      </div>
+    </li>
 </ul>
 
 
@@ -237,25 +254,20 @@ piHostname = 'engage.landstar.com';
         <section class="contentWrap">
             
 
-<ul class="topNavigation _white" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://www.landstaronline.com/public/login.aspx" class="" target="_blank">Login</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://websphere.landstar.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://websphere.landstar.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://investor.landstar.com/" class="" target="_blank">Investors</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="https://www.landstar.com/request-a-quote/" class="" target="">Request A Quote</a>
-        </li>
-        <li itemprop="name" class="">
-            <a rel="canonical" itemprop="url" href="/#signup" class="btn _outline _noarrow" data-modal_trigger="joinUs">Sign up</a>
-        </li>
+<ul class="topNavigation _white authSection" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNavAuth2">
+    <li><a rel="canonical" itemprop="url" href="login.html">Login</a></li>
+    <li><a rel="canonical" itemprop="url" href="https://investor.landstar.com/" target="_blank">Investors</a></li>
+    <li><a rel="canonical" itemprop="url" href="https://www.landstar.com/request-a-quote/">Request A Quote</a></li>
+    <li id="signupLi2"><a rel="canonical" itemprop="url" href="/#signup" class="btn" data-modal_trigger="joinUs">Sign up</a></li>
+    <li id="userMenuLi2" style="display:none;">
+      <div class="userMenuContainer">
+        <button class="userMenuBtn2" id="userMenuBtn2"></button>
+        <div class="userDropdown2" id="userDropdown2">
+          <div class="userInfo" id="userEmail2"></div>
+          <a href="#" id="logoutLink2">Logout</a>
+        </div>
+      </div>
+    </li>
 </ul>
 
             <div class="content">
@@ -433,6 +445,7 @@ piHostname = 'engage.landstar.com';
     <script type="text/javascript" src="/Scripts/nav-control.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
     <script type="text/javascript"src="/Scripts/main.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
     <script type="text/javascript" src="/Scripts/blog.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript" src="/auth-navbar.js"></script>
 
 
 </body>
