@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css-2?family=Nunito&#x2B;Sans:400,400i,700,700i,800,800i&amp;display=swap">
+    <!--Exists in head element-->
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T3WRH8C');</script>
+<!-- End Google Tag Manager -->
+
+<title>Don&#x27;t Be a Victim: Protect Your Personal Data</title>
+<meta name="description" property="description" content="As workplaces moved into home offices and people spend more time online during the pandemic, the Federal Bureau of Investigation (FBI) says the business of stealing data picked up.">
+<meta name="og:title" property="og:title" content="Don&#x27;t Be a Victim: Protect Your Personal Data">
+<meta name="og:description" property="og:description" content="As workplaces moved into home offices and people spend more time online during the pandemic, the Federal Bureau of Investigation (FBI) says the business of stealing data picked up.">
+<meta name="og:type" property="og:type" content="website">
+<meta name="og:image" property="og:image" content="http://www.werner.com/media/uvmmyjmt/520x430p-don-t-be-a-victim.jpg">
+<link rel="canonical" href="http://www.werner.com/blog/protect-your-personal-data/">
+
+<!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../Content/img/favicons/apple-touch-icon-57x57-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../Content/img/favicons/apple-touch-icon-114x114-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../Content/img/favicons/apple-touch-icon-144x144-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../Content/img/favicons/apple-touch-icon-60x60-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../Content/img/favicons/apple-touch-icon-120x120-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../Content/img/favicons/apple-touch-icon-76x76-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../Content/img/favicons/apple-touch-icon-152x152-2.png">
+<link rel="icon" type="image/png" sizes="196x196" href="../../Content/img/favicons/favicon-196x196-2.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../Content/img/favicons/favicon-96x96-2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../Content/img/favicons/favicon-32x32-2.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../Content/img/favicons/favicon-16x16-2.png">
+<meta name="application-name" content="Werner System">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/Content/img/favicons/mstile-144x144.png">
+
+
+
+
+<script type="application/ld+json" nonce="ke23of229kVuep72rtesvX&#x2B;U">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Werner",
+    "url": "https://werner.com",
+    "sameAs": [
+    "https://www.facebook.com/WernerSystem",
+    "https://www.youtube.com/user/WernerVideos",
+    "https://www.linkedin.com/company/werner/"
+    ]
+    }
+</script>
+
+
+    
+    <link rel="stylesheet" href="../../css%20%283%29/layout.css">
+    
+</head>
+<body class="blogPost">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRH8C" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="page">
+        
+<section class="navContainer">
+<nav class="nav">
+    <a id="siteLogo" class="logoMain" href="../../index-2.htm">
+        Werner
+    </a>
+    <button id="mobileNavToggle" class="navToggleMain">
+        <span class="title">Menu</span>
+        <span class="hamburger"></span>
+    </button>
+    <div class="fullNav" id="fullNav">
+        <ul id="mainNavigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../../why-werner/index-2.htm" class="werner-nav-icon-star hasChildren" data-children="True" target=""><span>Werner Advantage</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../why-werner/entrepreneurs/index-2.htm" class="" target="">Entrepreneurs</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../why-werner/safety-security/index-2.htm" class="" target="">Safety &amp; Security</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../why-werner/tools-technology/index-2.htm" class="" target="">Tools &amp; Technology</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../../the-werner-network/index-2.htm" class="werner-nav-icon-triangle hasChildren" data-children="True" target=""><span>The Werner Network</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../the-werner-network/customers/index-2.htm" class="" target="">Customers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../the-werner-network/agents/index-2.htm" class="" target="">Agents</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../the-werner-network/owner-operators/index-2.htm" class="" target="">Owner-Operators</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../the-werner-network/carriers/index-2.htm" class="" target="">Carriers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../the-werner-network/become-an-agent/index-1.htm" class="" target="">Become an Agent</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../../services/index-2.htm" class="werner-nav-icon-tools hasChildren" data-children="True" target=""><span>Services</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../services/north-american-services/index-2.htm" class="" target="">North America</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../services/global-services/index-2.htm" class="" target="">Global</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../../corporate-information/index-2.htm" class="werner-nav-icon-letter hasChildren" data-children="True" target=""><span>Corporate Information</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../corporate-information/corporate-responsibility/index-2.htm" class="" target="">Corporate Responsibility</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../corporate-information/certifications-and-operating-information/index-2.htm" class="" target="">Certifications and Operating Information</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../../corporate-information/careers/index-2.htm" class="" target="">Careers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.trmsites.com/werner/home.asp?siteid=90017" class="" target="_blank">Merchandise</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../index-139.htm" class="werner-nav-icon-list " data-children="False" target=""><span>News &amp; Resources</span></a>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../../contact/index-2.htm" class="werner-nav-icon-letter " data-children="False" target=""><span>Contact</span></a>
+                </li>
+        </ul>
+
+        
+
+<ul class="topNavigation _white" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="../../request-a-quote/index-2.htm" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+
+        <ul class="socialNavigation">
+    <li>
+        <a href="https://www.facebook.com/WernerSystem" target="_blank" class="socialLink _fb">Facebook</a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/werner" target="_blank" class="socialLink _li">LinkedIn</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/c/WernerVideos" target="_blank" class="socialLink _yt">YouTube</a>
+    </li>
+</ul>
+
+    </div>
+</nav>
+</section>
+
+
+        <section class="contentWrap">
+            
+
+<ul class="topNavigation _white" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="../../request-a-quote/index-2.htm" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+            <div class="content">
+                
+<section class="banner blogTitleBanner _white">
+    <article class="banner_copy">
+        <h1 class="banner_title"><a href="../index-139.htm">Werner News &amp; Resources</a></h1>
+        <div class="rte">
+            <p>Find out the latest news through our blog posts, news articles and press releases.</p>
+        </div>
+    </article>
+</section>
+
+<section class="blogForms">
+    <div class="blogForm">
+        <form id="emailSignUp">
+            <h3>Join Our Blog</h3>
+            <input id="blogEmailAddress" type="email" placeholder="Enter Email Address" required="required">
+            <button type="submit" id="emailSignUpBtn" class="btn _noarrow _whiteHover">Submit</button>
+        </form>
+        <div class="blogForm_message" id="emailSignUpThankYouMessage" style="display: none;">
+            <h3>Your subscription was successful!</h3>
+        </div>
+        <div class="blogForm_message" id="emailSignUpFailMessage" style="display: none;">
+            <h3 class="blogForm_error">Your subscription failed. Please try again later.</h3>
+        </div>
+    </div>
+    <form class="blogForm" id="blogSearch" action="/blog/">
+        <input type="search" placeholder="Enter Search Terms" value="" id="search-terms" name="s">
+        <button type="submit" class="btn _noarrow _whiteHover _iconSearch" id="search-button"></button>
+    </form>
+</section>
+
+<section class="blogArticle">
+    <div class="blogArticle_meta">
+        <h1 class="blogArticle_title">Don&#x27;t Be a Victim: Protect Your Personal Data</h1>
+            <time datetime="1/12/2021 12:00:00 PM" class="blogArticle_date">January 12, 2021</time>
+
+        <ul class="blogArticle_socials">
+    <li class="blogArticle_social">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.werner.com//blog/protect-your-personal-data/" class="blogArticle_socialLink _facebook">Share via Facebook</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.werner.com//blog/protect-your-personal-data/&title=Don%27t%20Be%20a%20Victim%3A%20Protect%20Your%20Personal%20Data&source=LinkedIn" class="blogArticle_socialLink _linkedin">Share via LinkedIn</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="mailto:?subject=I wanted you to see this post&body=Check out this site https://www.werner.com/blog/protect-your-personal-data/" class="blogArticle_socialLink _email">Share via email</a>
+    </li>
+</ul>
+    </div>
+    <article class="blogArticle_content rte">
+            <div class="blogArticle_rte">
+                <p>The Federal Trade Commission (FTC) estimates more than 9 million Americans have their identities stolen each year. As workplaces moved into home offices and people spend more time online during the pandemic, the Federal Bureau of Investigation (FBI) says the business of stealing data picked up.</p>
+<p>“Criminals can do a lot with someone’s personal information. They can drain bank accounts, take out lines of credit, open new bank accounts, file for your tax refund, even commit healthcare fraud. People have to be aware that these crimes are happening everywhere and know how to protect themselves,” says Special Agent Frank Norris with the FBI Jacksonville Cyber Squad. He explains criminals are constantly seeking opportunities to steal personal and business data - using elaborate phishing schemes to target victims through email, websites and telephone scams.&nbsp;</p>
+<h2>Online Scams</h2>
+<p>FTC data shows a record surge in online scams since the beginning of the coronavirus pandemic. According to the FTC Consumer Data Protection Spotlight from April and May 2020, more than 34,000 users complained about problems related to online shopping and phishing scams.</p>
+<p>“These scams are often in the form of phishing and spoof emails linked to bogus websites and accounts,” says Norris. “Every day there are more social media sites out there, people are doing more shopping and business online, and as a result, they are putting more of their information online.”&nbsp;&nbsp;</p>
+<p>In addition to posting less personal information online, Norris recommends users keep separate passwords for all online accounts and think twice before clicking on email offers or social media ads that sound too good to be true.&nbsp;</p>
+<p>“Never put your information into websites that are not secure and might not seem safe,” says Norris. “We are creatures of habit, using the same email or the same password for every account, which puts us more at risk of becoming a victim of identity theft. It may be fun to fill out a survey on social media asking for your pet’s name and favorite color, for example. Those questions give criminals a lot of information about you, hints to what your passwords might be and information that gives them access to your private accounts.”</p>
+<h2>Business Email Imposters</h2>
+<p>Just as criminals create bogus ads and accounts to scam online users, the FTC warns business owners that scammers also plan schemes to gather personal information from unknowing employees in order to create spoofing or imposter email accounts.</p>
+<p>“We have had reports of social engineering scams where someone calls or sends an email in an office setting asking for information,” says Norris. “They will be looking for information about who works in key positions such as accounting and IT. If they are looking for obvious answers, even information as simple as your colleague’s email address, it can be used to compromise an identity.”</p>
+<p>The Business Email Compromise (BEC) scam, Norris explains, is another way criminals work to obtain personal information and bank account numbers from unknowing coworkers.</p>
+<p>“If a criminal gets that information, they will ask for more until they have enough to steal an identity or many identities,” says Norris. “Once scammers compromise a business email account, they will even go as far as to email entire departments asking for direct deposit information of employees.”</p>
+<h2>Teleworking by Wi-Fi</h2>
+<p>Whether traveling or teleworking from home, the FBI warns to be weary of public Wi-Fi and consider that there could be a Wi-Fi hacker nearby trying to take a peek at a user’s online activity.</p>
+<p>“We call this the man in the middle attack. When people log on to public Wi-Fi, they put themselves in front of hackers,” says Norris. “The hackers can put themselves between you and your connection and redirect you to websites – even steal your credentials if you were to go to a site and login.”</p>
+<p>According to FBI data, there are 68,000 Wi-Fi hotspots in the United States – at airports, coffee shops, hotels, book stores, hospitals and schools - where hackers wait nearby to access laptops and other electronic devices. When a hacker is able to connect to a computer, they access all of the sensitive information it contains including user IDs, passwords, credit card numbers, etc.</p>
+<p>“We recommend that people only use public Wi-Fi for browsing. Don’t log in to anything that puts your information at risk,” says Norris. “Don’t check your email or any of your accounts when you are on public Wi-Fi. Hackers are everywhere.”</p>
+<p>According to the Federal Trade Commission (FTC) phone scams, phishing emails and bogus websites may seem legitimate, but often trick users into clicking on a link via text message, an online advertisement, or to open an attachment for payment. The FTC says these scams may:</p>
+<ul>
+<li>Look like they are from a company you trust or someone you know</li>
+<li>Say your account is on hold for issues</li>
+<li>Have a generic greeting</li>
+<li>Invite you to click on an outside link to make a payment </li>
+</ul>
+<p>Scammers launch thousands of phishing attacks every day which Norris explains are often successful. <br>The FBI’s Internet Crime Complaint Center (IC3) reported that people lose approximately $57 million to phishing scams each year.</p>
+<p>The FBI offers these tips to keep your personal data protected:</p>
+<ul>
+<li>Use a two factor identification app on your phone or your home computer for maximum security.</li>
+<li>Think twice before you click on email or ad offers.</li>
+<li>Check to be sure the company’s name is spelled correctly.</li>
+<li>Keep passwords unique.</li>
+<li>Never use the same password for every online account.</li>
+<li>Never save passwords electronically.</li>
+<li>Avoid using public Wi-Fi. If possible, use a reputable Virtual Private Network (VPN) while your online activity.</li>
+</ul>
+<p>If you believe your personal information has been compromised through a cyber or online phishing scam, file a report with the FBI’s IC3 by visiting www.IC3.gov.</p>
+<p>“These reports help us connect cases to see when and where these things are happening. When credit cards, banking information or any personal information is compromised it becomes a major intrusion on people’s lives,” says Norris. “We are urging the public to report these crimes when they happen, or if your information has been compromised.”</p>
+            </div>
+
+        <div class="mod_modList">
+
+        </div>
+    </article>
+
+
+</section>
+
+<section class="blogCategories">
+    <h3 class="blogCategories_title">Categories</h3>
+    <ul class="blogCategories_list">
+            <li class="blogCategories_item">
+                <a href="../../blog-264.html?category=Industry Insights" class="blogCategories_link">Industry Insights</a>
+            </li>
+    </ul>
+</section>
+
+<section class="blogTags">
+    <h3 class="blogTags_title">Tags</h3>
+    <ul class="blogTags_list">
+
+            <li class="blogTags_item">
+                <a href="/blog?tag=Data Protection" class="blogTags_link">Data Protection</a>
+            </li>
+
+    </ul>
+</section>
+
+    <!-- related posts -->
+    <section class="blogListing _related">
+        <h3 class="blogTags_title">Related Posts</h3>
+        <ul class="blogListing_list _secondary">
+                <li class="blogListing_post">
+                    <div class="blogListing_img" style="background-image: url('../../media/wapkyv5b/520x430p-werner-agent-advantage-2.jpg')"></div>
+                    <div class="blogListing_copy">
+                        <h2 class="blogListing_title"><a href="../the-werner-agent-advantage-for-cross-border-shipping/index-2.htm">The Werner Agent Advantage for Cross-Border Shipping</a></h2>
+                        <time datetime="11/3/2025 12:00:00 PM" class="blogListing_date">November 03, 2025</time>
+                        <a href="../the-werner-agent-advantage-for-cross-border-shipping/index-2.htm" class="blogListing_link btn">Read More</a>
+                    </div>
+                </li>
+                <li class="blogListing_post">
+                    <div class="blogListing_img" style="background-image: url('../../media/d00iuh5x/graphics-blog-1-2.png')"></div>
+                    <div class="blogListing_copy">
+                        <h2 class="blogListing_title"><a href="../werner-s-lonegro-gains-perspective-on-life-as-a-werner-bco/index-2.htm">Werner’s Lonegro Gains Perspective on Life as a Werner B &hellip;</a></h2>
+                        <time datetime="10/31/2025 9:00:00 AM" class="blogListing_date">October 31, 2025</time>
+                        <a href="../werner-s-lonegro-gains-perspective-on-life-as-a-werner-bco/index-2.htm" class="blogListing_link btn">Read More</a>
+                    </div>
+                </li>
+                <li class="blogListing_post">
+                    <div class="blogListing_img" style="background-image: url('../../media/c5jhajgu/520x430p-tca-beacom-3.jpg')"></div>
+                    <div class="blogListing_copy">
+                        <h2 class="blogListing_title"><a href="../navigating-truckload-operations-in-a-challenging-environment/index-2.htm">Navigating Truckload Operations in a Challenging Environment &hellip;</a></h2>
+                        <time datetime="4/29/2025 12:00:00 PM" class="blogListing_date">April 29, 2025</time>
+                        <a href="../navigating-truckload-operations-in-a-challenging-environment/index-2.htm" class="blogListing_link btn">Read More</a>
+                    </div>
+                </li>
+        </ul>
+    </section>
+
+ 
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <nav class="footerNav">
+        <ul class="footerNav_list">
+                <li>
+                    <a href="../../terms-of-use/index-4.htm?https://www.werner.com/terms-of-use/#:~:text=Site%20Ownership%3B%20Copyrights%20and%20Trademarks%3B%20Intellectual%20Property%20Rights" class="footerNav_link" target="_blank">COPYRIGHT &#xA9; 2019 - 2025 WERNER SYSTEM, INC. ALL RIGHTS RESERVED</a>
+                </li>
+                <li>
+                    <a href="../../privacy-policy/index-2.htm" class="footerNav_link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="../../terms-of-use/index-5.htm" class="footerNav_link">Terms of Use</a>
+                </li>
+        </ul>
+    </nav>
+</footer>
+
+
+    
+
+<div class="joinUs" data-modal_content="joinUs">
+    <div class="joinUs_modal">
+        <span class="close_button" role="button" data-modal_trigger="joinUs">Close Window</span>
+        <div class="joinUs_content">
+            <article class="joinUs_column">
+                <h3>Agent Network</h3>
+                <p>Werner’s independent agents enjoy the administrative, sales and technological support of a financially secure industry leader, along with the freedom that comes with owning your own business.</p>
+                <div class="joinUs_links">
+                    <a href="../../agent-pre-qualification/index-2.htm" class="btn _outline _noarrow">Get Started</a>
+                    <a href="../../the-werner-network/become-an-agent/index-1.htm" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Owner-Operator Network</h3>
+                <p>If defining success on your own terms is important to you, then make the drive over to Werner. Go home when you want, load out when you’re ready. Lease to Werner today.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.leasetowerner.com/?utm_source=Werner.com&utm_medium=Join%20Us&utm_campaign=Get%20Started%20CTA" class="btn _outline _noarrow">Get Started</a>
+                    <a href="../../the-werner-network/owner-operators/index-2.htm" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Carrier Network</h3>
+                <p>Get access to thousands of posted premium loads every day, quick trip payments and big fleet fuel discounts through Werner. If you’re looking for more, look to Werner.</p>
+                <div class="joinUs_links">
+                    <a href="https://highway.com/onboarding/sign-up" target="" class="btn _outline _noarrow">Qualify Now</a>
+                    <a href="../../the-werner-network/index-2.htm" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Employment Opportunities</h3>
+                <p>Our employees play a critical role in the success of everyone in the Werner system. That’s why we offer competitive salaries and outstanding employee benefits. Werner is an equal opportunity employer, F/M/V/D.</p>
+                <div class="joinUs_links">
+                    <a href="https://usr58.dayforcehcm.com/CandidatePortal/en-US/werner" class="btn _outline _noarrow">Apply Now</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    
+<script type="text/javascript" nonce="ke23of229kVuep72rtesvX&#x2B;U">
+    _linkedin_partner_id = "199050";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript" nonce="ke23of229kVuep72rtesvX&#x2B;U">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })();
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="../../collect/index-2.htm?pid=199050&fmt=gif">
+</noscript>
+    
+    <script nonce="ke23of229kVuep72rtesvX&#x2B;U">(function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerOffsetX: 10, triggerOffsetY: 10, triggerRadius: '50%' } }); }; e.appendChild(s); }());</script>
+
+    <script type="text/javascript" src="../../Scripts/jquery-3.6.0.min-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/jquery.smoothState-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/respond-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/unveil-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/slick.min-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/izr-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/vendor/jquery.magnific-popup-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/nav-control-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/main-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+    <script type="text/javascript" src="../../Scripts/blog-2.js?cdv=1695606972" nonce="ke23of229kVuep72rtesvX&#x2B;U"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css-2?family=Nunito&#x2B;Sans:400,400i,700,700i,800,800i&amp;display=swap">
+    <!--Exists in head element-->
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T3WRH8C');</script>
+<!-- End Google Tag Manager -->
+
+<title>Werner News | Werner System, Inc.</title>
+<meta name="description" property="description" content="Find out the latest news through our blog posts, news articles and press releases.">
+<meta name="og:title" property="og:title" content="Werner News | Werner System, Inc.">
+<meta name="og:description" property="og:description" content="Find out the latest news through our blog posts, news articles and press releases.">
+<meta name="og:type" property="og:type" content="website">
+<meta name="og:image" property="og:image" content="http://www.werner.com/media/hmlhm2xh/home-600x315.jpg">
+<link rel="canonical" href="index-139.htm">
+
+<!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../Content/img/favicons/apple-touch-icon-57x57-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Content/img/favicons/apple-touch-icon-114x114-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Content/img/favicons/apple-touch-icon-144x144-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../Content/img/favicons/apple-touch-icon-60x60-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../Content/img/favicons/apple-touch-icon-120x120-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../Content/img/favicons/apple-touch-icon-76x76-2.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../Content/img/favicons/apple-touch-icon-152x152-2.png">
+<link rel="icon" type="image/png" sizes="196x196" href="../Content/img/favicons/favicon-196x196-2.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../Content/img/favicons/favicon-96x96-2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../Content/img/favicons/favicon-32x32-2.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../Content/img/favicons/favicon-16x16-2.png">
+<meta name="application-name" content="Werner System">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/Content/img/favicons/mstile-144x144.png">
+
+
+
+
+<script type="application/ld+json" nonce="TbFT3xOXJ6Shef/bLw2PIwzu">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Werner",
+    "url": "https://werner.com",
+    "sameAs": [
+    "https://www.facebook.com/WernerSystem",
+    "https://www.youtube.com/user/WernerVideos",
+    "https://www.linkedin.com/company/werner/"
+    ]
+    }
+</script>
+
+
+    
+
+    <link rel="stylesheet" href="../css%20%283%29/layout.css">
+    
+</head>
+<body class="blog">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRH8C" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="page">
+        
+<section class="navContainer">
+<nav class="nav">
+    <a id="siteLogo" class="logoMain" href="../index-2.htm">
+        Werner
+    </a>
+    <button id="mobileNavToggle" class="navToggleMain">
+        <span class="title">Menu</span>
+        <span class="hamburger"></span>
+    </button>
+    <div class="fullNav" id="fullNav">
+        <ul id="mainNavigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../why-werner/index-2.htm" class="werner-nav-icon-star hasChildren" data-children="True" target=""><span>Werner Advantage</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../why-werner/entrepreneurs/index-2.htm" class="" target="">Entrepreneurs</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../why-werner/safety-security/index-2.htm" class="" target="">Safety &amp; Security</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../why-werner/tools-technology/index-2.htm" class="" target="">Tools &amp; Technology</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../the-werner-network/index-2.htm" class="werner-nav-icon-triangle hasChildren" data-children="True" target=""><span>The Werner Network</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../the-werner-network/customers/index-2.htm" class="" target="">Customers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../the-werner-network/agents/index-2.htm" class="" target="">Agents</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../the-werner-network/owner-operators/index-2.htm" class="" target="">Owner-Operators</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../the-werner-network/carriers/index-2.htm" class="" target="">Carriers</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../services/index-2.htm" class="werner-nav-icon-tools hasChildren" data-children="True" target=""><span>Services</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../services/north-american-services/index-2.htm" class="" target="">North America</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../services/global-services/index-2.htm" class="" target="">Global</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../corporate-information/index-2.htm" class="werner-nav-icon-letter hasChildren" data-children="True" target=""><span>Corporate Information</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../corporate-information/corporate-responsibility/index-2.htm" class="" target="">Corporate Responsibility</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../corporate-information/certifications-and-operating-information/index-2.htm" class="" target="">Certifications and Operating Information</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="../corporate-information/careers/index-2.htm" class="" target="">Careers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.trmsites.com/werner/home.asp?siteid=90017" class="" target="_blank">Merchandise</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="index-139.htm" class="werner-nav-icon-list " data-children="False" target=""><span>News &amp; Resources</span></a>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="../contact/index-2.htm" class="werner-nav-icon-letter " data-children="False" target=""><span>Contact</span></a>
+                </li>
+        </ul>
+
+        
+
+<ul class="topNavigation _white" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="../request-a-quote/index-2.htm" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+
+        <ul class="socialNavigation">
+    <li>
+        <a href="https://www.facebook.com/WernerSystem" target="_blank" class="socialLink _fb">Facebook</a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/werner" target="_blank" class="socialLink _li">LinkedIn</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/c/WernerVideos" target="_blank" class="socialLink _yt">YouTube</a>
+    </li>
+</ul>
+
+    </div>
+</nav>
+</section>
+
+
+        <section class="contentWrap">
+            
+
+<ul class="topNavigation _white" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="../request-a-quote/index-2.htm" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+            <div class="content">
+                
+
+
+<section class="banner blogTitleBanner _white">
+    <article class="banner_copy">
+        <h1 class="banner_title"><a href="index-139.htm">Werner News &amp; Resources</a></h1>
+        <div class="rte">
+            <p>Find out the latest news through our blog posts, news articles and press releases.</p>
+        </div>
+    </article>
+</section>
+
+<section class="blogForms">
+    <div class="blogForm">
+        <form id="emailSignUp">
+            <h3>Join Our Blog</h3>
+            <input id="blogEmailAddress" type="email" placeholder="Enter Email Address" required="required">
+            <button type="submit" id="emailSignUpBtn" class="btn _noarrow _whiteHover">Submit</button>
+        </form>
+        <div class="blogForm_message" id="emailSignUpThankYouMessage" style="display: none;">
+            <h3>Your subscription was successful!</h3>
+        </div>
+        <div class="blogForm_message" id="emailSignUpFailMessage" style="display: none;">
+            <h3 class="blogForm_error">Your subscription failed. Please try again later.</h3>
+        </div>
+    </div>
+    <form class="blogForm" id="blogSearch">
+        <input type="search" placeholder="Enter Search Terms" value="" id="search-terms" name="s">
+        <button type="submit" class="btn _noarrow _whiteHover _iconSearch" id="search-button"></button>
+    </form>
+</section>
+
+<section class="blogCategories">
+    <h3 class="blogCategories_title">Categories</h3>
+    <ul class="blogCategories_list">
+            <li class="blogCategories_item">
+                <a href="index-140.htm?category=Agents" class="blogCategories_link">Agents</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-141.htm?category=Cross-Border" class="blogCategories_link">Cross-Border</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-142.htm?category=Hazmat" class="blogCategories_link">Hazmat</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-143.htm?category=Heavy/Specialized" class="blogCategories_link">Heavy/Specialized</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-144.htm?category=Industry Insights" class="blogCategories_link">Industry Insights</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-145.htm?category=Recognition" class="blogCategories_link">Recognition</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-146.htm?category=Werner News" class="blogCategories_link">Werner News</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-147.htm?category=Owner-Operators" class="blogCategories_link">Owner-Operators</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-148.htm?category=Safety" class="blogCategories_link">Safety</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-149.htm?category=Solutions in Motion&#xAE;" class="blogCategories_link">Solutions in Motion&#xAE;</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-150.htm?category=Technology" class="blogCategories_link">Technology</a>
+            </li>
+            <li class="blogCategories_item">
+                <a href="index-151.htm?category=The Road to Success&#xAE;" class="blogCategories_link">The Road to Success&#xAE;</a>
+            </li>
+    </ul>
+</section>
+
+    <section class="blogListing">
+
+            <ul class="blogListing_list _primary">
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/vq1nbh3g/520x430p-wreaths-across-america-blog-image-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="werner-bco-brings-wreaths-to-laredo/index-2.htm">Werner BCO Brings Wreaths to Laredo</a></h2>
+                                    <time datetime="12/12/2025 12:00:00 PM" class="blogListing_date">December 12, 2025</time>
+                                <div class="rte">
+                                    <p>
+                                        Laredo, Texas, along with over 4,600 other cemeteries across the county, commemorates its fallen veterans with a Wreaths Across America remembrance ceremony and wreath-laying event. Now in its fourth year, the city has BCO Bob Mead and his wife to thank for bringing the remembrance event to Laredo.
+                                    </p>
+                                </div>
+                                <a href="werner-bco-brings-wreaths-to-laredo/index-2.htm" class="blogListing_link btn">Read More</a>
+                                <ul class="blogArticle_socials">
+    <li class="blogArticle_social">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.werner.com//blog/werner-bco-brings-wreaths-to-laredo/" class="blogArticle_socialLink _facebook">Share via Facebook</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.werner.com//blog/werner-bco-brings-wreaths-to-laredo/&title=Werner%20BCO%20Brings%20Wreaths%20to%20Laredo&source=LinkedIn" class="blogArticle_socialLink _linkedin">Share via LinkedIn</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="mailto:?subject=I wanted you to see this post&body=Check out this site https://www.werner.com/blog/werner-bco-brings-wreaths-to-laredo/" class="blogArticle_socialLink _email">Share via email</a>
+    </li>
+</ul>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/hzxnchfp/520x430p-wernerwomens-forum-blog-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="werner-hosts-inaugural-women-s-leadership-forum/index-2.htm">Werner Hosts Inaugural Women’s Leadership Forum</a></h2>
+                                    <time datetime="12/9/2025 12:00:00 PM" class="blogListing_date">December 09, 2025</time>
+                                <div class="rte">
+                                    <p>
+                                        Werner hosted its inaugural Women’s Leadership Forum at Jacksonville's headquarters — bringing together women from across the company for a conversation on leadership, confidence, and career growth.
+                                    </p>
+                                </div>
+                                <a href="werner-hosts-inaugural-women-s-leadership-forum/index-2.htm" class="blogListing_link btn">Read More</a>
+                                <ul class="blogArticle_socials">
+    <li class="blogArticle_social">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.werner.com//blog/werner-hosts-inaugural-women-s-leadership-forum/" class="blogArticle_socialLink _facebook">Share via Facebook</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.werner.com//blog/werner-hosts-inaugural-women-s-leadership-forum/&title=Werner%20Hosts%20Inaugural%20Women%E2%80%99s%20Leadership%20Forum&source=LinkedIn" class="blogArticle_socialLink _linkedin">Share via LinkedIn</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="mailto:?subject=I wanted you to see this post&body=Check out this site https://www.werner.com/blog/werner-hosts-inaugural-women-s-leadership-forum/" class="blogArticle_socialLink _email">Share via email</a>
+    </li>
+</ul>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/eqoh3zf1/520x430p-mxcb-transloading-blog-2.png')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="how-transloading-optimizes-cross-border-logistics/index-2.htm">How Transloading Optimizes Cross-Border Logistics</a></h2>
+                                <div class="rte">
+                                    <p>
+                                        Transloading streamlines cross-border logistics between Mexico and the U.S., enhancing efficiency and operations with the right provider.
+                                    </p>
+                                </div>
+                                <a href="how-transloading-optimizes-cross-border-logistics/index-2.htm" class="blogListing_link btn">Read More</a>
+                                <ul class="blogArticle_socials">
+    <li class="blogArticle_social">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.werner.com//blog/how-transloading-optimizes-cross-border-logistics/" class="blogArticle_socialLink _facebook">Share via Facebook</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.werner.com//blog/how-transloading-optimizes-cross-border-logistics/&title=How%20Transloading%20Optimizes%20Cross-Border%20Logistics&source=LinkedIn" class="blogArticle_socialLink _linkedin">Share via LinkedIn</a>
+    </li>
+    <li class="blogArticle_social">
+        <a href="mailto:?subject=I wanted you to see this post&body=Check out this site https://www.werner.com/blog/how-transloading-optimizes-cross-border-logistics/" class="blogArticle_socialLink _email">Share via email</a>
+    </li>
+</ul>
+                            </div>
+                        </li>
+
+            </ul>
+            <ul class="blogListing_list _secondary">
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/zr0mlszy/food-drive-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="thanksgiving-food-drive/index-2.htm">Thanksgiving Food Drive</a></h2>
+                                    <time datetime="11/25/2025 12:00:00 PM" class="blogListing_date">November 25, 2025</time>
+                                <a href="thanksgiving-food-drive/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/jxhpyu1x/520x430p-sponsors-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="2025-sponsor-spotlight/index-2.htm">2025 Sponsor Spotlight</a></h2>
+                                    <time datetime="11/21/2025 12:00:00 PM" class="blogListing_date">November 21, 2025</time>
+                                <a href="2025-sponsor-spotlight/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/qyicfdsg/edit_07_amaniunstrapping-1-00_14_12_05still009-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="werner-agent-scores-jaguars-stadium-project-for-the-win/index-2.htm">Werner Agent Scores Jaguars Stadium Project For The Win</a></h2>
+                                    <time datetime="11/19/2025 12:00:00 PM" class="blogListing_date">November 19, 2025</time>
+                                <a href="werner-agent-scores-jaguars-stadium-project-for-the-win/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/gttjjhyk/vets-day-no-date-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="honoring-those-who-served/index-2.htm">Honoring Those Who Served</a></h2>
+                                    <time datetime="11/11/2025 12:00:00 PM" class="blogListing_date">November 11, 2025</time>
+                                <a href="honoring-those-who-served/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../media/4npnnzrs/veterans-day-blog-2.png')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="from-service-to-success-how-veterans-continue-to-drive-werner-forward/index-2.htm">From Service to Success: How Veterans Continue to Drive Land &hellip;</a></h2>
+                                    <time datetime="11/11/2025 12:00:00 PM" class="blogListing_date">November 11, 2025</time>
+                                <a href="from-service-to-success-how-veterans-continue-to-drive-werner-forward/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+                        <li class="blogListing_post">
+                            <div class="blogListing_img" style="background-image: url('../Media/blog-media-import/2019-LINK-blog-headerLink-520x430p-2.jpg')"></div>
+                            <div class="blogListing_copy">
+                                <h2 class="blogListing_title"><a href="the-werner-link-newsletter-fall-2025/index-2.htm">The Werner Link Newsletter, Fall 2025</a></h2>
+                                    <time datetime="11/3/2025 12:00:00 PM" class="blogListing_date">November 03, 2025</time>
+                                <a href="the-werner-link-newsletter-fall-2025/index-2.htm" class="blogListing_link btn">Read More</a>
+                            </div>
+                        </li>
+            </ul>
+    </section>
+<section>
+    <nav class="pagination">
+            <ul>
+                    <li class="pagination_page _active"><a href="index-152.htm?page=1">1</a></li>
+                    <li class="pagination_page "><a href="index-153.htm?page=2">2</a></li>
+                    <li class="pagination_page "><a href="index-154.htm?page=3">3</a></li>
+                    <li class="pagination_page "><a href="index-155.htm?page=4">4</a></li>
+                    <li class="pagination_next"><a href="index-153.htm?page=2" class="btn">Next</a></li>
+            </ul>
+    </nav>
+</section>
+
+
+
+
+
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <nav class="footerNav">
+        <ul class="footerNav_list">
+                <li>
+                    <a href="../terms-of-use/index-4.htm?https://www.werner.com/terms-of-use/#:~:text=Site%20Ownership%3B%20Copyrights%20and%20Trademarks%3B%20Intellectual%20Property%20Rights" class="footerNav_link" target="_blank">COPYRIGHT &#xA9; 2019 - 2025 WERNER SYSTEM, INC. ALL RIGHTS RESERVED</a>
+                </li>
+                <li>
+                    <a href="../privacy-policy/index-2.htm" class="footerNav_link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="../terms-of-use/index-5.htm" class="footerNav_link">Terms of Use</a>
+                </li>
+        </ul>
+    </nav>
+</footer>
+
+
+    
+
+<div class="joinUs" data-modal_content="joinUs">
+    <div class="joinUs_modal">
+        <span class="close_button" role="button" data-modal_trigger="joinUs">Close Window</span>
+        <div class="joinUs_content">
+            <article class="joinUs_column">
+                <h3>Agent Network</h3>
+                <p>Werner’s independent agents enjoy the administrative, sales and technological support of a financially secure industry leader, along with the freedom that comes with owning your own business.</p>
+                <div class="joinUs_links">
+                    <a href="../agent-pre-qualification/index-2.htm" class="btn _outline _noarrow">Get Started</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Owner-Operator Network</h3>
+                <p>If defining success on your own terms is important to you, then make the drive over to Werner. Go home when you want, load out when you’re ready. Lease to Werner today.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.leasetowerner.com/?utm_source=Werner.com&utm_medium=Join%20Us&utm_campaign=Get%20Started%20CTA" class="btn _outline _noarrow">Get Started</a>
+                    <a href="../the-werner-network/owner-operators/index-2.htm" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Carrier Network</h3>
+                <p>Get access to thousands of posted premium loads every day, quick trip payments and big fleet fuel discounts through Werner. If you’re looking for more, look to Werner.</p>
+                <div class="joinUs_links">
+                    <a href="https://highway.com/onboarding/sign-up" target="" class="btn _outline _noarrow">Qualify Now</a>
+                    <a href="../the-werner-network/index-2.htm" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Employment Opportunities</h3>
+                <p>Our employees play a critical role in the success of everyone in the Werner system. That’s why we offer competitive salaries and outstanding employee benefits. Werner is an equal opportunity employer, F/M/V/D.</p>
+                <div class="joinUs_links">
+                    <a href="https://usr58.dayforcehcm.com/CandidatePortal/en-US/werner" class="btn _outline _noarrow">Apply Now</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    
+<script type="text/javascript" nonce="TbFT3xOXJ6Shef/bLw2PIwzu">
+    _linkedin_partner_id = "199050";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript" nonce="TbFT3xOXJ6Shef/bLw2PIwzu">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })();
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="../collect/index-2.htm?pid=199050&fmt=gif">
+</noscript>
+    
+    <script nonce="TbFT3xOXJ6Shef/bLw2PIwzu">(function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerOffsetX: 10, triggerOffsetY: 10, triggerRadius: '50%' } }); }; e.appendChild(s); }());</script>
+
+    <script type="text/javascript" src="../Scripts/jquery-3.6.0.min-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/jquery.smoothState-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/respond-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/unveil-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/slick.min-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/izr-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/vendor/jquery.magnific-popup-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/nav-control-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/main-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+    <script type="text/javascript" src="../Scripts/blog-2.js?cdv=1695606972" nonce="TbFT3xOXJ6Shef/bLw2PIwzu"></script>
+
+
+</body>
+</html>
+

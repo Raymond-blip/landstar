@@ -1,4 +1,4 @@
-﻿window.Landstar = window.Landstar || {};
+﻿window.Werner = window.Werner || {};
 
 (function (form, app, $, undefined) {
 
@@ -63,4 +63,4 @@
         }
     });
 
-}(Landstar.Form = Landstar.Form || {}, Landstar.App, jQuery));
+}(Werner.Form = Werner.Form || {}, Werner.App, jQuery));

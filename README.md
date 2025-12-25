@@ -1,6 +1,6 @@
 ## Werner Truck Driver Signup (Local Clone)
 
-This project is a local clone of the Landstar public site, customized with a **Werner truck driver signup flow**:
+This project is a local clone of the Werner public site, customized with a **Werner truck driver signup flow**:
 
 - Updated homepage `index.htm` with a **Sign up** option.
 - Two dedicated signup pages:
@@ -18,7 +18,7 @@ This project is a local clone of the Landstar public site, customized with a **W
 First, install the dependencies:
 
 ```bash
-cd "C:\Downloaded Web Sites\www.landstar.com"
+cd "C:\Downloaded Web Sites\www.werner.com"
 npm install
 ```
 

@@ -1236,40 +1236,40 @@ nav.nav {
 .fullNav > ul > li > a:after {
   opacity: 0;
 }
-.fullNav > ul > li > a.landstar-nav-icon-star:before {
+.fullNav > ul > li > a.werner-nav-icon-star:before {
   background-image: url("/Content/img/icon-menu-star.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-star:after {
+.fullNav > ul > li > a.werner-nav-icon-star:after {
   background-image: url("/Content/img/icon-menu-star-white.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-triangle:before {
+.fullNav > ul > li > a.werner-nav-icon-triangle:before {
   background-image: url("/Content/img/icon-menu-triangle.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-triangle:after {
+.fullNav > ul > li > a.werner-nav-icon-triangle:after {
   background-image: url("/Content/img/icon-menu-triangle-white.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-tools:before {
+.fullNav > ul > li > a.werner-nav-icon-tools:before {
   background-image: url("/Content/img/icon-menu-tools.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-tools:after {
+.fullNav > ul > li > a.werner-nav-icon-tools:after {
   background-image: url("/Content/img/icon-menu-tools-white.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-letter:before {
+.fullNav > ul > li > a.werner-nav-icon-letter:before {
   background-image: url("/Content/img/icon-menu-letter.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-letter:after {
+.fullNav > ul > li > a.werner-nav-icon-letter:after {
   background-image: url("/Content/img/icon-menu-letter-white.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-list:before {
+.fullNav > ul > li > a.werner-nav-icon-list:before {
   background-image: url("/Content/img/icon-menu-list.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-list:after {
+.fullNav > ul > li > a.werner-nav-icon-list:after {
   background-image: url("/Content/img/icon-menu-list-white.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-envelope:before {
+.fullNav > ul > li > a.werner-nav-icon-envelope:before {
   background-image: url("/Content/img/icon-menu-envelope.png");
 }
-.fullNav > ul > li > a.landstar-nav-icon-envelope:after {
+.fullNav > ul > li > a.werner-nav-icon-envelope:after {
   background-image: url("/Content/img/icon-menu-envelope-white.png");
 }
 .fullNav > ul > li > a:hover {

@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&#x2B;Sans:400,400i,700,700i,800,800i&amp;display=swap">
+    <!--Exists in head element-->
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T3WRH8C');</script>
+<!-- End Google Tag Manager -->
+
+<title>Terms of Use | Werner System, Inc.</title>
+<meta name="description" property="description" content="By using the site, you acknowledge and signify that you have read, understood, and agree to be bound by this agreement." />
+<meta name="og:title" property="og:title" content="Terms of Use | Werner System, Inc." />
+<meta name="og:description" property="og:description" content="By using the site, you acknowledge and signify that you have read, understood, and agree to be bound by this agreement." />
+<meta name="og:type" property="og:type" content="website" />
+<meta name="og:image" property="og:image" content="http://www.werner.com/media/hmlhm2xh/home-600x315.jpg" />
+<link rel="canonical" href="https://www.werner.com/terms-of-use/" />
+
+<!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/Content/img/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/img/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/img/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/Content/img/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/Content/img/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/Content/img/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/Content/img/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" sizes="196x196" href="/Content/img/favicons/favicon-196x196.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/Content/img/favicons/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/Content/img/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/Content/img/favicons/favicon-16x16.png" />
+<meta name="application-name" content="Werner System" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/Content/img/favicons/mstile-144x144.png" />
+
+
+
+
+<script type="application/ld+json" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Werner",
+    "url": "https://werner.com",
+    "sameAs": [
+    "https://www.facebook.com/WernerSystem",
+    "https://www.youtube.com/user/WernerVideos",
+    "https://www.linkedin.com/company/werner/"
+    ]
+    }
+</script>
+
+
+    
+    <link rel="stylesheet" href="/css/layout.css" />
+    
+</head>
+<body class="generalPage">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRH8C"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="page">
+        
+<section class="navContainer">
+<nav class="nav">
+    <a id="siteLogo" class="logoMain" href="/">
+        Werner
+    </a>
+    <button id="mobileNavToggle" class="navToggleMain">
+        <span class="title">Menu</span>
+        <span class="hamburger"></span>
+    </button>
+    <div class="fullNav" id="fullNav">
+        <ul id="mainNavigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/" class="werner-nav-icon-star hasChildren" data-children="True" target=""><span>Werner Advantage</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/entrepreneurs/" class="" target="">Entrepreneurs</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/safety-security/" class="" target="">Safety &amp; Security</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/tools-technology/" class="" target="">Tools &amp; Technology</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/" class="werner-nav-icon-triangle hasChildren" data-children="True" target=""><span>The Werner Network</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/customers/" class="" target="">Customers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/agents/" class="" target="">Agents</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/owner-operators/" class="" target="">Owner-Operators</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/carriers/" class="" target="">Carriers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/become-an-agent/" class="" target="">Become an Agent</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/" class="werner-nav-icon-tools hasChildren" data-children="True" target=""><span>Services</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/north-american-services/" class="" target="">North America</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/global-services/" class="" target="">Global</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/" class="werner-nav-icon-letter hasChildren" data-children="True" target=""><span>Corporate Information</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/corporate-responsibility/" class="" target="">Corporate Responsibility</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/certifications-and-operating-information/" class="" target="">Certifications and Operating Information</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/careers/" class="" target="">Careers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.trmsites.com/werner/home.asp?siteid=90017" class="" target="_blank">Merchandise</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="/blog/" class="werner-nav-icon-list " data-children="False" target=""><span>News &amp; Resources</span></a>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/contact/" class="werner-nav-icon-letter " data-children="False" target=""><span>Contact</span></a>
+                </li>
+        </ul>
+
+        
+
+<ul class="topNavigation " itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werner.com/request-a-quote/" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+
+        <ul class="socialNavigation">
+    <li>
+        <a href="https://www.facebook.com/WernerSystem" target="_blank" class="socialLink _fb">Facebook</a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/werner" target="_blank" class="socialLink _li">LinkedIn</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/c/WernerVideos" target="_blank" class="socialLink _yt">YouTube</a>
+    </li>
+</ul>
+
+    </div>
+</nav>
+</section>
+
+
+        <section class="contentWrap">
+            
+
+<ul class="topNavigation " itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werner.com/request-a-quote/" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+            <div class="content">
+                
+<section class="banner basicTitleBanner " style="background-image: url()">
+    <article class="banner_copy">
+        <!--  -->
+        <h1 class="banner_title">Terms of Use</h1>
+    </article>
+</section>
+<section class="generalContent rte">
+    <p>Welcome to our site (the “Site”). The Site is operated by Werner System Holdings, Inc. (“Werner”, “we” or” “us”) on its own behalf or on behalf of Werner Affiliates. This document (the “Terms of Use” or the “Agreement”) establishes the terms and conditions governing your use of the Site. A “Werner Affiliate(s)” is any entity that controls, is under common control with, or is controlled by, Werner.</p>
+<p>These Terms of Use, together with Werner’s <a href="/privacy-policy">Privacy Policy</a>, constitute a binding agreement between users of the Site (“you”, unless otherwise specified) and Werner.</p>
+<p>By using the Site, you acknowledge and signify that you have read, understood, and agree to be bound by this Agreement. You must agree to this Agreement in order to access or use the Site.</p>
+<p>This Agreement contains the following provisions:</p>
+<p><strong>1</strong>. <strong>Your Acceptance of this Agreement</strong>.</p>
+<p>This is an agreement between you and Werner and governs your use of the Site, its contents and services. Each time you visit, browse, order goods through, purchase goods through, advertise goods through, access or otherwise use the Site, you signify your acceptance and agreement, and the acceptance and agreement of any person you purport to represent (and for the purposes of this Agreement, “person” includes any type of incorporated or unincorporated entity, including your employer), without limitation or qualification, to be bound by this Agreement for using the Site, and to comply with all applicable laws and regulations.</p>
+<p>Please read the Terms of Use carefully before you start to use the Site. By using the Site (or by clicking to accept or agree to the Terms of Use when this option is made available to you), you accept and agree to be bound and abide by these Terms of Use. If you do not want to agree to these Terms of Use, you must not access or use the Site.</p>
+<p>By accessing this Site, you represent and warrant that you are at least eighteen (18) years old and that you have the legal authority to agree to and accept this Agreement on behalf of yourself and any person you purport to represent. If you do not have the legal authority to agree to and accept this Agreement, or if you are not authorized to agree to and accept this Agreement, or if you do not agree with the terms of this Agreement, then you may not use the Site.</p>
+<p><strong>2</strong>. <strong>Scope of this Agreement</strong>.</p>
+<p>These Terms of Use only apply to your activities when using the Site or its contents. From time to time, we may establish or authorize a Werner service provider to establish a Werner-branded website that operates under different terms and conditions, such as the <a href="http://www.trmsites.com/werner/home.asp?siteid=90017" data-anchor="?siteid=90017">Werner Company Store</a> or the <a href="https://usr57.dayforcehcm.com/CandidatePortal/en-US/werner">Werner Candidate Portal</a>, each of which are operated and managed by a separate company under separate terms and conditions. Those different terms and conditions will be linked to that website’s home page. Please review such different terms and conditions if you choose to visit those websites, as they govern your use thereof.</p>
+<p>These Terms of Use do not affect or amend the terms of any other contracts you have entered into or may enter into with Werner or a Werner Affiliate, such as carrier contracts, agency agreements, transportation and logistics contracts, and other contracts for Werner goods or services (each of these separate contracts with Werner and/or Werner Affiliates is referred to as a “Werner Contracts”), and your and Werner’s (and Werner Affiliates’) respective obligations thereunder, except as otherwise expressly set forth in such Werner Contract.  </p>
+<p><strong>3</strong>. <strong>Authority</strong>.</p>
+<p>The content and services for this Site are based in the state of Florida in the United States and provided for access and use only by persons located in the United States, Canada and Mexico. You acknowledge that you may not be able to access all or some of the Site outside of the United States, Canada and Mexico; and that access to the Site outside North America may not be legal by certain persons or in certain countries. If you access the Site from outside the United States, you are responsible for compliance with local laws. Accessing the Site in Canada or Mexico may afford you additional privacy protections. Please refer to the <a href="/privacy-policy">Privacy Policy</a> for more information about your privacy rights in these countries</p>
+<p><strong>4</strong>. <strong>Changes to these Terms of Use</strong>.</p>
+<p>We may modify, suspend or terminate the operation of the Site, as well as its content and offerings, in whole and/or in part, in our sole discretion, at any time and for any reason.</p>
+<p>From time to time, Werner may, in its sole discretion, for any reason and without any liability to you or any other person, change, supplement or amend these Terms of Use, or require that you agree to additional terms and conditions (the “Revised Terms”) in order to continue using the Site. Access to some areas of the Site may be limited to users who have been authenticated and granted permission by Werner. Werner reserves its right to revoke permission to access such areas of the Site for any reason.</p>
+<p>You may be required to agree to Revised Terms in order for you to obtain permission to access some areas of the Site, using access credentials consisting of a User ID (defined below) and Password (defined below), access certain areas of the Site or utilize certain features or functions offered on the Site by Werner. For example, certain portions of the Site may only be accessible to those who have met prerequisite Werner business qualifications or to those situated in particular geographic locations. Werner may require you to agree to Revised Terms before you are allowed to post information to the Site, participate in group discussions or business forums, enter sweepstakes and contests, engage in similar interactive activities or participate in commercial activities. Such Revised Terms are incorporated herein by reference and made a part of these Terms of Use.</p>
+<p>These Terms of Use may only be modified in writing by an authorized officer of Werner and they may not be modified orally or in writing by our Site’s customer service representatives or our employees. You may not change, supplement, or amend these Terms of Use in any manner.</p>
+<p>You are responsible for checking for revisions to the Terms of Use each time you use the Site and, in any event, are bound to changes to this Agreement thirty (30) days after such changes have been introduced.</p>
+<p>Any changes to the dispute resolution procedures set forth below in Governing Law and Venue shall not apply to any disputes that have been commenced prior to the changes to the Terms of Use taking effect.</p>
+<p><strong>5</strong>. <strong>Privacy Policy</strong>.</p>
+<p>Please review Werner’s <a href="/privacy-policy">Privacy Policy</a>, which explains Werner’s practices relating to the collection, use, storage (if any) and disclosure of information (including personal information) you provide through use of the Site. The <a href="/privacy-policy">Privacy Policy</a> is incorporated herein by reference and is a part of these Terms of Use. By using the Site, you are consenting to the <a href="/privacy-policy">Privacy Policy</a>.</p>
+<p><strong>6</strong>. <strong>Site Ownership; Copyrights and Trademarks; Intellectual Property Rights</strong>.</p>
+<p>Werner, Werner Affiliates and/or their licensors own the Site, its content, features, functionality and systems, including the copyright, and all rights to trademarks and service marks used on the Site, and all other intellectual property rights therein. All rights not expressly granted or licensed herein are reserved to Werner, Werner Affiliates or licensors.</p>
+<p>This Site and its entire contents, data, software, code, features, functionality (including but not limited to all information, text, displays, images, video, audio and the design, selection and arrangement thereof) materials, processes, procedures, methods, techniques and any other content (collectively “Data and Information”), are owned by Werner, Werner Affiliates, its licensors or other providers of such material and are protected by United States and international copyright, trademark, patent, trade secret and other intellectual property and proprietary rights (hereinafter “Intellectual Property Rights”). You acknowledge, understand, and agree that Werner retains all Intellectual Property Rights in and to all Data and Information, excluding Data and Information that you may provide.</p>
+<p>Werner’s and Werner Affiliates’ trademarks and service marks (many of which are registered in the United States and other countries) may appear on the Site from time to time, including, without limitation, Werner, Werner System, Werner Express America, Express America, Werner Global Logistics, Werner Gemini, Werner Inway, Inway, Werner Ligon, Werner Ranger, Werner Connect, the Werner star logo, the Werner road logo, Werner Maximizer, Maximizer, Werner Clarity, Ask Max, WernerOne, Werner Accu-Rate, BCO, LCAPP, Orbit and the accompanying design, , L.E.A.D.S., LEADS, LOAD ALERTS, Roadstar, Roadstar Werner’s Best, “The Road to Success”, “Power Buying. Buying Power.”, Mexico Made Simple, Simplificando Mexico, SavingsPlus and “Solutions in Motion” and U-TRAK (collectively, the “Werner Trademarks”). Other product, service and company names appearing in the Site may be the trademarks of their respective owners, and are used by Werner via license or under “fair use” principles. Unauthorized use of any such Trademarks, including reproduction, imitation, dilution or confusing or misleading uses, is prohibited under the trademark laws of the United States and other countries. No right or license to use any of these trademarks is granted in these Terms of Use.</p>
+<p>Werner or Werner Affiliates are the owners of all domain names that link to Werner websites in the US and internationally and/or relate to the business of Werner, and unauthorized use of these names or any of them is not permitted. The domain names include  Werner.com,  Werner.mx, WernerBroker.com, WernerOnline.com, WernerCompanyStore.com, WernerSolutions.com, LeasetoWerner.com, Lease2Werner.com, WernerAdvantage.com, LCAPP.com, WernerHeavyHaul.com, WernerLTL.com, WernerLogistics.com, WernerCarriers.com, WernerCentral.com.</p>
+<p>If you print, copy, modify, download, or otherwise use or provide any other person with access to any part of the Site in breach of the Terms of Use, your right to use the Site will stop immediately and you must, at our option, return or destroy any copies of the materials you have made. No right, title, or interest in or to the Site or any content on the Site is transferred to you, and all rights not expressly granted are reserved by Werner.</p>
+<p>If you wish to make any use of material on the Site other than that set out in this section, please address your request to: <a href="mailto:wernercorpcomm@werner.com">wernercorpcomm@werner.com</a>.</p>
+<p><strong>7</strong>. <strong>Limited License; Your Use of Site Data and Information; Monitoring</strong>.</p>
+<p><u>Limited License</u>: Subject to these Terms of Use and any further restrictions set forth in the Revised Terms, Werner hereby grants to you a non-exclusive, limited, non-sublicensable, non-transferable, revocable license (“Limited License”) to access the Site and use the information, features, functions and content made available to you on the Site, solely in connection with Werner-related or Werner Affiliate-related business and not for purposes of competing with Werner or the Werner Affiliates or for any other purpose.</p>
+<p><u>Use of Site Data and Information</u>: With respect to information and content that is identified on the Site as available to you for downloading or printing, or is configured to enable you to download or print, you may download and/or print one copy and may only use it for the Werner-related or Werner Affiliate-related business purpose for which it was made available and not for purposes of competing with Werner, a Werner Affiliate, or for any other purpose. You are expressly prohibited from modifying any of the Site pages or other content and from removing or altering any visible or non-visible identification, marks, notices, or disclaimers in the content that you download or print from the Site.</p>
+<p>Where access to portions of the Site is limited to those authenticated users with valid User IDs and Passwords, the license granted above with respect to those portions of the Site is applicable only to those authorized by Werner to use a valid User ID (defined below) and Password (defined below).</p>
+<p>You may link to our homepage, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it, but you must not establish a link in such a way as to suggest any form of association, approval, or endorsement on our part without our express written consent.</p>
+<p>This Site may provide certain social media features that enable you to:</p>
+<p>(a) Link from your own or certain third party websites to certain content on this Site.</p>
+<p>(b) Send emails or other communications with certain content, or links to certain content, on this Site.</p>
+<p>(c) Cause limited portions of content on this Site to be displayed or appear to be displayed on your own or certain third party websites.</p>
+<p>You may use these features solely as they are provided by us, and solely with respect to the content they are displayed with and otherwise in accordance with any additional terms and conditions we provide with respect to such features. Subject to the foregoing, you must not:</p>
+<p>(a) Establish a link from any website that is not owned by you.</p>
+<p>(b) Cause the Site or portions of it to be displayed on, or appear to be displayed by, any other website, for example, framing, deep linking, or in-line linking.</p>
+<p>(c) Link to any part of the Site other than the homepage.</p>
+<p>(d) Otherwise take any action with respect to the materials on this Site that is inconsistent with any other provision of these Terms of Use.</p>
+<p>The website from which you are linking, or on which you make certain content accessible, must comply in all respects with the Content Standards set out in these Terms of Use.</p>
+<p>You agree to cooperate with us in causing any unauthorized framing or linking immediately to stop. We reserve the right to withdraw linking permission without notice.</p>
+<p>We may disable all or any social media features and any links at any time without notice in our discretion.</p>
+<p>No other license or rights in the Site are granted by Werner and all licenses and rights granted may be terminated or revoked by Werner at any time at Werner’s sole discretion. From time to time Werner may, without notice, monitor your use of the Site, although Werner is not obligated to do so.</p>
+<p><u>Monitoring</u>:  We have the right to monitor your activity on the Site (both in public areas and limited access areas of the Site). We have the right to cooperate fully with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone accessing, using, and posting any materials on or through the Site. YOU WAIVE AND AGREE TO HOLD HARMLESS AND IMMUNE WERNER AND WERNER AFFILIATES, LICENSEES, AND SERVICE PROVIDERS FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY OF THE FOREGOING PARTIES DURING, OR TAKEN AS A CONSEQUENCE OF, INVESTIGATIONS BY EITHER SUCH PARTIES OR LAW ENFORCEMENT AUTHORITIES.</p>
+<p>Although we have the right to monitor your activity on the Site, we do not undertake to review all material before it is posted on the Site and cannot ensure prompt removal of objectionable material after it has been posted. Accordingly, we assume no liability for any action or inaction regarding transmissions, communications, or content provided by any user or third party. We have no liability or responsibility to anyone for performance or nonperformance of the activities described in this section.</p>
+<p><strong>8</strong>. <strong>User Account Access</strong>.</p>
+<p>You are responsible for maintaining the security of information such as user identification (a unique identifier, email addresses or other combination of characters and numbers used to identify a user collectively referred to as “User ID”), codes and passwords (codes and passwords are collectively referred to as a “Password”) that you are given or adopt for purposes of accessing non-public portions of the Site. If you choose, or are provided with, a User ID, Password, or any other piece of information as part of our security procedures, you must treat such information as confidential, and you must not disclose it to any other person or entity. You also acknowledge that your account is personal to you and agree not to provide any other person with access to this Site or portions of it using your User ID, Password, or other security information. You agree to notify us immediately of any unauthorized access to or use of your User ID and/or Password or any other breach of security. You also agree to ensure that you exit from your account at the end of each session. You should use particular caution when accessing your account from a public or shared computer so that others are not able to view or record your Password or other personal information.</p>
+<p>Werner, from time-to-time, may require you to change your Password. Werner reserves the right to enforce specific password requirements (e.g. length or specific character and/or number requirements), although Werner is not obligated to do so.</p>
+<p>Werner may require you to select a security question and supply an answer (collectively Security Question). Your Security Question is user-selected and must be kept confidential. Werner, from time-to-time, may require you to select a new Security Question, although Werner is not obligated to do so.</p>
+<p>Werner may require you to provide certain information such as your FID, Agency, Tractor, or Werner Carrier ID prior to granting access to non-public areas of the Site. You agree that any information you provide to Werner will be true, accurate, current and complete and your failure to provide true, accurate, current, and complete information is a breach of these Terms of Use. You (or your employer, if you use the Site on behalf of your employer) are solely responsible and liable for any use and misuse of your User ID and Password and for all activities that occur under your User ID and Password. You must ensure that all uses of your User ID and Password comply with these Terms of Use.</p>
+<p>You must immediately notify Werner at <a href="mailto:Helpdesk-jacksonville@werner.com">Helpdesk-jacksonville@werner.com</a> of any unauthorized use of your User ID or Password, or if you know or suspect that your User ID and/or Password has been lost or stolen, has become known to any other person, or has been otherwise compromised.</p>
+<p>You agree to respond promptly to any communications from Werner regarding your use of the Site, your User ID and your Password.</p>
+<p>All User ID and Passwords remain the property of Werner and may be cancelled or suspended at any time by Werner without any notice or liability to you or any other person. Werner is not under any obligation to verify the actual identity or authority of the user of any User ID or Password.</p>
+<p>THE SECURITY AND PRIVACY PROVIDED BY AN USER ID, PASSWORD, SECURITY QUESTION AND OTHER SECURITY INFORMATION IS NOT COMPLETE AND CAN BE CIRCUMVENTED. YOUR USE OF ANY ACCESS FEATURES AND SECURITY INFORMATION IS AT YOUR OWN RISK.</p>
+<p><strong>9</strong>. <strong>Werner Confidential Information</strong>.</p>
+<p>Certain information appearing on the Site may be, and may be identified as, Werner confidential information. Werner confidential information is all information that is marked as confidential or that ought reasonably to be deemed to be confidential, including without limitation contact information for Werner’s or Werner Affiliates’ agents and Werner’s or Werner Affiliates’ BCO field representatives, information about Werner, Werner Affiliates and their respective agents’ safety procedures and systems, information about particular loads, information regarding Werner’s and Werner Affiliates’ services, products, customers, customer lists, bookkeeping, written contracts and agreements, rates, compensation or techniques, and additional non-public information that is accessible only via Passwords. You agree only to use Werner confidential information as expressly permitted in these Terms of Use and as further restricted by any Revised Terms. In addition, you agree only to use such Werner confidential information in connection with your Werner-related or Werner Affiliate-related business, for no other purpose, and not to compete with Werner or Werner Affiliates. Upon Werner’s request, you will immediately return or destroy all such Werner confidential information in your possession and make no further use thereof.</p>
+<p><strong>10</strong>. <strong>Third Party Products and Services</strong>.</p>
+<p>From time to time, the Site may contain information about third party products and services. For example, Werner may arrange for discounts to be provided on certain third party products and services, third party products and services may be advertised on the Site, and third party products and services may be sold on the Site. Further, Werner may provide a section on the Site where users may post information about their property, such as trucks, trailers and other trucking-related equipment, or services they want to sell or provide (a “For Sale By Owner Service”). With respect to all such third party products and services, you should be aware that they are not being provided by Werner and Werner is not responsible for such goods or services or the terms on which they may be purchased or sold. If you choose to purchase such goods or services, you do so at your own risk and you should carefully evaluate them and the terms upon which you are purchasing them.</p>
+<p>If the Site contains links to other websites and resources provided by third parties, these links are provided for your convenience only. This includes links contained in advertisements, including banner advertisements and sponsored links. We have no control over the contents of those websites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any of the third party websites linked to this Site, you do so entirely at your own risk and subject to the terms and conditions of use for such websites.</p>
+<p><strong>11</strong>. <strong>Load Information</strong>.</p>
+<p>From time to time, such as through Werner domain names, as noted in Section 6, and other Werner apps and/or Werner websites, Werner may provide you with access to load information (“Load Information”). You may use and print out such Load Information solely for the purposes of identifying loads that may suit your capabilities, contacting agents to confirm the accuracy of such Load Information for logistical and planning purposes, and/or for other commercial purposes in connection with doing business with Werner or Werner Affiliates, but in any case not for use to compete with Werner, Werner Affiliates or for any other purpose. Load Information is provided by independent agents and is not monitored or checked by Werner for content or accuracy. WERNER ADVISES YOU NOT TO RELY UPON THE LOAD INFORMATION POSTED ON THE SITE AND EXPRESSLY DISCLAIMS ANY RESPONSIBILITY FOR INACCURATE OR INCOMPLETE LOAD INFORMATION. Werner further advises you to contact, and you do hereby agree to contact, the individual agent or agents who post the specific Load Information on the Site to confirm that such information is complete and accurate.</p>
+<p><strong>12</strong>. <strong>Request Mechanisms</strong>.</p>
+<p>Werner makes available on the Site mechanisms for you to request or inquire about transportation, logistics and other non-Site-related services from Werner or Werner Affiliates. None of these mechanisms create a binding obligation between you and Werner or the Werner Affiliates, and in order for you to engage Werner or the Werner Affiliates to provide any such services, you and Werner or the Werner Affiliate must execute separate written contracts setting forth the terms and conditions under which such services are to be provided.</p>
+<p><strong>13</strong>. <strong>Information you Provide to Werner on the Site</strong>.</p>
+<p>From time to time, Werner may offer capabilities and features on the Site that enable you to post information to the Site (whether directly or through Werner) that will be visible to other Site users who access the Site and/or that will enable you to interact with other Site users. All information or material that you or other users provide for use on the Site or post on the Site is referred to in these Terms of Use as “User Posted Content”.</p>
+<p>Werner may provide user online discussion and chat forums, and other interactive features, to provide a forum for User Posted Content, to provide for the exchange of information in connection with online load transactions, arrange for users to post Load Information, and to provide other interactive features and functions for use by users of the Site. You may also choose to provide User Posted Content in the For Sale By Owners Section. You acknowledge that your use of the Site and the User Posted Content you provide is governed by Werner’s <a href="/privacy-policy">Privacy Policy</a>.</p>
+<p>Users may also from time to time submit suggestions and ideas (“Suggestions”) to Werner via email or through User Posted Content about ways in which Werner may improve or expand its or Werner Affiliates’ business (such as ideas for new or improved products, services or Site features).</p>
+<p>By posting or providing User Posted Content and/or by submitting Suggestions, you are granting to Werner and its designees a perpetual, royalty-free, non-exclusive, non-terminable, sublicensable, worldwide license to use, reproduce, modify, distribute, transmit, re-transmit, create derivative works of, publicly display, publicly perform, publish, store and exploit such information and Suggestions in any way, in whole or in part, in all media now known or hereinafter discovered, without obligation to do so or without any compensation to you. By posting or providing User Posted Content and/or by submitting Suggestions, you are also warranting that you have all necessary right, title and interest to grant such a license and that such User Posted Content and Suggestions do not infringe upon the rights of others, are not injurious to others, and comply with the requirements imposed on you under these Terms of Use. Any User Posted Content you post to the Site and/or other Werner websites or Werner applications will be considered non-confidential and non-proprietary.</p>
+<p>You are responsible for any User Posted Content and Suggestions that you provide to Werner or post to the Site, or that is provided or posted using your Passwords. Werner is not responsible for any User Posted Content or Suggestions, including, without limitation, User Posted Content or Suggestions from other Site users that you may encounter in your use of the Site.</p>
+<p>Werner expressly reserves the right, without obligation or notice, to pre-screen, remove, modify, refuse to post, delete, block, take down, and/or edit all User Posted Content and Suggestions, for any reason, in its sole discretion.</p>
+<p>Whenever you provide User Posted Content to Werner, you represent and warrant that you own or control all rights in and to the User Posted Content and have the right to grant the license granted above to Werner, Werner Affiliates and service providers, and each of their respective licensees, successors, and assigns; and that all User Posted Content does and will comply with these Terms of Use. You understand and acknowledge that you are responsible for any User Posted Content you submit or contribute, and you, not Werner, have full responsibility for such content, including its legality, reliability, accuracy, and appropriateness.</p>
+<p>We are not responsible or liable to any third party for the content or accuracy of any User Posted Content posted by you or any other user of the Site. Without limiting the foregoing, User Posted Content must not violate the following “Content Standards”:</p>
+<p>(a) Contain any material that is defamatory, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory, or otherwise objectionable.</p>
+<p>(b) Promote sexually explicit or pornographic material, violence, or discrimination based on race, sex, religion, nationality, disability, sexual orientation, or age.</p>
+<p>(c) Infringe any patent, trademark, trade secret, copyright, or other intellectual property or other rights of any other person.</p>
+<p>(d) Violate the legal rights (including the rights of publicity and privacy) of others or contain any material that could give rise to any civil or criminal liability under applicable laws or regulations or that otherwise may be in conflict with these Terms of Use and our <a href="/privacy-policy">Privacy Policy</a>.</p>
+<p>(e) Be likely to deceive any person.</p>
+<p>(f) Promote any illegal activity, or advocate, promote, or assist any unlawful act.</p>
+<p>(g) Cause annoyance, inconvenience, or needless anxiety or be likely to upset, embarrass, alarm, or annoy any other person.</p>
+<p>(h) Impersonate any person or misrepresent your identity or affiliation with any person or organization.</p>
+<p>(i) Involve commercial activities or sales, such as contests, sweepstakes, and other sales promotions, barter, or advertising.</p>
+<p>(j) Give the impression that they emanate from or are endorsed by us or any other person or entity, if this is not the case.</p>
+<p><strong>14</strong>. <strong>Acceptable Use; Prohibited Use</strong>.</p>
+<p>You are responsible for all activities you engage in, on or through use of the Site, and those engaged in by anyone using your Passwords. You agree to use the Site in accordance with these Terms of Use, the Revised Terms, and all applicable laws, rules and regulations. You agree to keep all information you provide to Werner or post on the Site up-to-date, complete and accurate, including, without limitation, all Load Information, contact information, User Posted Content, and all information you provide to other users.</p>
+<p>In addition, you agree not to provide to Werner, post on the Site, or transmit through the Site information, materials, User Posted Content or Suggestions that:</p>
+<p>(a) Are inaccurate, false, misleading, deceptive, tortious, injurious, unlawful, threatening, abusive, defamatory, obscene, lewd, lascivious, violent, harassing, offensive, pornographic, profane or indecent, or that would constitute or encourage conduct that would constitute a criminal offense, give rise to civil liability, or violate applicable laws, rules and/or regulations.</p>
+<p>(b) Violate the proprietary rights of others, including, without limitation, the copyright, trademark, trade dress, patent, trade secret, or moral rights of others, or information or material that violates another’s rights of privacy, publicity or confidentiality.</p>
+<p>(c) You do not have the right to provide, post or transmit.</p>
+<p>(d) Credit card account information or personal information that could be used to login to a financial account.</p>
+<p>(e) In any way that violates any applicable federal, state, local, or international law or regulation (including, without limitation, any laws regarding the export of data or software to and from the US or other countries).For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content, asking for personally identifiable information, or otherwise.</p>
+<p>(f) To send, knowingly receive, upload, download, use, or re-use any material that does not comply with the Content Standards, above, as set out in these Terms of Use.</p>
+<p>(g) To transmit, or procure the sending of, any advertising or promotional material without our prior written consent, including any “junk mail”, “chain letter”, “spam”", or any other similar solicitation.</p>
+<p>(h) To impersonate or attempt to impersonate Werner, a Werner employee, another user, or any other person or entity (including, without limitation, by using email addresses or screen names associated with any of the foregoing).</p>
+<p>(i) To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Site, or which, as determined by us, may harm the Werner or users of the Site or expose them to liability.</p>
+<p>In addition, you agree not to engage in activities on or through use of the Site or using information gathered from the Site, so as to:</p>
+<p>(a)     Violate these Terms of Use or applicable laws, rules or regulations.</p>
+<p>(b)     Engage in fraudulent activity.</p>
+<p>(c)     Violate any terms of use, rules, policies or guidelines of your Internet access provider, online service, or websites to which this Site links.</p>
+<p>(d)    Damage, delete or modify or make derivative versions of any information or material on the Site (except for deleting or modifying your own User Posted Content where the Site makes that function possible).</p>
+<p>(e)     Modify any copyright or other proprietary notices or legends on the Site or information or material printed or downloaded from the Site.</p>
+<p>(f)     Impersonate or misrepresent your affiliation with Werner or frame our Site.</p>
+<p>(g)     Use any robot, scraper or other automated process not provided by us to gather information or extract data from the Site.</p>
+<p>(h)     Reverse engineer or copy or disassemble any programming components of the Site or otherwise endeavour to discover source code from the Site.</p>
+<p>(i)      Bypass or circumvent or endeavour to bypass or circumvent measures employed to prevent or limit access to areas, code, or content of the Site.</p>
+<p>(j)      Gather or use email or other contact information from other Site users except as expressly permitted by the Site and the <a href="/privacy-policy">Privacy Policy</a>.</p>
+<p>(k)     Use the Site systems to send unsolicited emails.</p>
+<p>(l)      Disable, disrupt, impair, overburden or damage the Site or interfere with any other party’s use thereof, such as through viruses, denial of service attacks, spamming, flooding or other disruptive components or acts.</p>
+<p>(m)    Endanger or threaten the safety or security of or cause harm to any person or property.</p>
+<p>(n)     Use any robot, spider, or other automatic device, process, or means to access the Site for any purpose, including monitoring or copying any of the material on the Site.</p>
+<p>(o)     Use any manual process to monitor or copy any of the material on the Site or for any other unauthorized purpose without our prior written consent.</p>
+<p>(p)     Use any device, software, or routine that interferes with the proper working of the Site.</p>
+<p>(q)     Introduce any viruses, Trojan horses, worms, logic bombs, or other material that is malicious or technologically harmful.</p>
+<p>(r)     Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Site, the server on which the Site is stored, or any server, computer, or database connected to the Site.</p>
+<p>(s)     Attack the Site via a denial-of-service attack or a distributed denial-of-service attack.</p>
+<p>(t)     Otherwise attempt to interfere with the proper working of the Site.</p>
+<p>Werner has the right to:</p>
+<p>(a) Remove or refuse to post any User Posted Content for any or no reason in our sole discretion.</p>
+<p>(b) Take any action with respect to any User Posted Content that we deem necessary or appropriate in our sole discretion, including if we believe that such User Posted Content violates the Terms of Use, infringes any intellectual property right or other right of any person or entity, threatens the personal safety of users of the Site or the public, or could create liability for Werner.</p>
+<p>(c) Disclose your identity or other information about you to any third party who claims that material posted by you violates their rights, including their intellectual property rights or their right to privacy.</p>
+<p>(d) Take appropriate legal action, including without limitation, referral to law enforcement, for any illegal or unauthorized use of the Site.</p>
+<p>(e) Terminate or suspend your access to all or part of the Site for any or no reason, including without limitation, any violation of these Terms of Use.</p>
+<p>Without limiting the foregoing, Werner has the right to report to law enforcement authorities any violation of these Terms of Use. To be clear, you have no expectation of privacy related to your use of the Site, except as described in Werner’s <a href="/privacy-policy">Privacy Policy</a>. We have the right to cooperate fully with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone posting any materials on or through the Site. YOU WAIVE AND HOLD HARMLESS WERNER AND WERNER AFFILIATES, LICENSEES, AND SERVICE PROVIDERS FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY OF THE FOREGOING PARTIES DURING, OR TAKEN AS A CONSEQUENCE OF, INVESTIGATIONS BY EITHER SUCH PARTIES OR LAW ENFORCEMENT AUTHORITIES.</p>
+<p>However, we do not undertake to review all material before it is posted on the Site, and cannot ensure prompt removal of objectionable material after it has been posted. Accordingly, we assume no liability for any action or inaction regarding transmissions, communications, or content provided by any user or third party. We have no liability or responsibility to anyone for performance or nonperformance of the activities described in this section.</p>
+<p>Nothing in these Terms of Use shall prohibit or restrict Werner or any Werner Affiliate from complying with all applicable laws, rules and regulations, and all law enforcement requests and/or subpoenas. Werner may use and disclose any User Posted Content, Suggestions, User ID, Passwords, security information and user contact information as Werner deems reasonable to comply with the law, to respond to such requests or subpoenas, to enforce these Terms of Use or Werner Contracts, and to protect the safety of persons or property.</p>
+<p>While this Site is not directed to or expected to be used by children, parents should know that there is a significant amount of information available to them and a variety of commercially available products and services that can assist them in implementing controls to block minors’ access to adult, violent or other content that the parent prefers to block. The Federal Trade Commission maintains a website at <a href="http://www.onguardonline.gov">www.onguardonline.gov</a> that contains information about protecting kids using the Internet.</p>
+<p><strong>15</strong>. <strong>Copyright Infringement</strong>.</p>
+<p>Werner respects the intellectual property rights of others and requires that all users of this Site do the same. Werner will investigate notices of copyright infringement and take appropriate action upon receipt of proper notification, including termination of Site access and termination of other privileges of anyone who repeatedly infringes the copyright rights of others. If you believe that your work has been used, posted or copied on the Site in a way that constitutes copyright infringement, please notify the Werner Copyright Agent (at the address set forth below) in writing with the following information:</p>
+<p>(a)     Your real name and your current valid working email address and telephone number with which we can contact you;</p>
+<p>(b)     Identification of the work protected by copyright that you claim has been infringed or, if multiple works have been infringed, a representative list of such works;</p>
+<p>(c)     A description of where the work that you claim infringes your work is being used or appears on the Site;</p>
+<p>(d)    A written statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;</p>
+<p>(e)     A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on behalf of the copyright owner; and</p>
+<p>(f)     Your electronic or physical signature.</p>
+<p>Werner’s Copyright Agent is:  Werner Copyright Agent, c/o Corporate Communications Department, Werner System, Inc. 13410 Sutton Park Drive South, Jacksonville, Florida 32224. Email: <a href="mailto:copyrightagent@werner.com">copyrightagent@werner.com</a>.</p>
+<p><strong>16</strong>.<strong> Disclaimer, Liability Exclusion, Liability Limitation, Release and Indemnity</strong>.</p>
+<p>Werner strives to make your use of the Site a useful experience. Nevertheless, neither Werner nor any Werner Affiliate, on whose behalf Werner is operating this Site, accepts any liability for your use of the Site. From time to time, this Site may contain technical inaccuracies or typographical errors, and we do not warrant the accuracy of any posted information. Please confirm you are using the most up-to-date pages on this Site, and confirm the accuracy and completeness of information before using it to make decisions relating to services, products, or other matters described in this Site.</p>
+<p>If any term in this Terms of Use is found by competent judicial authority to be unenforceable in any respect, the validity of the remainder of this Terms of Use will be unaffected, provided that such unenforceability does not materially affect the parties’ rights under this Terms of Use.</p>
+<p><strong><u>DISCLAIMER</u></strong></p>
+<p><strong>YOUR USE OF THE SITE IS AT YOUR OWN RISK. </strong></p>
+<p><strong>YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION TO ANY COMPUTER OR OTHER EQUIPMENT ARISING FROM, CONNECTED WITH, OR RELATING TO YOUR USE OF THE SITE.</strong></p>
+<p><strong>THE OPERATION OF THE SITE MAY BE AFFECTED BY NUMEROUS FACTORS BEYOND WERNER’S CONTROL. THE OPERATION OF THE SITE MAY NOT BE CONTINUOUS OR UNINTERRUPTED OR SECURE. SECURITY AND PRIVACY AND CONFIDENTIALITY RISKS CANNOT BE ELIMINATED.</strong></p>
+<p><strong>NEITHER WERNER NOR THE WERNER AFFILIATE IS UNDER ANY OBLIGATION TO VERIFY THE IDENTITY OF USERS OF THE SITE. HOWEVER, YOU PROMISE NOT TO SHARE USE OF YOUR USER ID OR PASSWORDS NOR TO ALLOW ANYONE TO USE THE SITE POSING AS YOU.</strong></p>
+<p><strong>THROUGH OR BECAUSE OF YOUR USE OF THE SITE, YOU MAY HAVE THE OPPORTUNITY TO ENGAGE IN COMMERCIAL TRANSACTIONS WITH PERSONS OTHER THAN WERNER OR THE WERNER AFFILIATE. ALL SUCH TRANSACTIONS ARE AT YOUR OWN RISK. NEITHER WERNER NOR THE WERNER AFFILIATE IS A PARTY TO ANY SUCH TRANSACTIONS AND DISCLAIMS ANY AND ALL LIABILITY REGARDING ALL SUCH TRANSACTIONS. WERNER AND THE WERNER AFFILIATE MAKE NO REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND WITH RESPECT TO SUCH TRANSACTIONS, WHETHER EXPRESS OR IMPLIED, AND INCLUDING WITHOUT LIMITATION IMPLIED WARRANTIES OF MERCHANTABLE QUALITY, FITNESS FOR A PARTICULAR PURPOSE, PERFORMANCE OR USEFULNESS, ALL OF WHICH WERNER AND THE WERNER AFFILIATE DISCLAIM TO THE FULLEST EXTENT PERMITTED BY LAW.</strong></p>
+<p><strong>WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WERNER AND THE WERNER AFFILIATE MAKE NO REPRESENTATION, WARRANTY OR CONDITION THAT:</strong></p>
+<ul>
+<li><strong>THE SITE WILL BE COMPATIBLE WITH YOUR COMPUTER AND RELATED EQUIPMENT AND SOFTWARE;</strong></li>
+<li><strong>THE SITE WILL BE AVAILABLE OR WILL FUNCTION WITHOUT INTERRUPTION OR WILL BE FREE OF ERRORS OR THAT ANY ERRORS WILL BE CORRECTED;</strong></li>
+<li><strong>THE INFORMATION AVAILABLE ON OR THROUGH THE SITE WILL BE ACCURATE, COMPLETE, SEQUENTIAL, OR TIMELY;</strong></li>
+<li><strong>PARTICULAR RESULTS OR ANY RESULTS AT ALL MAY BE OBTAINED THROUGH THE USE OF THE SITE;</strong></li>
+<li><strong>THE USE OF THE SITE, INCLUDING THE BROWSING AND DOWNLOADING OF ANY INFORMATION, WILL BE FREE OF VIRUSES, TROJAN HORSES, WORMS OR OTHER DESTRUCTIVE OR DISRUPTIVE COMPONENTS; OR</strong></li>
+<li><strong>THE USE OF THE SITE WILL NOT INFRINGE THE RIGHTS (INCLUDING INTELLECTUAL PROPERTY RIGHTS) OF ANY PERSON.</strong></li>
+</ul>
+<p><strong>WERNER AND WERNER AFFILIATES DISCLAIM ANY AND ALL LIABILITY REGARDING SUCH MATTERS TO THE FULLEST EXTENT PERMITTED BY LAW.</strong></p>
+<p><strong>YOU AGREE TO IMPLEMENT SUFFICIENT SECURITY SAFEGUARDS AND BACKUP PROCEDURES TO SATISFY YOUR PARTICULAR REQUIRMENTS FOR ANTI-VIRUS PROTECTION AND ACCURACY OF DATA INPUT AND OUTPUT, AND FOR MAINTAINING A MEANS EXTERNAL TO OUR SITE FOR ANY RECONSTRUCTION OF ANY LOST, DEGRADED OR CORRUPTED DATA.</strong></p>
+<p><strong>ADDITIONAL DISCLAIMERS MAY APPEAR WITHIN THE SITE ITSELF AND ARE INCORPORATED HEREIN BY REFERENCE.</strong></p>
+<p><strong><u>LIABILITY EXCLUSION</u></strong></p>
+<p><strong>NEITHER WERNER NOR THE WERNER AFFILIATE WILL UNDER ANY CIRCUMSTANCES BE LIABLE TO YOU OR ANY OTHER PERSON FOR ANY LOSS OF USE, LOSS OF PRODUCTION, LOSS OF INCOME OR PROFITS (ANTICIPATED OR OTHERWISE), LOSS OF MARKETS, ECONOMIC LOSS, SPECIAL, INDIRECT OR CONSEQUENTIAL LOSS OR DAMAGE OR PUNITIVE DAMAGES, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LAW OR EQUITY, ARISING FROM, CONNECTED WITH, OR RELATING TO THE USE OF THE SITE BY YOU OR ANY OTHER PERSON, AND REGARDLESS OF ANY NEGLIGENCE OR OTHER FAULT OR WRONGDOING BY WERNER, ANY WERNER AFFILIATE, OR ANY PERSON FOR WHOM WERNER IS RESPONSIBLE, AND NOTWITHSTANDING THAT WERNER OR ANY WERNER AFFILIATE OR PERSON FOR WHOM WERNER IS RESPONSIBLE MAY HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES BEING INCURRED BY YOU OR ANY OTHER PERSON.</strong></p>
+<p>TO THE FULLEST EXTENT PROVIDED BY LAW, WE WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, VIRUSES, OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA, OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE SITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE OR TO YOUR DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY OTHER WEBSITE OR APPLICATION  LINKED TO IT.</p>
+<p>YOUR USE OF THE SITE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE IS AT YOUR OWN RISK. THE SITE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER WERNER NOR ANY PERSON ASSOCIATED WITH THE COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE. WITHOUT LIMITING THE FOREGOING, NEITHER WERNER NOR ANYONE ASSOCIATED WITH WERNER REPRESENTS OR WARRANTS THAT THE SITE, ITS CONTENT, OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE WILL BE ACCURATE, RELIABLE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE SITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p>
+<p>TO THE FULLEST EXTENT PROVIDED BY LAW, WERNER HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR PARTICULAR PURPOSE.</p>
+<p>THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
+<p><strong><u>LIMITATION OF LIABILITY</u></strong></p>
+<p><strong>TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT, INCLUDING DUE TO NEGLIGENCE, WILL WERNER OR ANY WERNER AFFILIATES OR THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES OR LICENSORS BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE, SPECIAL OR OTHER DAMAGES, INCLUDING, WITHOUT LIMITATION, DAMAGES DUE TO LOST PROFITS OR BUSINESS INTERRUPTION, ARISING OUT OF USE OF THE SITE, SITE OPERATIONS, OR ANY CONTENT, INFORMATION, PRODUCT OR SERVICE MADE AVAILABLE THROUGH THE SITE, EVEN IF WERNER OR ANY  WERNER AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY THEREOF. TO THE FULLEST EXTENT PERMITTED BY LAW, THE LIABILITY OF WERNER AND WERNER AFFILIATES AND THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES AND LICENSORS ARISING OUT OF OR IN CONNECTION WITH THIS SITE IS LIMITED TO THE LESSER OF THE DOLLAR AMOUNT YOU PAID WERNER TO USE THIS SITE OR ONE HUNDRED U.S. DOLLARS ($100).</strong></p>
+<p><strong><u>RELEASE</u></strong></p>
+<p><strong>YOU HEREBY RELEASE, REMISE AND FOREVER DISCHARGE EACH OF WERNER, WERNER AFFILIATES, AND ALL OF THEIR RESPECTIVE AGENTS, DIRECTORS, OFFICERS, EMPLOYEES, INFORMATION PROVIDERS, SERVICE PROVIDERS, SUPPLIERS, LICENSORS AND LICENSEES, AND ALL OTHER RELATED, ASSOCIATED, OR CONNECTED PERSONS FROM ANY AND ALL MANNER OF RIGHTS, CLAIMS, COMPLAINTS, DEMANDS, CAUSES OF ACTION, PROCEEDINGS, LIABILITIES, OBLIGATIONS, LEGAL FEES, COSTS, AND DISBURSEMENTS OF ANY NATURE AND KIND WHATSOEVER AND HOWSOEVER ARISING, WHETHER KNOWN OR UNKNOWN, WHICH NOW OR HEREAFTER EXIST, WHICH ARISE FROM, RELATE TO, OR ARE CONNECTED WITH YOUR USE OF THE SITE.</strong></p>
+<p><strong><u>INDEMNITY</u></strong></p>
+<p><strong>YOU AGREE TO INDEMNIFY, DEFEND AND HOLD HARMLESS EACH OF WERNER, WERNER AFFILIATES, AND ALL OF THEIR RESPECTIVE AGENTS, DIRECTORS, OFFICERS, EMPLOYEES, INFORMATION PROVIDERS, SERVICE PROVIDERS, SUPPLIERS, LICENSORS AND LICENSEES, AND ALL OTHER RELATED, ASSOCIATED, OR CONNECTED PERSONS (COLLECTIVELY, THE “INDEMNIFIED PARTIES”) FROM AND AGAINST ANY AND ALL LIABILITIES, EXPENSES AND COSTS, INCLUDING WITHOUT LIMITATION REASONABLE LEGAL FEES AND EXPENSES, INCURRED BY THE INDEMNIFIED PARTIES IN CONNECTION WITH ANY CLAIM OR DEMAND ARISING OUT OF, RELATED TO, OR CONNECTED WITH YOUR USE OF THE SITE, THE PRODUCTS AND SERVICES OFFERED THROUGH THE SITE, THE USE OF THE SITE BY SOMEONE POSING AS YOU, OR YOUR BREACH OF THIS AGREEMENT. YOU WILL ASSIST AND CO-OPERATE AS FULLY AS REASONABLY REQUIRED BY THE INDEMNIFIED PARTIES IN THE DEFENCE OF ANY SUCH CLAIM OR DEMAND. YOU FURTHER AGREE TO INDEMNIFY WERNER AND THE INDEMNIFIED PARTIES FROM ALL SUITS, DAMAGES, COSTS AND LIABILITIES WHATSOEVER ARISING FROM ANY TRANSACTIONS IN WHICH YOU ENGAGE USING PRODUCTS OR SERVICES OBTAINED FROM OR THROUGH THE SITE.</strong></p>
+<p><strong>ADVICE AND INFORMATION PROVIDED BY WERNER, ANY WERNER AFFILIATE, OR THEIR REPRESENTATIVES, WHETHER ORAL OR WRITTEN, WILL NOT CREATE ANY REPRESENTATION, WARRANTY OR CONDITION OR VARY OR AMEND THIS AGREEMENT, INCLUDING THE ABOVE DISCLAIMER, LIABILITY EXCLUSION, LIABILITY LIMITATION, RELEASE AND INDEMNITY PROVISIONS, AND YOU MAY NOT RELY UPON ANY SUCH ADVICE OR INFORMATION.</strong></p>
+<p><strong>THE EXCLUSION OF CERTAIN WARRANTIES AND THE LIMITATIONS OF CERTAIN LIABILITIES MAY BE PROHIBITED BY CERTAIN LEGISLATION AND LAWS IN SOME JURISDICTIONS AND THUS MAY NOT APPLY TO YOU. </strong> </p>
+<p>The disclaimer, liability exclusion, liability limitation, release, and indemnity provisions in this Agreement survive indefinitely after the termination of this Agreement.</p>
+<p><strong>17</strong>. <strong>Links</strong>.</p>
+<p>This Site may contain links to or from websites controlled by third parties. Werner and the Werner Affiliate make no representations or warranties regarding linked websites or their content or goods or services you may encounter or obtain thereon. If the Site contains links to other websites and resources provided by third parties, these links are provided for your convenience only. Werner has no control over the contents of those websites or resources, and neither Werner nor the Werner Affiliate accepts responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any of the third party websites linked to this Site, you do so entirely at your own risk and subject to the terms and conditions of use for such websites.</p>
+<p>This Site may also contain links to other websites or applications operated by or for Werner. Please check the terms of use and privacy policy applicable to each website you visit, as they may vary due to the nature of the websites and who is permitted to access them.</p>
+<p><strong>18</strong>. <strong>Termination of Your Access to the Site</strong>.</p>
+<p>Werner, in its sole and absolute discretion, may terminate, suspend, and/or limit your access to the Site, and may revoke your User ID and Password or limit which individuals may use the Site through your User ID and Password, without notice or liability, at any time. Further, Werner will investigate notices of copyright infringement and take appropriate action, including, but not limited to, termination of access to the Site and revocation of the User ID and Password of anyone who repeatedly infringes upon the copyright rights of others or violates these Terms of Use.</p>
+<p>Termination, suspension or limitation of your right to access the Site shall not affect or terminate your obligations or the rights and licenses granted to Werner by you under these Terms of Use, all of which survive any such termination, suspension or limitation.</p>
+<p><strong>19</strong>. <strong>Electronic Communications</strong>.</p>
+<p>By using this Site, you are consenting to receive communications from Werner electronically with respect to your use of this Site and its contents, and you are agreeing that Werner may communicate with you with respect to your use of this Site and its contents via email, by posting notices on the Site, and by other means of communication, including but not limited to electronic mail. You specifically authorize Werner to contact you via email in the event Werner or a Werner Affiliate is required by law to notify you of a data security incident or data breach.</p>
+<p><strong>20</strong>. <strong>Third Party Rights</strong>.</p>
+<p>The provisions of these Terms of Use are for the benefit of Werner and Werner Affiliates and each of these entities shall have the right to assert and enforce these provisions directly against you on its own behalf. Otherwise, there are no third party beneficiaries of these Terms of Use.</p>
+<p><strong>21</strong>. <strong>Forward-Looking Statements</strong>.</p>
+<p>Portions of this Site may contain forward-looking statements concerning Werner or the financial performance of Werner. These forward-looking statements only speak as of the date indicated or, if no such date is indicated, as of the date such statements are posted to the Site. These statements are only predictions and actual events or results may differ materially. Please read Werner’s SEC filings, including its annual, periodic and current reports, as amended, for additional information about the risks, uncertainties and other factors that could cause actual results to differ materially from those in the forward-looking statements. <strong>WERNER EXPRESSLY DISCLAIMS ANY OBLIGATION TO UPDATE, AMEND, SUPPLEMENT OR OTHERWISE REVISE ANY FORWARD-LOOKING STATEMENTS CONTAINED ON THIS SITE TO REFLECT EVENTS OR CIRCUMSTANCES THAT MAY ARISE AFTER THE DATE INDICATED, EXCEPT AS OTHERWISE REQUIRED BY APPLICABLE LAW</strong>.</p>
+<p><strong>22</strong>. <strong>Governing Law and Venue</strong>.</p>
+<p>These Terms of Use, your use of the Site, and all related matters shall be governed and construed in accordance with the laws of the State of Florida without application of its conflicts of laws principles. Except as may be expressly agreed otherwise by Werner and you, you agree that any dispute between Werner or any  Werner Affiliate, on the one hand, and you, on the other hand, arising from, connected with or relating to the Site, your use of the Site, these Terms of Use or any related matters shall be brought exclusively in a federal or state court having jurisdiction thereof within the State of Florida. Werner and you waive any objection to such venue based on lack of personal jurisdiction or inconvenient forum.</p>
+<p><strong>23</strong>. <strong>Waiver; Severability</strong>.</p>
+<p>Failure to insist upon or enforce strict performance of any provision of these Terms of Use shall not be construed as a waiver of any provision or right contained herein. Neither the course of conduct between you and us nor trade practice shall act to modify any provision of these Terms of Use.</p>
+<p>If any provision of these Terms of Use is deemed invalid, void or unenforceable, that invalid, void or unenforceable provision shall be deemed severable from these Terms of Use and shall not affect the validity and enforceability of the remaining provisions, which will continue in full force and effect.</p>
+<p>Any rights not expressly granted by these Terms of Use are reserved to Werner.</p>
+<p><strong>24</strong>. <strong>Reliance on Information Posted</strong>.</p>
+<p>The information presented on or through the Site is made available solely for general information purposes. We do not warrant the accuracy, completeness, or usefulness of this information. Any reliance you place on such information is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the Site, or by anyone who may be informed of any of its contents.</p>
+<p>This Site may include content provided by third parties, including materials provided by other users, bloggers, and third party licensors, syndicators, aggregators, and/or reporting services. All statements and/or opinions expressed in these materials, and all articles and responses to questions and other content, other than the content provided by Werner, are solely the opinions and the responsibility of the person or entity providing those materials. These materials do not necessarily reflect the opinion of Werner. We are not responsible, or liable to you or any third party, for the content or accuracy of any materials provided by any third parties.</p>
+<p><strong>25</strong>. <strong>Changes to the Site</strong>.</p>
+<p>We may update the content on this Site from time to time, but its content is not necessarily complete or up-to-date. Any of the material on the Site may be out of date at any given time, and we are under no obligation to update such material.</p>
+<p><strong>26</strong>. <strong>Information About You and Your Visits to the Site</strong>.</p>
+<p>All information we collect on this Site is subject to our <a href="/privacy-policy">Privacy Policy</a>. By using the Site, you consent to all actions taken by us with respect to your information in compliance with the <a href="/privacy-policy">Privacy Policy</a>.</p>
+<p><strong>27</strong>. <strong>Limitation on Time to File Claims</strong>.</p>
+<p>ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF USE OR THE SITE MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED.</p>
+<p><strong>28</strong>. <strong>Assignment; Entire Agreement</strong>.</p>
+<p>The provisions of these Terms of Use will inure to the benefit of and be binding upon each of Werner and Werner Affiliates and each of their respective successors and assigns and you and your heirs, executors, administrators, successors, permitted assigns, and personal representatives.</p>
+<p>Werner may assign its rights and duties under these Terms of Use to any other person or entity at any time without your consent and without notice to you. You may not assign these Terms of Use, nor may you assign, license or delegate your rights, licenses or privileges provided hereunder. These Terms of Use, the Revised Terms, any other policies, guidelines, requirements, disclaimers and requirements posted on the Site by Werner, including the <a href="/privacy-policy">Privacy Policy</a>, except as set forth in the immediately following sentence below, comprise the entire agreement between you and Werner regarding your use of the Site and its contents. Notwithstanding the foregoing, all terms and conditions of Werner Contracts that relate to your use of the Site (including, without limitation, any restrictions, preconditions, limitations or requirements on or relating to such use) shall be in addition to and not in substitution of, any of the terms contained in these Terms of Use or the Revised Terms.  </p>
+<p><strong>29</strong>. <strong>Questions or Concerns</strong>.</p>
+<p>This Site is operated by Werner Systems Holding, Inc.</p>
+<p>All notices of copyright infringement claims should be sent to the copyright agent designated above in the manner and by the means set out therein.</p>
+<p>All other feedback, comments, requests for technical support, and other communications relating to the Site should be directed to:  the Werner Corporate Communications department at <a href="mailto:wernercorpcomm@werner.com">wernercorpcomm@werner.com</a>.</p>
+<p><strong>30</strong>. <strong>Date</strong>.</p>
+<p>The date the Terms of Use was last modified is June 1, 2020.</p>
+</section>
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <nav class="footerNav">
+        <ul class="footerNav_list">
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/?https://www.werner.com/terms-of-use/#:~:text=Site%20Ownership%3B%20Copyrights%20and%20Trademarks%3B%20Intellectual%20Property%20Rights" class="footerNav_link" target="_blank">COPYRIGHT &#xA9; 2019 - 2025 WERNER SYSTEM, INC. ALL RIGHTS RESERVED</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/privacy-policy/" class="footerNav_link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/" class="footerNav_link">Terms of Use</a>
+                </li>
+        </ul>
+    </nav>
+</footer>
+
+
+    
+
+<div class="joinUs" data-modal_content="joinUs">
+    <div class="joinUs_modal">
+        <span class="close_button" role="button" data-modal_trigger="joinUs">Close Window</span>
+        <div class="joinUs_content">
+            <article class="joinUs_column">
+                <h3>Agent Network</h3>
+                <p>Werner’s independent agents enjoy the administrative, sales and technological support of a financially secure industry leader, along with the freedom that comes with owning your own business.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.werner.com/agent-pre-qualification/" class="btn _outline _noarrow">Get Started</a>
+                    <a href="https://www.werner.com/the-werner-network/become-an-agent/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Owner-Operator Network</h3>
+                <p>If defining success on your own terms is important to you, then make the drive over to Werner. Go home when you want, load out when you’re ready. Lease to Werner today.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.leasetowerner.com/?utm_source=Werner.com&amp;utm_medium=Join%20Us&amp;utm_campaign=Get%20Started%20CTA" class="btn _outline _noarrow">Get Started</a>
+                    <a href="https://www.werner.com/the-werner-network/owner-operators/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Carrier Network</h3>
+                <p>Get access to thousands of posted premium loads every day, quick trip payments and big fleet fuel discounts through Werner. If you’re looking for more, look to Werner.</p>
+                <div class="joinUs_links">
+                    <a href="https://highway.com/onboarding/sign-up" target="" class="btn _outline _noarrow">Qualify Now</a>
+                    <a href="https://www.werner.com/the-werner-network/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Employment Opportunities</h3>
+                <p>Our employees play a critical role in the success of everyone in the Werner system. That’s why we offer competitive salaries and outstanding employee benefits. Werner is an equal opportunity employer, F/M/V/D.</p>
+                <div class="joinUs_links">
+                    <a href="https://usr58.dayforcehcm.com/CandidatePortal/en-US/werner" class="btn _outline _noarrow">Apply Now</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    
+<script type="text/javascript" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x">
+    _linkedin_partner_id = "199050";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })();
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=199050&fmt=gif" />
+</noscript>
+    
+    <script nonce="PKAi/0Cb5ttsDSTLZiUkzl1x">(function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerOffsetX: 10, triggerOffsetY: 10, triggerRadius: '50%' } }); }; e.appendChild(s); }());</script>
+
+    <script type="text/javascript" src="/Scripts/jquery-3.6.0.min.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/jquery.smoothState.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/respond.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/unveil.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/slick.min.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/izr.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/vendor/jquery.magnific-popup.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/nav-control.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/main.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+    <script type="text/javascript" src="/Scripts/blog.js?cdv=1695606972" nonce="PKAi/0Cb5ttsDSTLZiUkzl1x"></script>
+
+
+</body>
+</html>
+

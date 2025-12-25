@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Driver Application | Werner Trucking</title>
+    <link rel="stylesheet" href="/css/layout.css" />
+    <style>
+        .application-page { max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; }
+        .page-header { text-align: center; margin-bottom: 48px; }
+        .page-header h1 { margin: 0 0 16px; color: #0b63ce; font-size: 2.5rem; }
+        .page-header p { font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto; }
+        .application-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 32px; margin-bottom: 48px; }
+        .option-card { background: #fff; border: 2px solid #e5e7eb; border-radius: 12px; padding: 32px; text-align: center; transition: all 0.3s ease; }
+        .option-card:hover { border-color: #0b63ce; box-shadow: 0 8px 25px rgba(11, 99, 206, 0.1); }
+        .option-card h2 { margin: 0 0 16px; color: #0b63ce; font-size: 1.8rem; }
+        .option-card p { margin: 0 0 24px; color: #666; line-height: 1.6; }
+        .option-card .features { text-align: left; margin: 24px 0; }
+        .option-card .features li { margin: 8px 0; color: #555; }
+        .btn-large { display: inline-block; background: #0b63ce; color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: background 0.3s ease; }
+        .btn-large:hover { background: #0952a5; }
+        .btn-secondary { display: inline-block; background: #f3f4f6; color: #0b63ce; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 12px; }
+        .process-info { background: #f8fafc; border-radius: 12px; padding: 32px; margin-top: 48px; }
+        .process-info h3 { margin: 0 0 24px; color: #0b63ce; font-size: 1.5rem; text-align: center; }
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .step { text-align: center; }
+        .step-number { display: inline-block; width: 40px; height: 40px; background: #0b63ce; color: #fff; border-radius: 50%; line-height: 40px; font-weight: 700; margin-bottom: 12px; }
+        .step h4 { margin: 0 0 8px; color: #333; }
+        .step p { margin: 0; color: #666; font-size: 0.9rem; }
+        .important-notice { background: #fff3cd; border: 1px solid #ffeaa7; color: #856404; padding: 20px; border-radius: 8px; margin: 32px 0; }
+        .important-notice h4 { margin: 0 0 12px; color: #856404; }
+        @media (max-width: 768px) {
+            .application-options { grid-template-columns: 1fr; }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body class="page">
+    <main class="application-page">
+        <div class="page-header">
+            <h1>Join Werner as a Professional Driver</h1>
+            <p>Start your career with one of America's leading transportation companies. Choose the application path that best fits your situation.</p>
+        </div>
+
+        <div class="important-notice">
+            <h4>📧 Application Process</h4>
+            <p><strong>After submitting your application:</strong> Our assessment team will review your information within 24-72 hours. You'll receive a detailed response via email with next steps, requirements, or approval status. Please ensure your email address is correct and check your spam folder.</p>
+        </div>
+
+        <div class="application-options">
+            <div class="option-card">
+                <h2>🚛 Company Driver</h2>
+                <p>Apply as a standard company driver. Perfect for U.S. citizens and permanent residents with valid work authorization.</p>
+                
+                <ul class="features">
+                    <li>✅ Standard application process</li>
+                    <li>✅ Faster processing time</li>
+                    <li>✅ Immediate employment eligibility</li>
+                    <li>✅ All route types available</li>
+                    <li>✅ Comprehensive benefits package</li>
+                </ul>
+
+                <a href="/applicant-signup.htm" class="btn-large">Apply as Company Driver</a>
+                <br>
+                <a href="#requirements" class="btn-secondary">View Requirements</a>
+            </div>
+
+            <div class="option-card">
+                <h2>🌍 Immigrant Driver</h2>
+                <p>Apply as an immigrant driver. We'll help with visa sponsorship and work authorization for qualified candidates.</p>
+                
+                <ul class="features">
+                    <li>✅ Visa sponsorship support</li>
+                    <li>✅ 50% visa fee coverage</li>
+                    <li>✅ Immigration compliance assistance</li>
+                    <li>✅ Work authorization processing</li>
+                    <li>✅ Specialized support team</li>
+                </ul>
+
+                <a href="/immigrant-signup.htm" class="btn-large">Apply as Immigrant Driver</a>
+                <br>
+                <a href="#immigration-info" class="btn-secondary">Immigration Info</a>
+            </div>
+        </div>
+
+        <div class="process-info">
+            <h3>Application Process</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Submit Application</h4>
+                    <p>Complete the comprehensive application form with all required information and documents.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Assessment Review</h4>
+                    <p>Our team reviews your application, driving record, and qualifications within 24-72 hours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Email Response</h4>
+                    <p>Receive detailed feedback via email with approval status, next steps, or additional requirements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Onboarding</h4>
+                    <p>Complete final paperwork, training, and orientation to start your Werner driving career.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="requirements" class="process-info">
+            <h3>General Requirements</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <h4>📋 Documentation</h4>
+                    <p>Valid CDL Class A license, DOT medical card, clean driving record, and employment history.</p>
+                </div>
+                <div class="step">
+                    <h4>🛡️ Safety Record</h4>
+                    <p>Clean driving record with minimal violations, no recent accidents, and DOT compliance.</p>
+                </div>
+                <div class="step">
+                    <h4>💼 Experience</h4>
+                    <p>Commercial driving experience preferred but not required. We offer training programs.</p>
+                </div>
+                <div class="step">
+                    <h4>🏥 Medical</h4>
+                    <p>Valid DOT medical certificate and ability to pass drug/alcohol screening.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="immigration-info" class="process-info">
+            <h3>Immigration Support</h3>
+            <p style="text-align: center; margin-bottom: 24px;">Werner provides comprehensive immigration support for qualified international drivers.</p>
+            <div class="process-steps">
+                <div class="step">
+                    <h4>🛂 Visa Sponsorship</h4>
+                    <p>We handle all visa application processes and sponsor qualified drivers for work authorization.</p>
+                </div>
+                <div class="step">
+                    <h4>💰 Fee Coverage</h4>
+                    <p>Werner covers 50% of all applicable visa-related fees for employed drivers.</p>
+                </div>
+                <div class="step">
+                    <h4>📋 Documentation</h4>
+                    <p>Assistance with I-9 verification, work permits, and immigration compliance requirements.</p>
+                </div>
+                <div class="step">
+                    <h4>🤝 Ongoing Support</h4>
+                    <p>Dedicated immigration support team throughout your employment and visa process.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

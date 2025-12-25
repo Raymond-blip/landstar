@@ -6,7 +6,7 @@ const crypto = require('crypto');
 const sqlite3 = require('sqlite3').verbose();
 
 const ROOT = __dirname;
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8002;
 const DATA_DIR = path.join(ROOT, 'data');
 const DB_FILE = path.join(DATA_DIR, 'submissions.db');
 
@@ -60,12 +60,32 @@ function initDatabase() {
           state TEXT,
           zip_code TEXT,
           date_of_birth TEXT,
+          gender TEXT,
+          emergency_contact_name TEXT,
+          emergency_contact_phone TEXT,
+          position_type TEXT,
+          availability_start_date TEXT,
+          preferred_routes TEXT,
+          years_experience TEXT,
           license_number TEXT,
           license_state TEXT,
           license_expiry TEXT,
-          years_experience TEXT,
-          preferred_routes TEXT,
-          availability TEXT,
+          license_class TEXT,
+          endorsements TEXT,
+          previous_employer_1 TEXT,
+          employment_dates_1 TEXT,
+          reason_for_leaving_1 TEXT,
+          previous_employer_2 TEXT,
+          employment_dates_2 TEXT,
+          reason_for_leaving_2 TEXT,
+          has_accidents TEXT,
+          accident_details TEXT,
+          has_violations TEXT,
+          violation_details TEXT,
+          failed_dot_test TEXT,
+          has_medical_card TEXT,
+          medical_card_expiry TEXT,
+          authorization TEXT,
           ip_address TEXT,
           created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )`, (err) => {
@@ -89,6 +109,7 @@ function initDatabase() {
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           first_name TEXT,
           last_name TEXT,
+          other_names TEXT,
           email TEXT,
           phone TEXT,
           address TEXT,
@@ -96,17 +117,40 @@ function initDatabase() {
           state TEXT,
           zip_code TEXT,
           date_of_birth TEXT,
+          country_of_origin TEXT,
+          emergency_contact_name TEXT,
+          emergency_contact_phone TEXT,
+          immigration_status TEXT,
+          uscis_number TEXT,
+          issuing_country TEXT,
+          document_expiry TEXT,
+          work_authorization TEXT,
+          nominator_code TEXT,
+          sponsoring_company TEXT,
+          visa_type TEXT,
+          nominator_understanding TEXT,
           license_number TEXT,
           license_state TEXT,
           license_expiry TEXT,
+          license_class TEXT,
+          endorsements TEXT,
+          cdl_location TEXT,
+          cdl_country TEXT,
+          immigrant_acknowledgment TEXT,
           years_experience TEXT,
-          preferred_routes TEXT,
-          availability TEXT,
-          visa_type TEXT,
-          visa_number TEXT,
-          visa_expiry TEXT,
-          work_authorization TEXT,
-          country_of_origin TEXT,
+          countries_driven TEXT,
+          previous_employers TEXT,
+          primary_language TEXT,
+          english_proficiency TEXT,
+          read_signs TEXT,
+          has_accidents TEXT,
+          accident_details TEXT,
+          has_violations TEXT,
+          violation_details TEXT,
+          failed_dot_test TEXT,
+          has_medical_card TEXT,
+          medical_card_expiry TEXT,
+          authorization TEXT,
           ip_address TEXT,
           created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )`, (err) => {
@@ -121,34 +165,65 @@ function initDatabase() {
 function insertSubmission(db, kind, payload, ip) {
   return new Promise((resolve, reject) => {
     const table = kind === 'applicant' ? 'applicants' : 'immigrants';
-    const fields = kind === 'applicant' 
-      ? 'first_name, last_name, email, password_hash, phone, address, city, state, zip_code, date_of_birth, license_number, license_state, license_expiry, years_experience, preferred_routes, availability, ip_address'
-      : 'first_name, last_name, email, phone, address, city, state, zip_code, date_of_birth, license_number, license_state, license_expiry, years_experience, preferred_routes, availability, visa_type, visa_number, visa_expiry, work_authorization, country_of_origin, ip_address';
     
-    const placeholders = fields.split(', ').map(() => '?').join(', ');
-    const values = kind === 'applicant'
-      ? [
-          payload.firstName, payload.lastName, payload.email,
-          // password_hash will be computed if password is present
-          payload.password ? hashPassword(payload.password) : null,
-          payload.phone, payload.address, payload.city, payload.state, payload.zipCode,
-          payload.dateOfBirth, payload.licenseNumber, payload.licenseState,
-          payload.licenseExpiry, payload.yearsExperience, payload.preferredRoutes,
-          payload.availability, ip
-        ]
-      : [
-          payload.firstName, payload.lastName, payload.email, payload.phone,
-          payload.address, payload.city, payload.state, payload.zipCode,
-          payload.dateOfBirth, payload.licenseNumber, payload.licenseState,
-          payload.licenseExpiry, payload.yearsExperience, payload.preferredRoutes,
-          payload.availability, payload.visaType, payload.visaNumber,
-          payload.visaExpiry, payload.workAuthorization, payload.countryOfOrigin, ip
-        ];
-
-    db.run(`INSERT INTO ${table} (${fields}) VALUES (${placeholders})`, values, function(err) {
-      if (err) return reject(err);
-      resolve({ id: this.lastID });
-    });
+    if (kind === 'applicant') {
+      const fields = `first_name, last_name, email, password_hash, phone, address, city, state, zip_code, 
+                     date_of_birth, gender, emergency_contact_name, emergency_contact_phone, position_type, 
+                     availability_start_date, preferred_routes, years_experience, license_number, license_state, 
+                     license_expiry, license_class, endorsements, previous_employer_1, employment_dates_1, 
+                     reason_for_leaving_1, previous_employer_2, employment_dates_2, reason_for_leaving_2, 
+                     has_accidents, accident_details, has_violations, violation_details, failed_dot_test, 
+                     has_medical_card, medical_card_expiry, authorization, ip_address`;
+      
+      const placeholders = fields.split(', ').map(() => '?').join(', ');
+      const values = [
+        payload.firstName, payload.lastName, payload.email,
+        payload.password ? hashPassword(payload.password) : null,
+        payload.phone, payload.address, payload.city, payload.state, payload.zipCode,
+        payload.dateOfBirth, payload.gender, payload.emergencyContactName, payload.emergencyContactPhone,
+        payload.positionType, payload.availabilityStartDate, payload.preferredRoutes, payload.yearsExperience,
+        payload.licenseNumber, payload.licenseState, payload.licenseExpiry, payload.licenseClass,
+        payload.endorsements, payload.previousEmployer1, payload.employmentDates1, payload.reasonForLeaving1,
+        payload.previousEmployer2, payload.employmentDates2, payload.reasonForLeaving2,
+        payload.hasAccidents, payload.accidentDetails, payload.hasViolations, payload.violationDetails,
+        payload.failedDotTest, payload.hasMedicalCard, payload.medicalCardExpiry, payload.authorization, ip
+      ];
+      
+      db.run(`INSERT INTO ${table} (${fields}) VALUES (${placeholders})`, values, function(err) {
+        if (err) return reject(err);
+        resolve({ id: this.lastID });
+      });
+    } else {
+      const fields = `first_name, last_name, other_names, email, phone, address, city, state, zip_code, 
+                     date_of_birth, country_of_origin, emergency_contact_name, emergency_contact_phone, 
+                     immigration_status, uscis_number, issuing_country, document_expiry, work_authorization, 
+                     nominator_code, sponsoring_company, visa_type, nominator_understanding, license_number, 
+                     license_state, license_expiry, license_class, endorsements, cdl_location, cdl_country, 
+                     immigrant_acknowledgment, years_experience, countries_driven, previous_employers, 
+                     primary_language, english_proficiency, read_signs, has_accidents, accident_details, 
+                     has_violations, violation_details, failed_dot_test, has_medical_card, medical_card_expiry, 
+                     authorization, ip_address`;
+      
+      const placeholders = fields.split(', ').map(() => '?').join(', ');
+      const values = [
+        payload.firstName, payload.lastName, payload.otherNames, payload.email, payload.phone,
+        payload.address, payload.city, payload.state, payload.zipCode, payload.dateOfBirth,
+        payload.countryOfOrigin, payload.emergencyContactName, payload.emergencyContactPhone,
+        payload.immigrationStatus, payload.uscisNumber, payload.issuingCountry, payload.documentExpiry,
+        payload.workAuthorization, payload.nominatorCode, payload.sponsoringCompany, payload.visaType,
+        payload.nominatorUnderstanding, payload.licenseNumber, payload.licenseState, payload.licenseExpiry,
+        payload.licenseClass, payload.endorsements, payload.cdlLocation, payload.cdlCountry,
+        payload.immigrantAcknowledgment, payload.yearsExperience, payload.countriesDriven,
+        payload.previousEmployers, payload.primaryLanguage, payload.englishProficiency, payload.readSigns,
+        payload.hasAccidents, payload.accidentDetails, payload.hasViolations, payload.violationDetails,
+        payload.failedDotTest, payload.hasMedicalCard, payload.medicalCardExpiry, payload.authorization, ip
+      ];
+      
+      db.run(`INSERT INTO ${table} (${fields}) VALUES (${placeholders})`, values, function(err) {
+        if (err) return reject(err);
+        resolve({ id: this.lastID });
+      });
+    }
   });
 }
 

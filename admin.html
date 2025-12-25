@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Applicants Admin</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+    table{border-collapse:collapse;width:100%}
+    th,td{padding:8px;border:1px solid #ddd;text-align:left}
+    .controls{margin-bottom:12px}
+  </style>
+</head>
+<body>
+  <h2>Applicant Submissions</h2>
+  <div class="controls">
+    <label><input type="checkbox" id="gmailOnly" /> Show Gmail only</label>
+    <button id="refresh">Refresh</button>
+    <a id="csvLink" href="/api/applicants?format=csv" download>Download CSV</a>
+  </div>
+  <div id="count"></div>
+  <table id="tbl">
+    <thead><tr><th>ID</th><th>Email</th><th>Submitted</th><th>Data (JSON)</th></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function load(){
+      const gmailOnly = document.getElementById('gmailOnly').checked;
+      const q = gmailOnly ? '?gmail_only=1' : '';
+      document.getElementById('csvLink').href = '/api/applicants?format=csv' + (gmailOnly? '&gmail_only=1':'');
+      const res = await fetch('/api/applicants' + q);
+      const json = await res.json();
+      document.getElementById('count').textContent = 'Found: ' + (json.count || 0);
+      const tbody = document.querySelector('#tbl tbody');
+      tbody.innerHTML = '';
+      (json.results || []).forEach(r=>{
+        const tr = document.createElement('tr');
+        const tdId = document.createElement('td'); tdId.textContent = r.id; tr.appendChild(tdId);
+        const tdEmail = document.createElement('td'); tdEmail.textContent = r.email || ''; tr.appendChild(tdEmail);
+        const tdCreated = document.createElement('td'); tdCreated.textContent = r.created_at || ''; tr.appendChild(tdCreated);
+        const tdData = document.createElement('td'); tdData.textContent = JSON.stringify(r.data); tr.appendChild(tdData);
+        tbody.appendChild(tr);
+      });
+    }
+    document.getElementById('refresh').addEventListener('click', load);
+    document.getElementById('gmailOnly').addEventListener('change', load);
+    load();
+  </script>
+</body>
+</html>

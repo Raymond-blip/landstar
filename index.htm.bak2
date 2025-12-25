@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&#x2B;Sans:400,400i,700,700i,800,800i&amp;display=swap">
+    <!--Exists in head element-->
+
+
+
+<title>Werner System, Inc. | Transportation Solutions Provider</title>
+<meta name="description" property="description" content="Reliable transportation services delivered by a network of independent freight agents, leased owner-operators and other third-party capacity providers." />
+<meta name="og:title" property="og:title" content="Werner System, Inc. | Transportation Solutions Provider" />
+<meta name="og:description" property="og:description" content="Reliable transportation services delivered by a network of independent freight agents, leased owner-operators and other third-party capacity providers." />
+<meta name="og:type" property="og:type" content="website" />
+<meta name="og:image" property="og:image" content="http://www.werner.com/media/hmlhm2xh/home-600x315.jpg" />
+<link rel="canonical" href="https://www.werner.com/" />
+
+<!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/Content/img/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/img/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/img/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/Content/img/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/Content/img/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/Content/img/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/Content/img/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" sizes="196x196" href="/Content/img/favicons/favicon-196x196.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/Content/img/favicons/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/Content/img/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/Content/img/favicons/favicon-16x16.png" />
+    <meta name="application-name" content="Werner System" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/Content/img/favicons/mstile-144x144.png" />
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/layout.css" />
+    <style>
+      /* Navbar Auth Styles */
+      .topNavigation.authSection { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .authSection li { list-style: none; margin: 0; }
+      .authSection a { text-decoration: none; color: #111; font-size: 14px; padding: 8px 12px; }
+      .authSection a.btn { background: #0b63ce; color: #fff; border-radius: 6px; padding: 10px 16px; font-weight: 600; display: inline-block; }
+      .authSection a.btn:hover { background: #0a52b0; }
+      
+      /* User Menu Styles */
+      .userMenuContainer { position: relative; display: inline-block; }
+      .userMenuBtn { background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: opacity 0.2s; }
+      .userMenuBtn:hover { opacity: 0.8; }
+      .avatar { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; font-weight: 700; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .userDropdown { display: none; position: absolute; top: 100%; right: 0; background: #fff; border: 1px solid #d1d5db; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 2000; margin-top: 8px; overflow: hidden; }
+      .userDropdown.show { display: block; animation: slideDown 0.2s ease-out; }
+      @keyframes slideDown { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+      .userInfo { padding: 12px 16px; border-bottom: 1px solid #e5e7eb; background: #f9fafb; font-size: 13px; }
+      .userInfo > div:first-child { font-weight: 700; color: #111; margin-bottom: 2px; }
+      .userInfo > div:last-child { color: #666; font-weight: 400; }
+      .userDropdown a { display: block; padding: 12px 16px; color: #111; text-decoration: none; transition: background 0.15s; font-size: 14px; font-weight: 500; }
+      .userDropdown a:hover { background: #f3f4f6; }
+            /* Improve legibility for hero and landing images */
+            .heroBanner { position: relative; background-size: cover; background-position: center; }
+            .heroBanner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.35)); pointer-events: none; z-index: 1; }
+            .banner_copy { position: relative; z-index: 2; color: #fff; }
+            .banner_copy .rte p, .banner_title { color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+            .landingSecondaryImage img { display: block; margin: 0 auto; max-width: 100%; height: auto; filter: brightness(0.78) contrast(1.05); }
+        /* Clean top-fixed navbar styles */
+        .nav.modern-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .nav.modern-nav .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; padding: 12px 20px; }
+        .brand-logo { height: 40px; width: auto; display: block; }
+        .nav-links-wrapper { display: flex; align-items: center; gap: 20px; width: 100%; }
+        /* Push main links to the right of the nav */
+        .main-links { display: flex; gap: 16px; margin: 0; padding: 0; list-style: none; margin-left: auto; }
+        .main-links a { color: #111; text-decoration: none; font-weight:600; padding: 8px 6px; }
+        .auth-actions { display:flex; align-items:center; gap:12px; }
+        .auth-actions .btn.primary { background:#0b63ce; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; }
+        .nav-links-wrapper.open { display: block; }
+        /* Mobile hamburger */
+        .nav-toggle { background: none; border: none; display: inline-flex; flex-direction: column; gap:4px; padding:6px; cursor:pointer; }
+        .hamburger-bar { display:block; width:22px; height:2px; background:#111; }
+        /* Ensure page content isn't hidden under fixed nav */
+        body.homepage { padding-top: 72px; }
+
+        /* Center hero content and remove left/right split movement on landing */
+        .banner_copy { position: relative; z-index: 2; color: #fff; max-width: 900px; margin: 0 auto; text-align: center; padding: 60px 20px; }
+        .banner_title { text-align: center; }
+
+        /* Stack two-column CTA blocks into single column for a clean landing layout */
+        .twoColumnImageCta { display: block; }
+        .twoColumnImageCta_cta { width: 100%; padding: 24px; box-sizing: border-box; }
+        .twoColumnImageCta_img { width: 100%; height: 360px; background-size: cover; background-position: center; }
+
+        @media (min-width: 769px) {
+            .nav-toggle {
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body class="homepage">
+
+    <!-- Google Tag Manager (noscript) -->
+    
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="page">
+        
+<section class="navContainer">
+    <nav class="nav modern-nav">
+        <div class="nav-inner">
+            <a class="brand" href="/index.htm">
+                <img src="/media/werner%20logo.png" alt="Werner" class="brand-logo" />
+            </a>
+
+            <button id="mobileNavToggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="nav-links-wrapper" id="navLinksWrapper">
+                <ul id="mainNavLinks" class="main-links" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <li><a href="/index.htm">Home</a></li>
+                    <li><a href="https://www.werner.com/services/">Services</a></li>
+                    <li><a href="https://www.werner.com/blog/">Blog</a></li>
+                    <li><a href="https://www.werner.com/corporate-information/">Corporate</a></li>
+                    <li><a href="https://www.werner.com/request-a-quote/">Request A Quote</a></li>
+                </ul>
+
+                <div class="auth-actions" id="navAuthArea">
+                    <a id="navLoginLink" href="login.html" class="link">Login</a>
+                    <a id="navSignupBtn" href="/applicant-signup.htm" class="btn primary">Sign up</a>
+
+                    <div id="navUserMenu" class="userMenu" style="display:none;">
+                        <button id="navUserBtn" class="user-btn" aria-haspopup="true" aria-expanded="false"></button>
+                        <div id="navUserDropdown" class="user-dropdown" hidden>
+                            <div class="user-info" id="navUserEmail"></div>
+                            <a href="#" id="navLogout">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+        <section class="contentWrap">
+            
+
+<!-- Removed duplicated/top-side auth navigation for a single clean top navbar -->
+
+            <div class="content">
+                
+<section class="banner heroBanner _white" style="background-image: url(/media/werner-truck.webp);">
+        <article class="banner_copy">
+            <h1 class="banner_title">Designed To Respond<br />Built To Deliver</h1>
+            <div class="rte">
+                <p>A Safety First Transportation Solutions Provider. This is Werner.</p>
+            </div>
+                <a href="https://www.werner.com/why-werner/" class="btn _whiteHover">Why Werner?</a>
+        </article>
+    </section>
+
+
+
+
+<!-- These are formatted for left/right justification based on the order they're in on the page. -->
+
+<!-- Secondary image removed per request -->
+
+<section class="twoColumnImageCta">
+    <div class="twoColumnImageCta_cta">
+        <article>
+            <h2 class="h1">About Us</h2>
+            <div class="rte _md">
+                <p>Werner stands for safe, secure and reliable transportation services delivered by a network of independent freight agents, leased owner-operators and other third-party capacity providers. We empower these entrepreneurs to offer customized shipping solutions.</p>
+            </div>
+                <a href="https://www.werner.com/services/" class="btn _outline _white">Services</a>
+                <a href="https://www.werner.com/the-werner-network/" class="btn _whiteHover">The Werner Network</a>
+        </article>
+    </div>
+    <div class="twoColumnImageCta_img" style="background-image: url(/media/q5kiod00/home_2-colmn-split-corp-info_1000x1150p-copy.jpg);"></div>
+</section>
+
+
+
+
+
+
+
+<!-- These are formatted for left/right justification based on the order they're in on the page. -->
+
+<section class="twoColumnImageCta">
+    <div class="twoColumnImageCta_cta">
+        <article>
+            <h2 class="h1">Corporate Information</h2>
+            <div class="rte _md">
+                <p>Werner System, Inc. is a technology-enabled, asset-light provider of integrated transportation management solutions delivering safe, specialized transportation services to a broad range of customers utilizing a network of agents, third-party capacity owners and employees.</p>
+            </div>
+                <a href="https://www.werner.com/corporate-information/" class="btn _whiteHover">Learn More</a>
+        </article>
+    </div>
+    <div class="twoColumnImageCta_img" style="background-image: url(/media/1dkp1wpy/home_corporate-info.jpg);"></div>
+</section>
+
+
+
+
+
+    <section class="latestNewsFooterWidget">
+        <div class="latestNewsFooterWidget_intro">
+            <article>
+                <h2 class="h1">Latest News</h2>
+                <div class="rte">
+                    <p>Get the latest news about Werner. Read our blog posts, articles and press releases here.</p>
+                </div>
+                <a href="/blog/" class="btn _outline _white">View Blog</a>
+            </article>
+        </div>
+        <ul class="latestNewsFooterWidget_list">
+                <li class="latestNewsFooterWidget_preview">
+                    <article>
+                        <h4><a href="https://www.werner.com/blog/werner-bco-brings-wreaths-to-laredo/">Werner BCO Brings Wreaths to Laredo</a></h4>
+                        <time>December 12, 2025</time>
+                        <div class="rte"><p>Laredo, Texas, along with over 4,600 other cemeteries across the county, commemorates its fallen veterans with a Wreaths Across America remembrance ceremony and wreath-laying event. Now in its fourth year, the city has BCO Bob Mead and his wife to thank for bringing the remembrance event to Laredo.</p></div>
+                        <a href="https://www.werner.com/blog/werner-bco-brings-wreaths-to-laredo/" class="btn _outline _noarrow">Read More</a>
+                    </article>
+                </li>
+                <li class="latestNewsFooterWidget_preview">
+                    <article>
+                        <h4><a href="https://www.werner.com/blog/werner-hosts-inaugural-women-s-leadership-forum/">Werner Hosts Inaugural Women&#x2019;s Leadership Forum</a></h4>
+                        <time>December 09, 2025</time>
+                        <div class="rte"><p>Werner hosted its inaugural Women’s Leadership Forum at Jacksonville's headquarters — bringing together women from across the company for a conversation on leadership, confidence, and career growth.</p></div>
+                        <a href="https://www.werner.com/blog/werner-hosts-inaugural-women-s-leadership-forum/" class="btn _outline _noarrow">Read More</a>
+                    </article>
+                </li>
+                <li class="latestNewsFooterWidget_preview">
+                    <article>
+                        <h4><a href="https://www.werner.com/blog/how-transloading-optimizes-cross-border-logistics/">How Transloading Optimizes Cross-Border Logistics</a></h4>
+                        <time>December 01, 2025</time>
+                        <div class="rte"><p>Transloading streamlines cross-border logistics between Mexico and the U.S., enhancing efficiency and operations with the right provider.</p></div>
+                        <a href="https://www.werner.com/blog/how-transloading-optimizes-cross-border-logistics/" class="btn _outline _noarrow">Read More</a>
+                    </article>
+                </li>
+        </ul>
+    </section>
+
+  
+
+
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <nav class="footerNav">
+        <ul class="footerNav_list">
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/?https://www.werner.com/terms-of-use/#:~:text=Site%20Ownership%3B%20Copyrights%20and%20Trademarks%3B%20Intellectual%20Property%20Rights" class="footerNav_link" target="_blank">COPYRIGHT &#xA9; 2019 - 2025 WERNER SYSTEM, INC. ALL RIGHTS RESERVED</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/privacy-policy/" class="footerNav_link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/" class="footerNav_link">Terms of Use</a>
+                </li>
+        </ul>
+    </nav>
+</footer>
+
+
+    
+
+<div class="joinUs" data-modal_content="joinUs" id="signup">
+    <div class="joinUs_modal">
+        <span class="close_button" role="button" data-modal_trigger="joinUs">Close Window</span>
+        <div class="joinUs_content">
+            <article class="joinUs_column">
+                <h3>Applicant</h3>
+                <p>Sign up as a truck driver applicant for Werner. Submit your standard driver application and we’ll guide you through the onboarding steps.</p>
+                <div class="joinUs_links">
+                    <a href="/applicant-signup.htm" class="btn _outline _noarrow">Apply as Applicant</a>
+                    <a href="/applicant-signup.htm#requirements" class="joinUs_learnMore">View Requirements</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Immigrant Applicant</h3>
+                <p>Sign up as an immigrant applicant. We’ll collect your immigration details along with your driver application to route you to the right path.</p>
+                <div class="joinUs_links">
+                    <a href="/immigrant-signup.htm" class="btn _outline _noarrow">Apply as Immigrant</a>
+                    <a href="/immigrant-signup.htm#requirements" class="joinUs_learnMore">Document Checklist</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+    
+    <!-- accessibility/manage-settings widget script removed per request -->
+
+    <script type="text/javascript" src="/Scripts/jquery-3.7.1.min.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <script type="text/javascript" src="/Scripts/swiper-bundle.min.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript" src="/Scripts/vendor/respond.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript" src="/Scripts/vendor/unveil.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript" src="/Scripts/vendor/izr.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript" src="/Scripts/nav-control.js" nonce="offQ1GuUmhMWsSiN6X7GjHbA"></script>
+    <script type="text/javascript"src="/Scripts/main.js" nonce.

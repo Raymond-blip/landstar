@@ -1,7 +1,7 @@
 {
-  "name": "www.landstar.com",
+  "name": "www.werner.com",
   "version": "1.0.0",
-  "description": "This project is a local clone of the Landstar public site, customized with a **Werner truck driver signup flow**:",
+  "description": "This project is a local clone of the Werner public site, customized with a **Werner truck driver signup flow**:",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Raymond-blip/landstar.git"
+    "url": "git+https://github.com/Raymond-blip/werner.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Raymond-blip/landstar/issues"
+    "url": "https://github.com/Raymond-blip/werner/issues"
   },
-  "homepage": "https://github.com/Raymond-blip/landstar#readme",
+  "homepage": "https://github.com/Raymond-blip/werner#readme",
   "dependencies": {
     "sqlite3": "^5.1.7"
   }

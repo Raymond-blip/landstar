@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&#x2B;Sans:400,400i,700,700i,800,800i&amp;display=swap">
+    <!--Exists in head element-->
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T3WRH8C');</script>
+<!-- End Google Tag Manager -->
+
+<title>About Werner | A Network Built to Deliver</title>
+<meta name="description" property="description" content="The Werner business model is a unique network of freight agents and capacity providers. We deliver customized transportation solutions better than anyone." />
+<meta name="og:title" property="og:title" content="About Werner | A Network Built to Deliver" />
+<meta name="og:description" property="og:description" content="The Werner business model is a unique network of freight agents and capacity providers. We deliver customized transportation solutions better than anyone." />
+<meta name="og:type" property="og:type" content="website" />
+<meta name="og:image" property="og:image" content="http://www.werner.com/media/frajuxq3/why-werner-600x315.jpg" />
+<link rel="canonical" href="https://www.werner.com/why-werner/" />
+
+<!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/Content/img/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/img/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/img/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/Content/img/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/Content/img/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/Content/img/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/Content/img/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" sizes="196x196" href="/Content/img/favicons/favicon-196x196.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/Content/img/favicons/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/Content/img/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/Content/img/favicons/favicon-16x16.png" />
+<meta name="application-name" content="Werner System" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/Content/img/favicons/mstile-144x144.png" />
+
+
+
+
+<script type="application/ld+json" nonce="/4MTsZxoElzvt37M5GAOML8E">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Werner",
+    "url": "https://werner.com",
+    "sameAs": [
+    "https://www.facebook.com/WernerSystem",
+    "https://www.youtube.com/user/WernerVideos",
+    "https://www.linkedin.com/company/werner/"
+    ]
+    }
+</script>
+
+
+    
+    <link rel="stylesheet" href="/css/layout.css" />
+    
+</head>
+<body class="detailWithInfographic">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRH8C"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="page">
+        
+<section class="navContainer">
+<nav class="nav">
+    <a id="siteLogo" class="logoMain" href="/">
+        Werner
+    </a>
+    <button id="mobileNavToggle" class="navToggleMain">
+        <span class="title">Menu</span>
+        <span class="hamburger"></span>
+    </button>
+    <div class="fullNav" id="fullNav">
+        <ul id="mainNavigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/" class="werner-nav-icon-star hasChildren" data-children="True" target=""><span>Werner Advantage</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/entrepreneurs/" class="" target="">Entrepreneurs</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/safety-security/" class="" target="">Safety &amp; Security</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/why-werner/tools-technology/" class="" target="">Tools &amp; Technology</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/" class="werner-nav-icon-triangle hasChildren" data-children="True" target=""><span>The Werner Network</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/customers/" class="" target="">Customers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/agents/" class="" target="">Agents</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/owner-operators/" class="" target="">Owner-Operators</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/carriers/" class="" target="">Carriers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/the-werner-network/become-an-agent/" class="" target="">Become an Agent</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/" class="werner-nav-icon-tools hasChildren" data-children="True" target=""><span>Services</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/north-american-services/" class="" target="">North America</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/services/global-services/" class="" target="">Global</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/" class="werner-nav-icon-letter hasChildren" data-children="True" target=""><span>Corporate Information</span></a>
+                        <ul>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/corporate-responsibility/" class="" target="">Corporate Responsibility</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/certifications-and-operating-information/" class="" target="">Certifications and Operating Information</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.werner.com/corporate-information/careers/" class="" target="">Careers</a>
+                                </li>
+                                <li itemprop="name">
+                                    <a rel="canonical" itemprop="url" href="https://www.trmsites.com/werner/home.asp?siteid=90017" class="" target="_blank">Merchandise</a>
+                                </li>
+                        </ul>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="/blog/" class="werner-nav-icon-list " data-children="False" target=""><span>News &amp; Resources</span></a>
+                </li>
+                <li itemprop="name" class="">
+                    <a rel="canonical" itemprop="url" href="https://www.werner.com/contact/" class="werner-nav-icon-letter " data-children="False" target=""><span>Contact</span></a>
+                </li>
+        </ul>
+
+        
+
+<ul class="topNavigation _white" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werner.com/request-a-quote/" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+
+        <ul class="socialNavigation">
+    <li>
+        <a href="https://www.facebook.com/WernerSystem" target="_blank" class="socialLink _fb">Facebook</a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/werner" target="_blank" class="socialLink _li">LinkedIn</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/c/WernerVideos" target="_blank" class="socialLink _yt">YouTube</a>
+    </li>
+</ul>
+
+    </div>
+</nav>
+</section>
+
+
+        <section class="contentWrap">
+            
+
+<ul class="topNavigation _white" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werneronline.com/public/login.aspx" class="" target="_blank">Login</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/verifyLoad/verify.xhtml" class="" target="_blank">Verify</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://websphere.werner.com/shipmgr/publictrack/search.xhtml" class="" target="_blank">Track</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://investor.werner.com/" class="" target="_blank">Investors</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="https://www.werner.com/request-a-quote/" class="" target="">Request A Quote</a>
+        </li>
+        <li itemprop="name" class="">
+            <a rel="canonical" itemprop="url" href="" class="btn _outline _noarrow" data-modal_trigger="joinUs">Join us</a>
+        </li>
+</ul>
+
+            <div class="content">
+                <section class="banner heroBanner " style="background-image: url(/media/s1pnu3ly/banner-bg-why-werner.jpg)">
+    <article class="banner_copy">
+        <h1 class="banner_title">Why Werner?</h1>
+        <div class="rte">
+            The Werner business model is a unique network of agents and capacity providers. Discover how we deliver customized transportation solutions better than anyone else.
+        </div>
+            <a href="#" class="btn _video" data-modal_trigger="bannerVideo">Watch the video</a>
+    </article>
+</section>
+
+    <div class="videoGallery_modal" data-modal_content="bannerVideo">
+        <div class="videoGallery_modalInner">
+            <span class="close_button" role="button" data-modal_trigger="bannerVideo">Close Window</span>
+            <div class="videoGallery_video responsiveVideo">
+                <iframe src="https://player.vimeo.com/video/504515213" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+<section class="infographic">
+
+    <article class="infographic_copy">
+        <div class="rte">
+                <h2 class="h1 infographic_title">A Network Built to Deliver</h2>
+                <p>
+                    Compared to an ordinary logistics business, our network of independent agents and capacity providers offer greater flexibility to meet customers&#x2019; needs.
+                </p>
+
+                <h5>Call 877-696-4507 for more information.</h5>
+        </div>
+    </article>
+        <div class="infographic_graphic">
+            <div class="infographic_info _customers">
+                    <h4>Customers</h4>
+                    <p>Werner provides transportation solutions to more than 23,000 businesses worldwide. From single loads to complex projects, we can handle it all.</p>
+            </div>
+            <div class="infographic_info _agents">
+                    <h4>Agents</h4>
+                    <p>Our agents are the face of Werner. Providing customers with the knowledge and experience to get shipments delivered.</p>
+            </div>
+            <div class="infographic_info _capacity">
+                    <h4>Capacity</h4>
+                    <p>No one can match the Werner network. Werner&#x2019;s safe and secure capacity providers are ready when you are.</p>
+            </div>
+        </div>
+    }
+</section>
+
+<div class="umb-block-list">
+
+    <section class="twoColumnImg _left">
+        <div class="twoColumnImg_img _white" style="background-image: url(/media/21gfjwi2/lnstr-ad-network-of-specialists_1000x1150p.jpg);">
+                <h2>A Network of Specialists</h2>
+        </div>
+        <div class="twoColumnImg_copy">
+            <div class="rte _md">
+                <p><strong>A network of specialists working around the clock to deliver.</strong> The Werner network of independent agents and transportation capacity providers is uniquely positioned to meet your needs. Every agent and capacity provider is an independent business, highly motivated to ensure your satisfaction and success.</p>
+
+<h3>Capacity Where and When You Need It</h3>
+
+<p>With access to more than 78,000 truck capacity providers and a wide array of equipment, no one in the industry can match the Werner network. In addition to a trailer pool containing over 13,600 Werner vans to support our drop-and-hook service offering, Werner has one of the largest collections of specialized trailers in North America with over 2,700 pieces of equipment in our fleet.</p>
+
+<h3>Local Agents Who Understand Your Business</h3>
+
+<p>Our independent agents provide you with a local presence and a global reach.</p>
+
+<h3>One of the Safest Transportation Networks in North America</h3>
+
+<p>More than 35 years of experience and financial stability, ensuring your product is delivered safely and on time.</p>
+
+                    <a href="https://www.werner.com/why-werner/entrepreneurs/" class="btn">Learn More</a>
+                    <a href="https://cloud.3dissue.net/29953/29847/30285/45594/index.html?89302" class="btn _outline">View Our Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="twoColumnImg _right">
+        <div class="twoColumnImg_img _white" style="background-image: url(/media/pueikcgv/1014_desktop-about-05-safety-security-v1.jpg);">
+                <h2>Safety & Security</h2>
+        </div>
+        <div class="twoColumnImg_copy">
+            <div class="rte _md">
+                <p>As a safety-first company, our initiatives include strict Werner operator qualification requirements, orientation and training, plus customer and public outreach programs.</p>
+
+<h3>Monthly Safety Thursday Conference Calls</h3>
+
+<p>Join company executives, staff, owner-operators, customers, agents and law enforcement to discuss a variety of safety topics.</p>
+
+<h3>Mutual Understanding of Safety Together (M.U.S.T.)</h3>
+
+<p>Together Werner and customers develop hands-on safety solutions for each situation.</p>
+
+<h3>Werner Drives Education Home</h3>
+
+<p>Helping educate the motoring public on how to safely share the road with big trucks through the U.S. DOT No-Zone program.</p>
+
+<p>Werner security initiatives include background checks, cargo security, Customs Trade Partnership Against Terrorism (CTPAT) and the Free and Secure Trade (FAST) programs.</p>
+
+                    <a href="https://www.werner.com/why-werner/safety-security/" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="twoColumnImg _left">
+        <div class="twoColumnImg_img _white" style="background-image: url(/media/nn5dkua1/lnstr-ad-technology_marvin-with-tablet_1000x1150p.jpg);">
+                <h2>Tools & Technology</h2>
+        </div>
+        <div class="twoColumnImg_copy">
+            <div class="rte _md">
+                <p>Werner’s scale, systems and support, combined with our proprietary technology, help us to provide unparalleled value to our customers. Our technology and mobile apps make it easier to coordinate freight shipments. We are a leader in digital freight management, not mere digital load matching.</p>
+
+<p>With technology like the WernerOne® mobile app, capacity providers can easily find and set Load Alerts® notifications for potential loads from our freight board that meet their criteria. </p>
+
+<p>We’ve developed technology for agents that provides real-time data about their businesses and trends in their customers’ businesses. The results are tools that provide agents with in-depth analytics, solid data on pricing, and access to available capacity so they are empowered to provide superior service to customers.</p>
+
+                    <a href="https://www.werner.com/why-werner/tools-technology/" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- NEED TWO MORE TwoColumnImageSplitText MODULES HERE -->
+
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <nav class="footerNav">
+        <ul class="footerNav_list">
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/?https://www.werner.com/terms-of-use/#:~:text=Site%20Ownership%3B%20Copyrights%20and%20Trademarks%3B%20Intellectual%20Property%20Rights" class="footerNav_link" target="_blank">COPYRIGHT &#xA9; 2019 - 2025 WERNER SYSTEM, INC. ALL RIGHTS RESERVED</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/privacy-policy/" class="footerNav_link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://www.werner.com/terms-of-use/" class="footerNav_link">Terms of Use</a>
+                </li>
+        </ul>
+    </nav>
+</footer>
+
+
+    
+
+<div class="joinUs" data-modal_content="joinUs">
+    <div class="joinUs_modal">
+        <span class="close_button" role="button" data-modal_trigger="joinUs">Close Window</span>
+        <div class="joinUs_content">
+            <article class="joinUs_column">
+                <h3>Agent Network</h3>
+                <p>Werner’s independent agents enjoy the administrative, sales and technological support of a financially secure industry leader, along with the freedom that comes with owning your own business.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.werner.com/agent-pre-qualification/" class="btn _outline _noarrow">Get Started</a>
+                    <a href="https://www.werner.com/the-werner-network/become-an-agent/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Owner-Operator Network</h3>
+                <p>If defining success on your own terms is important to you, then make the drive over to Werner. Go home when you want, load out when you’re ready. Lease to Werner today.</p>
+                <div class="joinUs_links">
+                    <a href="https://www.leasetowerner.com/?utm_source=Werner.com&amp;utm_medium=Join%20Us&amp;utm_campaign=Get%20Started%20CTA" class="btn _outline _noarrow">Get Started</a>
+                    <a href="https://www.werner.com/the-werner-network/owner-operators/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Carrier Network</h3>
+                <p>Get access to thousands of posted premium loads every day, quick trip payments and big fleet fuel discounts through Werner. If you’re looking for more, look to Werner.</p>
+                <div class="joinUs_links">
+                    <a href="https://highway.com/onboarding/sign-up" target="" class="btn _outline _noarrow">Qualify Now</a>
+                    <a href="https://www.werner.com/the-werner-network/" class="joinUs_learnMore">Learn More</a>
+                </div>
+            </article>
+            <article class="joinUs_column">
+                <h3>Employment Opportunities</h3>
+                <p>Our employees play a critical role in the success of everyone in the Werner system. That’s why we offer competitive salaries and outstanding employee benefits. Werner is an equal opportunity employer, F/M/V/D.</p>
+                <div class="joinUs_links">
+                    <a href="https://usr58.dayforcehcm.com/CandidatePortal/en-US/werner" class="btn _outline _noarrow">Apply Now</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    
+<script type="text/javascript" nonce="/4MTsZxoElzvt37M5GAOML8E">
+    _linkedin_partner_id = "199050";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript" nonce="/4MTsZxoElzvt37M5GAOML8E">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })();
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=199050&fmt=gif" />
+</noscript>
+    
+    <script nonce="/4MTsZxoElzvt37M5GAOML8E">(function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerOffsetX: 10, triggerOffsetY: 10, triggerRadius: '50%' } }); }; e.appendChild(s); }());</script>
+
+    <script type="text/javascript" src="/Scripts/jquery-3.6.0.min.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/jquery.smoothState.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/respond.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/unveil.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/slick.min.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/izr.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/vendor/jquery.magnific-popup.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/nav-control.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/main.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+    <script type="text/javascript" src="/Scripts/blog.js?cdv=1695606972" nonce="/4MTsZxoElzvt37M5GAOML8E"></script>
+
+
+</body>
+</html>
+

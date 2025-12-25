@@ -4,188 +4,501 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Immigrant Applicant Sign Up | Werner Driver Application</title>
+    <title>Immigrant Driver Registration | Werner Driver Application</title>
     <link rel="stylesheet" href="/css/layout.css" />
     <style>
         .signup-page { max-width: 1080px; margin: 0 auto; padding: 48px 24px 96px; }
         .signup-header { text-align: center; margin-bottom: 32px; }
-        .signup-header h1 { margin: 0 0 8px; }
-        .notice { background: #f0f6ff; border: 1px solid #c8ddff; color: #0f3e8a; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; }
-        form.signup-form { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
-        fieldset { border: none; padding: 0; margin: 0 0 20px; }
-        legend { font-weight: 700; margin-bottom: 12px; display: block; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        .signup-header h1 { margin: 0 0 8px; color: #0b63ce; }
+        .notice { background: #f0f6ff; border: 1px solid #c8ddff; color: #0f3e8a; padding: 16px; border-radius: 8px; margin-bottom: 24px; }
+        .assessment-notice { background: #fff3cd; border: 1px solid #ffeaa7; color: #856404; padding: 16px; border-radius: 8px; margin-bottom: 24px; }
+        form.signup-form { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 32px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+        fieldset { border: 1px solid #e5e7eb; padding: 20px; margin: 0 0 24px; border-radius: 8px; background: #fafafa; }
+        legend { font-weight: 700; margin-bottom: 16px; display: block; color: #0b63ce; font-size: 18px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
         label { font-weight: 600; display: block; margin-bottom: 6px; }
-        input, select, textarea { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
-        textarea { min-height: 90px; resize: vertical; }
-        .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
-        .btn-primary { background: #0b63ce; color: #fff; border: none; padding: 12px 18px; border-radius: 6px; cursor: pointer; font-weight: 700; }
-        .btn-secondary { background: #f3f4f6; color: #111; border: 1px solid #d1d5db; padding: 12px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; }
-        .helper { font-size: 12px; color: #555; margin-top: 4px; }
-        .required { color: #c00; }
-        .success { display: none; margin-top: 16px; padding: 12px 16px; background: #e8f7ed; border: 1px solid #b7e4c7; color: #155724; border-radius: 6px; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+        textarea { min-height: 100px; resize: vertical; }
+        .checkbox-group { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
+        .checkbox-item { display: flex; align-items: flex-start; gap: 8px; }
+        .checkbox-item input[type="checkbox"], .checkbox-item input[type="radio"] { width: auto; margin-top: 4px; }
+        .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; justify-content: center; }
+        .btn-primary { background: #0b63ce; color: #fff; border: none; padding: 16px 32px; border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 16px; }
+        .btn-primary:hover { background: #0952a5; }
+        .btn-secondary { background: #f3f4f6; color: #111; border: 1px solid #d1d5db; padding: 16px 32px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .helper { font-size: 12px; color: #666; margin-top: 4px; }
+        .required { color: #dc2626; }
+        .success { display: none; margin-top: 16px; padding: 16px; background: #e8f7ed; border: 1px solid #b7e4c7; color: #155724; border-radius: 8px; text-align: center; }
+        .error { display: none; margin-top: 16px; padding: 16px; background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; border-radius: 8px; }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body class="page">
     <main class="signup-page">
         <div class="signup-header">
-            <h1>Truck Driver Sign Up (Immigrant Applicant)</h1>
-            <p>Provide driver and immigration details to start the Werner application process.</p>
+            <h1>Immigrant Company Driver Registration Form</h1>
+            <p>This form is designed for non‑citizen or immigrant drivers and complies with U.S. DOT and employment eligibility requirements.</p>
         </div>
 
-    <div class="notice">
-        This demo posts to <code>/api/immigrant</code> on the local server. Submissions are stored in <code>data/submissions.json</code>.
-    </div>
+        <div class="assessment-notice">
+            <strong>📧 Important:</strong> After submitting your application, please wait for our assessment team to review your information. 
+            You will receive a response via <strong>Gmail</strong> within 24-72 hours.
+        </div>
+        
+        <div class="notice">
+            <strong>Note:</strong> If employed, the company will be responsible for handling all processes related to the driver’s visa and work authorization application. The company will also cover <strong>50% of all applicable visa-related fees</strong>, subject to employment terms.
+        </div>
 
         <form class="signup-form" id="immigrantForm" novalidate>
+            <!-- 1. Personal Information -->
             <fieldset>
-                <legend>Contact Information</legend>
-                <div class="grid">
+                <legend>1. Personal Information</legend>
+                <div class="grid-2">
                     <div>
-                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <label for="firstName">Full Legal Name (First) <span class="required">*</span></label>
                         <input id="firstName" name="firstName" required />
                     </div>
                     <div>
-                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <label for="lastName">Full Legal Name (Last) <span class="required">*</span></label>
                         <input id="lastName" name="lastName" required />
-                    </div>
-                    <div>
-                        <label for="email">Email <span class="required">*</span></label>
-                        <input id="email" name="email" type="email" required />
-                    </div>
-                    <div>
-                        <label for="phone">Phone <span class="required">*</span></label>
-                        <input id="phone" name="phone" type="tel" placeholder="555-123-4567" required />
-                    </div>
-                    <div>
-                        <label for="city">City</label>
-                        <input id="city" name="city" />
-                    </div>
-                    <div>
-                        <label for="state">State/Province</label>
-                        <input id="state" name="state" />
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Driver Profile</legend>
-                <div class="grid">
-                    <div>
-                        <label for="licenseNumber">CDL / License Number <span class="required">*</span></label>
-                        <input id="licenseNumber" name="licenseNumber" required />
-                        <div class="helper">Enter “N/A” if not yet obtained.</div>
-                    </div>
-                    <div>
-                        <label for="experience">Years of Experience</label>
-                        <select id="experience" name="experience">
-                            <option value="">Select</option>
-                            <option value="<1">&lt; 1 year</option>
-                            <option value="1-2">1-2 years</option>
-                            <option value="3-5">3-5 years</option>
-                            <option value="6-10">6-10 years</option>
-                            <option value="10+">10+ years</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="endorsements">Endorsements</label>
-                        <input id="endorsements" name="endorsements" placeholder="HAZMAT, Tanker, Doubles, etc." />
-                    </div>
-                    <div>
-                        <label for="equipment">Equipment Experience</label>
-                        <input id="equipment" name="equipment" placeholder="Van, Flatbed, Reefer, Heavy Haul..." />
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Immigration Details</legend>
-                <div class="grid">
-                    <div>
-                        <label for="status">Current Status <span class="required">*</span></label>
-                        <select id="status" name="status" required>
-                            <option value="">Select status</option>
-                            <option value="green-card">Green Card</option>
-                            <option value="work-visa">Work Visa (H, TN, etc.)</option>
-                            <option value="student-opt">Student (OPT/CPT)</option>
-                            <option value="refugee-asylee">Refugee / Asylee</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="workAuth">Work Authorization Expiry</label>
-                        <input id="workAuth" name="workAuth" type="date" />
-                    </div>
-                    <div>
-                        <label for="country">Country of Citizenship</label>
-                        <input id="country" name="country" />
-                    </div>
-                    <div>
-                        <label for="passport">Passport Number</label>
-                        <input id="passport" name="passport" />
-                    </div>
-                    <div>
-                        <label for="ssn">SSN (last 4)</label>
-                        <input id="ssn" name="ssn" pattern="\\d{4}" placeholder="1234" />
-                        <div class="helper">Last 4 digits only.</div>
-                    </div>
-                    <div>
-                        <label for="i94">I-94 Number</label>
-                        <input id="i94" name="i94" />
                     </div>
                 </div>
                 <div>
-                    <label for="immigrationNotes">Notes / Supporting Details</label>
-                    <textarea id="immigrationNotes" name="immigrationNotes" placeholder="Visa class, dependents, sponsorship needs, etc."></textarea>
+                    <label for="otherNames">Other Names Used (if any)</label>
+                    <input id="otherNames" name="otherNames" />
+                </div>
+                <div class="grid-3">
+                    <div>
+                        <label for="dateOfBirth">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+                    </div>
+                    <div>
+                        <label for="countryOfOrigin">Country of Origin <span class="required">*</span></label>
+                        <input id="countryOfOrigin" name="countryOfOrigin" required />
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <label for="email">Email Address (Gmail Required) <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required />
+                        <div class="helper">We'll send your assessment results to this Gmail address</div>
+                    </div>
+                    <div>
+                        <label for="address">Current Address <span class="required">*</span></label>
+                        <input id="address" name="address" required />
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div>
+                        <label for="city">City <span class="required">*</span></label>
+                        <input id="city" name="city" required />
+                    </div>
+                    <div>
+                        <label for="state">State <span class="required">*</span></label>
+                        <input id="state" name="state" required />
+                    </div>
+                    <div>
+                        <label for="zipCode">ZIP Code <span class="required">*</span></label>
+                        <input id="zipCode" name="zipCode" required />
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <label for="emergencyContactName">Emergency Contact Name <span class="required">*</span></label>
+                        <input id="emergencyContactName" name="emergencyContactName" required />
+                    </div>
+                    <div>
+                        <label for="emergencyContactPhone">Emergency Contact Phone <span class="required">*</span></label>
+                        <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" required />
+                    </div>
                 </div>
             </fieldset>
 
-            <fieldset id="requirements">
-                <legend>Requirements Checklist</legend>
-                <ul>
-                    <li>Valid CDL or plan to obtain one</li>
-                    <li>Proof of work authorization (visa, EAD, Green Card, etc.)</li>
-                    <li>Passport (if applicable)</li>
-                    <li>Driving history and endorsements</li>
-                </ul>
+            <!-- 2. Immigration & Work Authorization -->
+            <fieldset>
+                <legend>2. Immigration & Work Authorization</legend>
+                <div>
+                    <label>Immigration Status <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="radio" id="statusGreenCard" name="immigrationStatus" value="Permanent Resident" required />
+                            <label for="statusGreenCard">Permanent Resident (Green Card)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="statusVisa" name="immigrationStatus" value="Work Visa" />
+                            <label for="statusVisa">Work Visa (H‑2B, TN, etc.)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="statusAsylee" name="immigrationStatus" value="Asylee / Refugee" />
+                            <label for="statusAsylee">Asylee / Refugee</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="statusTPS" name="immigrationStatus" value="TPS" />
+                            <label for="statusTPS">TPS (Temporary Protected Status)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="statusEAD" name="immigrationStatus" value="EAD" />
+                            <label for="statusEAD">Employment Authorization Document (EAD)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div>
+                        <label for="uscisNumber">USCIS / Document Number <span class="required">*</span></label>
+                        <input id="uscisNumber" name="uscisNumber" required />
+                    </div>
+                    <div>
+                        <label for="issuingCountry">Country Issuing Document <span class="required">*</span></label>
+                        <input id="issuingCountry" name="issuingCountry" required />
+                    </div>
+                    <div>
+                        <label for="documentExpiry">Expiration Date (if applicable)</label>
+                        <input type="date" id="documentExpiry" name="documentExpiry" />
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="workAuthorization" name="workAuthorization" value="yes" required />
+                        <label for="workAuthorization">I am legally authorized to work in the United States <span class="required">*</span></label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 3. Nominator Code (Employer Sponsorship) -->
+            <fieldset>
+                <legend>3. Nominator Code (Employer Sponsorship)</legend>
+                <div class="grid-3">
+                    <div>
+                        <label for="nominatorCode">Nominator Code <span class="required">*</span></label>
+                        <input id="nominatorCode" name="nominatorCode" required />
+                    </div>
+                    <div>
+                        <label for="sponsoringCompany">Sponsoring Company / Authority <span class="required">*</span></label>
+                        <input id="sponsoringCompany" name="sponsoringCompany" required />
+                    </div>
+                    <div>
+                        <label for="visaType">Program or Visa Type (if known)</label>
+                        <input id="visaType" name="visaType" />
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="nominatorUnderstanding" name="nominatorUnderstanding" value="yes" required />
+                        <label for="nominatorUnderstanding">I understand that this nominator code is used for employer sponsorship and work permit/visa processing and does not guarantee approval. <span class="required">*</span></label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 4. Driver License Information -->
+            <fieldset>
+                <legend>4. Driver License Information</legend>
+                <div class="grid-3">
+                    <div>
+                        <label for="licenseNumber">Driver License Number <span class="required">*</span></label>
+                        <input id="licenseNumber" name="licenseNumber" required />
+                    </div>
+                    <div>
+                        <label for="licenseState">State Issued <span class="required">*</span></label>
+                        <input id="licenseState" name="licenseState" required />
+                    </div>
+                    <div>
+                        <label for="licenseExpiry">License Expiration Date <span class="required">*</span></label>
+                        <input type="date" id="licenseExpiry" name="licenseExpiry" required />
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <label>License Class <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" id="classA" name="licenseClass" value="A" required />
+                                <label for="classA">Class A</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="classB" name="licenseClass" value="B" />
+                                <label for="classB">Class B</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="classC" name="licenseClass" value="C" />
+                                <label for="classC">Class C</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Endorsements</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="hazmat" name="endorsements" value="hazmat" />
+                                <label for="hazmat">Hazmat</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="tanker" name="endorsements" value="tanker" />
+                                <label for="tanker">Tanker</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="doubles" name="endorsements" value="doubles" />
+                                <label for="doubles">Double/Triple</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="noEndorsements" name="endorsements" value="none" />
+                                <label for="noEndorsements">None</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <label>CDL Obtained In <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="radio" id="cdlUS" name="cdlLocation" value="US" required />
+                            <label for="cdlUS">United States</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="cdlOther" name="cdlLocation" value="Other" />
+                            <label for="cdlOther">Other Country (specify):</label>
+                            <input id="cdlCountry" name="cdlCountry" style="width: 200px;" placeholder="Country Name" />
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="immigrantAcknowledgment" name="immigrantAcknowledgment" value="yes" required />
+                        <label for="immigrantAcknowledgment">If obtained outside the U.S., I acknowledge this is an immigrant application and that this employment opportunity is intended to support my application for a legal work permit/visa, subject to eligibility and approval by immigration authorities. <span class="required">*</span></label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 5. Driving Experience -->
+            <fieldset>
+                <legend>5. Driving Experience</legend>
+                <div class="grid-2">
+                    <div>
+                        <label for="yearsExperience">Years of Commercial Driving Experience <span class="required">*</span></label>
+                        <input id="yearsExperience" name="yearsExperience" required />
+                    </div>
+                    <div>
+                        <label for="countriesDriven">Countries Previously Driven In <span class="required">*</span></label>
+                        <input id="countriesDriven" name="countriesDriven" required />
+                    </div>
+                </div>
+                <div>
+                    <label for="previousEmployers">Previous Trucking Employers (last 3 years) <span class="required">*</span></label>
+                    <textarea id="previousEmployers" name="previousEmployers" placeholder="List your previous employers here..." required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- 6. Language Proficiency -->
+            <fieldset>
+                <legend>6. Language Proficiency</legend>
+                <div class="grid-2">
+                    <div>
+                        <label for="primaryLanguage">Primary Language <span class="required">*</span></label>
+                        <input id="primaryLanguage" name="primaryLanguage" required />
+                    </div>
+                    <div>
+                        <label>English Proficiency <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" id="fluent" name="englishProficiency" value="Fluent" required />
+                                <label for="fluent">Fluent</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="conversational" name="englishProficiency" value="Conversational" />
+                                <label for="conversational">Conversational</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="basic" name="englishProficiency" value="Basic" />
+                                <label for="basic">Basic</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="readSigns" name="readSigns" value="yes" required />
+                        <label for="readSigns">I can read and understand road signs, safety rules, and DOT regulations in English <span class="required">*</span></label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 7. Safety & Compliance -->
+            <fieldset>
+                <legend>7. Safety & Compliance</legend>
+                <div>
+                    <label>Any accidents in the last 3 years? <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="radio" id="accidentsYes" name="hasAccidents" value="yes" required />
+                            <label for="accidentsYes">Yes</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="accidentsNo" name="hasAccidents" value="no" />
+                            <label for="accidentsNo">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="accidentDetails">If yes, explain accidents:</label>
+                    <textarea id="accidentDetails" name="accidentDetails"></textarea>
+                </div>
+                <div>
+                    <label>Any traffic violations in the last 3 years? <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="radio" id="violationsYes" name="hasViolations" value="yes" required />
+                            <label for="violationsYes">Yes</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="violationsNo" name="hasViolations" value="no" />
+                            <label for="violationsNo">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="violationDetails">If yes, explain violations:</label>
+                    <textarea id="violationDetails" name="violationDetails"></textarea>
+                </div>
+                <div>
+                    <label>Have you ever failed or refused a DOT drug/alcohol test? <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="radio" id="dotTestYes" name="failedDotTest" value="yes" required />
+                            <label for="dotTestYes">Yes</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="radio" id="dotTestNo" name="failedDotTest" value="no" />
+                            <label for="dotTestNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 8. Medical & DOT Compliance -->
+            <fieldset>
+                <legend>8. Medical & DOT Compliance</legend>
+                <div class="grid-2">
+                    <div>
+                        <label>Do you have a valid DOT Medical Card? <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" id="medicalCardYes" name="hasMedicalCard" value="yes" required />
+                                <label for="medicalCardYes">Yes</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="medicalCardNo" name="hasMedicalCard" value="no" />
+                                <label for="medicalCardNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="medicalCardExpiry">Medical Card Expiration Date</label>
+                        <input type="date" id="medicalCardExpiry" name="medicalCardExpiry" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Declaration -->
+            <fieldset>
+                <legend>Declaration</legend>
+                <div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="authorization" name="authorization" value="yes" required />
+                        <label for="authorization">
+                            I certify that the information provided is true and accurate. I authorize the company to verify my employment eligibility, driving history, background, and DOT compliance as required by law. <span class="required">*</span>
+                        </label>
+                    </div>
+                </div>
             </fieldset>
 
             <div class="actions">
                 <button type="submit" class="btn-primary">Submit Application</button>
-                <a class="btn-secondary" href="/index.htm">Back to Home</a>
+                <button type="reset" class="btn-secondary">Clear Form</button>
             </div>
-            <div class="success" id="successMessage">Thanks! Your details were captured locally. Connect this form to your backend to receive submissions.</div>
+
+            <div class="success" id="successMessage">
+                <strong>✅ Application Submitted Successfully!</strong><br>
+                Thank you for your application. Our assessment team will review your information and contact you via Gmail within 24-72 hours.
+            </div>
+            <div class="error" id="errorMessage"></div>
         </form>
     </main>
 
     <script>
-        const form = document.getElementById('immigrantForm');
-        const success = document.getElementById('successMessage');
-        const endpoint = '/api/immigrant';
-
-        form.addEventListener('submit', async function (e) {
+        document.getElementById('immigrantForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
+            
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Handle regular form fields
+            for (let [key, value] of formData.entries()) {
+                if (key === 'endorsements') {
+                    if (!data[key]) data[key] = [];
+                    data[key].push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Convert endorsements array to string
+            if (data.endorsements) {
+                data.endorsements = data.endorsements.join(', ');
             }
 
-            const formData = Object.fromEntries(new FormData(form).entries());
-
             try {
-                const res = await fetch(endpoint, {
+                const response = await fetch('/api/immigrant', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify(data)
                 });
-                if (!res.ok) throw new Error('Request failed');
-                success.style.display = 'block';
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } catch (err) {
-                alert('Could not submit right now. Please try again.');
+
+                const result = await response.json();
+                
+                if (result.ok) {
+                    document.getElementById('successMessage').style.display = 'block';
+                    document.getElementById('errorMessage').style.display = 'none';
+                    this.reset();
+                    window.scrollTo(0, 0);
+                } else {
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                document.getElementById('errorMessage').textContent = 'Error: ' + error.message;
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'none';
+            }
+        });
+
+        // Email validation to require Gmail
+        document.getElementById('email').addEventListener('blur', function() {
+            const email = this.value.toLowerCase();
+            const errorDiv = this.parentNode.querySelector('.gmail-error');
+            
+            if (email && !email.endsWith('@gmail.com')) {
+                this.style.borderColor = '#dc2626';
+                this.setCustomValidity('Please use a Gmail address (e.g., name@gmail.com)');
+                
+                if (!errorDiv) {
+                    const msg = document.createElement('div');
+                    msg.className = 'helper gmail-error';
+                    msg.style.color = '#dc2626';
+                    msg.textContent = 'A Gmail address is required for assessment results.';
+                    this.parentNode.appendChild(msg);
+                }
+            } else {
+                this.style.borderColor = '#d1d5db';
+                this.setCustomValidity('');
+                if (errorDiv) errorDiv.remove();
             }
         });
     </script>
 </body>
 </html>
-
