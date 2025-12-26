@@ -147,28 +147,11 @@
             height: 100vh;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             position: relative;
             margin-top: 0;
             padding-top: 60px;
-        }
-        
-        /* Ensure images load on all devices */
-        .twoColumnImageCta_img {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 400px;
-        }
-        
-        /* Logo image optimization */
-        .bannerNav .logo img {
-            height: 40px;
-            width: auto;
-            display: block;
-            max-width: 150px;
         }
         
         .heroBanner .banner_copy {
@@ -387,7 +370,7 @@
                 display: none;
                 flex-direction: column;
                 gap: 8px;
-                background: rgba(0, 0, 0, 0.9);
+                background: rgba(0, 0, 0, 0.8);
                 padding: 16px;
                 position: absolute;
                 top: 60px;
@@ -396,51 +379,20 @@
                 max-width: none;
                 margin: 0;
                 z-index: 1199;
-                border-radius: 0 0 8px 8px;
             }
             
             .bannerNav.nav-open .nav-list {
                 display: flex;
             }
             
-            .bannerNav .nav-inner {
-                padding: 12px 20px;
-            }
-            
-            /* Hero Banner Mobile Fixes */
-            .heroBanner {
-                height: 70vh;
-                min-height: 500px;
-                background-size: cover;
-                background-position: center center;
-                background-attachment: scroll;
-                padding-top: 80px;
-            }
-            
-            .heroBanner .banner_copy {
-                padding: 32px 20px;
-                text-align: center;
-            }
-            
             .banner_title {
-                font-size: 28px;
-                line-height: 1.3;
-                margin-bottom: 12px;
+                font-size: 36px;
             }
             
             .heroBanner .rte {
                 font-size: 16px;
-                margin-bottom: 20px;
-                line-height: 1.5;
             }
             
-            /* Logo Mobile */
-            .bannerNav .logo img {
-                height: 32px;
-                max-width: 120px;
-            }
-            
-            /* Two Column Sections Mobile */
             .twoColumnImageCta {
                 flex-direction: column;
                 min-height: auto;
@@ -451,37 +403,23 @@
             }
             
             .twoColumnImageCta_cta {
-                padding: 40px 20px;
-                order: 2;
+                padding: 60px 32px;
             }
             
             .twoColumnImageCta_img {
-                height: 250px;
-                min-height: 250px;
-                order: 1;
-                background-size: cover !important;
-                background-position: center !important;
-                background-attachment: scroll !important;
+                height: 400px;
             }
             
             .twoColumnImageCta_cta h2 {
-                font-size: 24px;
-                line-height: 1.3;
+                font-size: 32px;
             }
             
-            .twoColumnImageCta_cta .rte {
-                font-size: 14px;
-                line-height: 1.5;
-            }
-            
-            /* Footer Mobile */
             .latestNewsFooterWidget {
-                padding: 40px 20px;
+                padding: 60px 32px;
             }
             
             .latestNewsFooterWidget_list {
                 grid-template-columns: 1fr;
-                gap: 20px;
             }
             
             footer {
@@ -491,59 +429,11 @@
             .footerNav_list {
                 flex-direction: column;
                 gap: 16px;
-                text-align: center;
             }
             
-            /* Button Mobile */
-            .btn {
-                padding: 10px 20px;
-                font-size: 14px;
+            .bannerNav .nav-inner {
+                padding: 12px 20px;
             }
-        }
-        
-        /* Extra small screens */
-        @media (max-width: 480px) {
-            .banner_title {
-                font-size: 24px;
-            }
-            
-            .heroBanner .rte {
-                font-size: 14px;
-            }
-            
-            .heroBanner .banner_copy {
-                padding: 20px 16px;
-            }
-            
-            .twoColumnImageCta_cta {
-                padding: 30px 16px;
-            }
-            
-            .twoColumnImageCta_cta h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
-    <style>
-        /* Slide animations (only transforms & opacity — no color changes) */
-        .slide-target {
-            opacity: 0;
-            transition: transform 640ms cubic-bezier(.2,.9,.3,1), opacity 640ms cubic-bezier(.2,.9,.3,1);
-            will-change: transform, opacity;
-        }
-
-        /* initial directions */
-        .slide-target.slide-from-left { transform: translateX(-28px); }
-        .slide-target.slide-from-right { transform: translateX(28px); }
-        .slide-target.slide-from-bottom { transform: translateY(28px); }
-
-        /* states */
-        .slide-in { opacity: 1 !important; transform: translateX(0) translateY(0) !important; }
-        .slide-out { opacity: 0 !important; transform: translateY(-18px) !important; }
-
-        /* small performance-friendly preference for reduced motion */
-        @media (prefers-reduced-motion: reduce) {
-            .slide-target, .slide-in, .slide-out { transition: none !important; transform: none !important; opacity: 1 !important; }
         }
     </style>
 </head>
@@ -559,7 +449,7 @@
                     <span class="hamburger"></span>
                 </button>
                 <ul class="nav-list">
-                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
                     <li><a href="https://investor.werner.com/" target="_blank">Investors</a></li>
                     <li><a href="https://www.werner.com/request-a-quote/">Request A Quote</a></li>
                     <li><a href="/signup-choose.htm" class="btn">Sign up</a></li>
@@ -580,7 +470,6 @@
 
         <!-- About Us Section - Full Width -->
         <section class="twoColumnImageCta">
-            <!-- <h2 style="padding-left: 1rem; padding: 1rem;">About Us</h2> -->
             <div class="twoColumnImageCta_cta">
                 <article>
                     <h2>About Us</h2>
@@ -686,44 +575,6 @@
                     btn.setAttribute('aria-expanded', 'false');
                 });
             });
-        })();
-    </script>
-    <script>
-        (function(){
-            function initSlides(){
-                const targets = [];
-
-                const title = document.querySelector('.banner_title');
-                if(title){
-                    title.classList.add('slide-target','slide-from-left');
-                    targets.push(title);
-                }
-
-                document.querySelectorAll('.twoColumnImageCta').forEach(el=>{
-                    el.classList.add('slide-target','slide-from-bottom');
-                    targets.push(el);
-                });
-
-                if(!targets.length) return;
-
-                const obs = new IntersectionObserver((entries)=>{
-                    entries.forEach(entry=>{
-                        const el = entry.target;
-                        if(entry.isIntersecting){
-                            el.classList.add('slide-in');
-                            el.classList.remove('slide-out');
-                        } else {
-                            el.classList.remove('slide-in');
-                            el.classList.add('slide-out');
-                        }
-                    });
-                }, {threshold: 0.18});
-
-                targets.forEach(t=>obs.observe(t));
-            }
-
-            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initSlides);
-            else initSlides();
         })();
     </script>
 </body>

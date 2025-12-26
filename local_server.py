@@ -53,7 +53,10 @@ def applicant():
     except Exception:
         return jsonify({'ok': False, 'error': 'Invalid JSON'}), 400
 
-    email = data.get('email') or None
+    email = (data.get('email') or '').strip() or None
+    # Require Gmail address for signup (assessment responses are sent via Gmail)
+    if email and not email.lower().endswith('@gmail.com'):
+        return jsonify({'ok': False, 'error': 'Please provide a Gmail address (example@gmail.com)'}), 400
     conn = get_db()
     cur = conn.cursor()
     cur.execute('INSERT INTO applicants (email, data, created_at) VALUES (?,?,?)', (

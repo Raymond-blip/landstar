@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Werner System, Inc.</title>
+    <meta name="description" content="Learn about Werner System, Inc. - Your trusted transportation solutions provider." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/Content/img/favicons/favicon-32x32.png" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Nunito Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #0b63ce;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Mobile menu button */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0b63ce;
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem 0;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                padding: 0.5rem 1rem;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 0.5rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0b63ce 0%, #f7a71b 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 4rem 0;
+        }
+        
+        .about-section {
+            margin-bottom: 3rem;
+        }
+        
+        .about-section h2 {
+            color: #0b63ce;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .about-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            color: #0b63ce;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .cta {
+            background: #f7a71b;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #0b63ce;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #094a9e;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Werner System</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="https://investor.werner.com/" target="_blank">Investors</a></li>
+                <li><a href="/request-a-quote.html">Request A Quote</a></li>
+                <li><a href="/applicant-signup.htm" class="btn">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>About Werner System</h1>
+            <p>Your trusted partner in transportation solutions, connecting businesses across America with reliable, efficient freight services.</p>
+        </div>
+    </section>
+
+    <main class="content container">
+        <section class="about-section">
+            <h2>Who We Are</h2>
+            <p>Werner System, Inc. is a leading transportation solutions provider dedicated to delivering reliable freight services across the United States. With decades of experience in the industry, we have built a reputation for excellence, safety, and customer satisfaction.</p>
+            <p>Our network of independent freight agents, leased owner-operators, and third-party capacity providers ensures that we can meet the diverse transportation needs of businesses of all sizes, from small local companies to large enterprises.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>To provide exceptional transportation services that exceed our customers' expectations while maintaining the highest standards of safety, reliability, and professionalism. We are committed to building long-term partnerships with our clients and drivers alike.</p>
+        </section>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🚛 Reliable Service</h3>
+                <p>On-time delivery and consistent performance you can count on for your business operations.</p>
+            </div>
+            <div class="feature">
+                <h3>🛡️ Safety First</h3>
+                <p>Comprehensive safety programs and rigorous driver training ensure secure transportation of your cargo.</p>
+            </div>
+            <div class="feature">
+                <h3>🌟 Professional Drivers</h3>
+                <p>Experienced, licensed professionals committed to excellence in every mile they drive.</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Modern Technology</h3>
+                <p>Advanced tracking systems and digital tools for real-time visibility and communication.</p>
+            </div>
+            <div class="feature">
+                <h3>🤝 Customer Focus</h3>
+                <p>Dedicated support team working around the clock to meet your transportation needs.</p>
+            </div>
+            <div class="feature">
+                <h3>🌍 Nationwide Network</h3>
+                <p>Extensive coverage across all 50 states with strategic partnerships and local expertise.</p>
+            </div>
+        </div>
+
+        <section class="about-section">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for qualified drivers to join our growing network. Whether you're an experienced driver or new to the industry, we offer competitive compensation, comprehensive benefits, and the support you need to succeed.</p>
+            <p>Our driver application process is designed to be straightforward and efficient, helping you get on the road quickly while ensuring all safety and regulatory requirements are met.</p>
+        </section>
+    </main>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Drive with Werner?</h2>
+            <p>Join thousands of professional drivers who have made Werner System their career choice.</p>
+            <a href="/applicant-signup.htm" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Werner System, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            navLinks.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    navLinks.classList.remove('active');
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

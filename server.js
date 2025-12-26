@@ -4,6 +4,7 @@ const path = require('path');
 const { URL } = require('url');
 const crypto = require('crypto');
 const sqlite3 = require('sqlite3').verbose();
+const nodemailer = require('nodemailer');
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 8002;
@@ -233,6 +234,119 @@ function hashPassword(password) {
   return crypto.createHash('sha256').update(password).digest('hex');
 }
 
+// Email configuration
+const EMAIL_TO = 'wernerenterprisesrecuritment@gmail.com';
+
+// Create email transporter
+let mailTransporter;
+try {
+  if (process.env.SMTP_USER && process.env.SMTP_PASS) {
+    // Use environment variables if available
+    mailTransporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS
+      }
+    });
+  } else {
+    // Create a test transporter for development
+    mailTransporter = nodemailer.createTransport({
+      streamTransport: true,
+      newline: 'unix',
+      buffer: true
+    });
+  }
+} catch (error) {
+  console.error('Email transporter setup failed:', error);
+  mailTransporter = null;
+}
+
+// Function to send application email
+async function sendApplicationEmail(applicationType, applicationData) {
+  try {
+    if (!mailTransporter) {
+      console.log('Email transporter not configured, saving email to file instead');
+      return await saveEmailToFile(applicationType, applicationData);
+    }
+
+    // Format the application data for email
+    const formattedData = Object.entries(applicationData)
+      .filter(([key]) => key !== 'password' && key !== 'ipAddress') // Don't include sensitive data
+      .map(([key, value]) => `${key}: ${value || 'Not provided'}`)
+      .join('\n');
+
+    const mailOptions = {
+      from: 'noreply@werner.com',
+      to: EMAIL_TO,
+      subject: `New ${applicationType} Application - ${applicationData.firstName} ${applicationData.lastName}`,
+      text: `
+New ${applicationType} application received:
+
+Applicant Information:
+${formattedData}
+
+Application submitted at: ${new Date().toLocaleString()}
+IP Address: ${applicationData.ipAddress || 'Unknown'}
+
+Please review this application in your system.
+
+Best regards,
+Werner Application System
+      `.trim()
+    };
+
+    const info = await mailTransporter.sendMail(mailOptions);
+    
+    // If using stream transport, save to file
+    if (info.message) {
+      await saveEmailToFile(applicationType, applicationData, info.message);
+    }
+    
+    console.log('Application email sent successfully:', info.messageId || 'saved to file');
+    return { success: true, messageId: info.messageId };
+  } catch (error) {
+    console.error('Failed to send application email:', error);
+    // Fallback: save to file
+    await saveEmailToFile(applicationType, applicationData);
+    return { success: false, error: error.message };
+  }
+}
+
+// Fallback function to save email content to file
+async function saveEmailToFile(applicationType, applicationData, emailContent = null) {
+  try {
+    const emailDir = path.join(DATA_DIR, 'emails');
+    await fs.promises.mkdir(emailDir, { recursive: true });
+    
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const filename = `${applicationType.toLowerCase()}-${applicationData.firstName}-${applicationData.lastName}-${timestamp}.txt`;
+    const filepath = path.join(emailDir, filename);
+    
+    const content = emailContent || `
+TO: ${EMAIL_TO}
+SUBJECT: New ${applicationType} Application - ${applicationData.firstName} ${applicationData.lastName}
+
+New ${applicationType} application received:
+
+${Object.entries(applicationData)
+  .filter(([key]) => key !== 'password')
+  .map(([key, value]) => `${key}: ${value || 'Not provided'}`)
+  .join('\n')}
+
+Application submitted at: ${new Date().toLocaleString()}
+IP Address: ${applicationData.ipAddress || 'Unknown'}
+    `.trim();
+    
+    await fs.promises.writeFile(filepath, content);
+    console.log(`Email saved to file: ${filepath}`);
+    return { success: true, filepath };
+  } catch (error) {
+    console.error('Failed to save email to file:', error);
+    return { success: false, error: error.message };
+  }
+}
+
 // In-memory session store (demo)
 const sessions = new Map();
 
@@ -293,11 +407,31 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, '');
   }
 
+  // Test email endpoint (for debugging)
+  if (req.method === 'POST' && url.pathname === '/api/test-email') {
+    try {
+      const testData = {
+        firstName: 'Test',
+        lastName: 'User',
+        email: 'test@example.com',
+        phone: '555-1234',
+        ipAddress: req.socket.remoteAddress
+      };
+      
+      const result = await sendApplicationEmail('Test Driver', testData);
+      return send(res, 200, { ok: true, result, message: 'Test email sent/saved' });
+    } catch (err) {
+      console.error('Test email error:', err);
+      return send(res, 500, { ok: false, error: err.message });
+    }
+  }
+
   if (req.method === 'POST' && (url.pathname === '/api/applicant' || url.pathname === '/api/immigrant')) {
     try {
       const raw = await collectBody(req);
       const payload = raw ? JSON.parse(raw) : {};
       const kind = url.pathname === '/api/applicant' ? 'applicant' : 'immigrant';
+      
       // Basic validation and uniqueness for applicants
       if (kind === 'applicant') {
         if (!payload.email) return send(res, 400, { ok: false, error: 'email required' });
@@ -306,7 +440,21 @@ const server = http.createServer(async (req, res) => {
         if (exists) return send(res, 409, { ok: false, error: 'An account with this email already exists' });
       }
 
-      await insertSubmission(db, kind, payload, req.socket.remoteAddress);
+      // Add IP address to payload for email
+      payload.ipAddress = req.socket.remoteAddress;
+
+      // Insert into database
+      const result = await insertSubmission(db, kind, payload, req.socket.remoteAddress);
+      
+      // Send email notification (don't fail if email fails)
+      try {
+        const applicationType = kind === 'applicant' ? 'Driver' : 'Immigrant Driver';
+        await sendApplicationEmail(applicationType, payload);
+        console.log(`Email sent for ${applicationType} application: ${payload.email}`);
+      } catch (emailError) {
+        console.error('Email sending failed, but application was saved:', emailError);
+      }
+
       return send(res, 200, { ok: true, message: 'Application submitted successfully' });
     } catch (err) {
       console.error('Submission error:', err);
@@ -430,6 +578,7 @@ const server = http.createServer(async (req, res) => {
   // Static file serving
   let pathname = url.pathname;
   if (pathname === '/') pathname = '/index.htm';
+  if (pathname === '/blog/' || pathname === '/blog') pathname = '/blog/index.htm';
   const filePath = safePath(pathname);
   if (!filePath) return send(res, 403, { error: 'Forbidden' });
 
@@ -466,4 +615,3 @@ initDatabase()
     console.error('Failed to initialize database:', err);
     process.exit(1);
   });
-

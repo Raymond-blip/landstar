@@ -1,0 +1,29 @@
+/* Override CSS to remove Landstar logos and show only Werner logo */
+.logoMain {
+    background-image: none !important;
+    text-indent: 0 !important;
+    overflow: visible !important;
+    background-color: transparent !important;
+}
+
+.logoMain:before, 
+.logoMain:after {
+    display: none !important;
+}
+
+.logoMain img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+@media (min-width: 50em) {
+    html:not(.mobile) .logoMain {
+        background-image: none !important;
+    }
+    
+    .logoMain:before, 
+    .logoMain:after {
+        display: none !important;
+    }
+}
