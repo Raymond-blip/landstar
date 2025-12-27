@@ -5,6 +5,7 @@ const { URL } = require('url');
 const crypto = require('crypto');
 const sqlite3 = require('sqlite3').verbose();
 const nodemailer = require('nodemailer');
+const NewsFetcher = require('./news-fetcher');
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 8002;
@@ -410,6 +411,7 @@ function collectBody(req) {
 }
 
 let db;
+const newsFetcher = new NewsFetcher();
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
@@ -421,6 +423,23 @@ const server = http.createServer(async (req, res) => {
 
   if (req.method === 'OPTIONS') {
     return send(res, 200, '');
+  }
+
+  // News API endpoint
+  if (req.method === 'GET' && url.pathname === '/api/news') {
+    try {
+      const refresh = url.searchParams.get('refresh') === 'true';
+      if (refresh) {
+        // Force refresh by clearing cache
+        newsFetcher.lastFetch = null;
+        newsFetcher.newsCache = [];
+      }
+      const news = await newsFetcher.getNews();
+      return send(res, 200, { ok: true, news });
+    } catch (err) {
+      console.error('News API error:', err);
+      return send(res, 500, { ok: false, error: err.message });
+    }
   }
 
   // Test email endpoint (for debugging)

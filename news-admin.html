@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Management - Werner Admin</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #0b63ce; margin-bottom: 30px; text-align: center; }
+        .section { margin-bottom: 30px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; }
+        .section h2 { color: #333; margin-bottom: 15px; }
+        .btn { background: #0b63ce; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        .btn:hover { background: #094a9e; }
+        .btn.secondary { background: #6c757d; }
+        .news-item { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #0b63ce; }
+        .news-item h3 { color: #0b63ce; margin-bottom: 5px; }
+        .news-item .date { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+        .news-item .description { color: #333; line-height: 1.4; }
+        .status { padding: 10px; border-radius: 5px; margin: 10px 0; }
+        .status.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        .form-group textarea { height: 100px; resize: vertical; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📰 Werner News Management System</h1>
+        
+        <div class="section">
+            <h2>🔄 News Status & Controls</h2>
+            <button class="btn" onclick="refreshNews()">Refresh News Now</button>
+            <button class="btn secondary" onclick="viewCurrentNews()">View Current News</button>
+            <button class="btn secondary" onclick="testNewsAPI()">Test News API</button>
+            <div id="statusMessage"></div>
+        </div>
+
+        <div class="grid">
+            <div class="section">
+                <h2>📝 Add Custom News</h2>
+                <form id="addNewsForm">
+                    <div class="form-group">
+                        <label for="newsTitle">Title:</label>
+                        <input type="text" id="newsTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsDescription">Description:</label>
+                        <textarea id="newsDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsUrl">URL (optional):</label>
+                        <input type="url" id="newsUrl" placeholder="https://...">
+                    </div>
+                    <button type="submit" class="btn">Add News Item</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>⚙️ News Settings</h2>
+                <div class="form-group">
+                    <label for="newsApiKey">News API Key (optional):</label>
+                    <input type="text" id="newsApiKey" placeholder="Enter your NewsAPI.org key">
+                    <small>Get a free key from <a href="https://newsapi.org" target="_blank">newsapi.org</a></small>
+                </div>
+                <button class="btn" onclick="saveSettings()">Save Settings</button>
+                
+                <div style="margin-top: 20px;">
+                    <h3>📊 Current Status:</h3>
+                    <div id="newsStats">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Current News Items</h2>
+            <div id="currentNews">Loading news...</div>
+        </div>
+    </div>
+
+    <script>
+        // Load current news and display
+        async function viewCurrentNews() {
+            try {
+                showStatus('Loading current news...', 'info');
+                const response = await fetch('/api/news');
+                const data = await response.json();
+                
+                if (data.ok && data.news) {
+                    displayNews(data.news);
+                    showStatus(`✅ Loaded ${data.news.length} news items`, 'success');
+                } else {
+                    showStatus('❌ Failed to load news', 'error');
+                }
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        // Display news items
+        function displayNews(newsItems) {
+            const container = document.getElementById('currentNews');
+            if (!newsItems || newsItems.length === 0) {
+                container.innerHTML = '<p>No news items available.</p>';
+                return;
+            }
+
+            container.innerHTML = newsItems.map(item => `
+                <div class="news-item">
+                    <h3>${item.title}</h3>
+                    <div class="date">${new Date(item.publishedAt).toLocaleDateString()}</div>
+                    <div class="description">${item.description || 'No description available'}</div>
+                    ${item.url && item.url !== '#' ? `<a href="${item.url}" target="_blank">Read More →</a>` : ''}
+                </div>
+            `).join('');
+        }
+
+        // Refresh news
+        async function refreshNews() {
+            try {
+                showStatus('🔄 Refreshing news...', 'info');
+                const response = await fetch('/api/news?refresh=true');
+                const data = await response.json();
+                
+                if (data.ok) {
+                    displayNews(data.news);
+                    showStatus('✅ News refreshed successfully!', 'success');
+                } else {
+                    showStatus('❌ Failed to refresh news', 'error');
+                }
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        // Test news API
+        async function testNewsAPI() {
+            try {
+                showStatus('🧪 Testing news API...', 'info');
+                const response = await fetch('/api/news');
+                const data = await response.json();
+                
+                if (data.ok) {
+                    showStatus(`✅ API working! Found ${data.news.length} articles`, 'success');
+                } else {
+                    showStatus('❌ API test failed', 'error');
+                }
+            } catch (error) {
+                showStatus('❌ API Error: ' + error.message, 'error');
+            }
+        }
+
+        // Show status message
+        function showStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('statusMessage');
+            statusDiv.innerHTML = `<div class="status ${type}">${message}</div>`;
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                statusDiv.innerHTML = '';
+            }, 5000);
+        }
+
+        // Add custom news (placeholder - would need backend implementation)
+        document.getElementById('addNewsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showStatus('ℹ️ Custom news feature coming soon!', 'info');
+        });
+
+        // Save settings (placeholder)
+        function saveSettings() {
+            showStatus('ℹ️ Settings feature coming soon!', 'info');
+        }
+
+        // Load initial data
+        document.addEventListener('DOMContentLoaded', function() {
+            viewCurrentNews();
+            
+            // Update stats
+            document.getElementById('newsStats').innerHTML = `
+                <p>✅ News system active</p>
+                <p>🔄 Auto-refresh: Every 30 minutes</p>
+                <p>📡 Source: Fallback news (no API key)</p>
+                <p>⏰ Last updated: ${new Date().toLocaleString()}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

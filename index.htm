@@ -623,29 +623,13 @@
                     <a href="/blog/" class="btn _outline">View Blog</a>
                 </article>
             </div>
-            <ul class="latestNewsFooterWidget_list">
+            <ul class="latestNewsFooterWidget_list" id="newsContainer">
+                <!-- News will be loaded dynamically -->
                 <li class="latestNewsFooterWidget_preview">
                     <article>
-                        <h4><a href="https://www.werner.com/blog/werner-bco-brings-wreaths-to-laredo/">Werner BCO Brings Wreaths to Laredo</a></h4>
-                        <time>December 12, 2025</time>
-                        <div class="rte"><p>Laredo, Texas, along with over 4,600 other cemeteries across the county, commemorates its fallen veterans with a Wreaths Across America remembrance ceremony and wreath-laying event. Now in its fourth year, the city has BCO Bob Mead and his wife to thank for bringing the remembrance event to Laredo.</p></div>
-                        <a href="https://www.werner.com/blog/werner-bco-brings-wreaths-to-laredo/" class="btn _outline">Read More</a>
-                    </article>
-                </li>
-                <li class="latestNewsFooterWidget_preview">
-                    <article>
-                        <h4><a href="https://www.werner.com/blog/werner-hosts-inaugural-women-s-leadership-forum/">Werner Hosts Inaugural Women's Leadership Forum</a></h4>
-                        <time>December 09, 2025</time>
-                        <div class="rte"><p>Werner hosted its inaugural Women's Leadership Forum at Jacksonville's headquarters — bringing together women from across the company for a conversation on leadership, confidence, and career growth.</p></div>
-                        <a href="https://www.werner.com/blog/werner-hosts-inaugural-women-s-leadership-forum/" class="btn _outline">Read More</a>
-                    </article>
-                </li>
-                <li class="latestNewsFooterWidget_preview">
-                    <article>
-                        <h4><a href="https://www.werner.com/blog/how-transloading-optimizes-cross-border-logistics/">How Transloading Optimizes Cross-Border Logistics</a></h4>
-                        <time>December 01, 2025</time>
-                        <div class="rte"><p>Transloading streamlines cross-border logistics between Mexico and the U.S., enhancing efficiency and operations with the right provider.</p></div>
-                        <a href="https://www.werner.com/blog/how-transloading-optimizes-cross-border-logistics/" class="btn _outline">Read More</a>
+                        <h4>Loading latest news...</h4>
+                        <time>Please wait</time>
+                        <div class="rte"><p>Fetching the latest transportation and logistics news...</p></div>
                     </article>
                 </li>
             </ul>
@@ -744,6 +728,57 @@
 
             if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initSlides);
             else initSlides();
+        })();
+
+        // Dynamic News Loading
+        (function(){
+            async function loadNews() {
+                try {
+                    console.log('🗞️ Loading latest news...');
+                    const response = await fetch('/api/news');
+                    const data = await response.json();
+                    
+                    if (data.ok && data.news && data.news.length > 0) {
+                        const newsContainer = document.getElementById('newsContainer');
+                        if (newsContainer) {
+                            newsContainer.innerHTML = data.news.map(article => {
+                                const date = new Date(article.publishedAt);
+                                const formattedDate = date.toLocaleDateString('en-US', { 
+                                    year: 'numeric', 
+                                    month: 'long', 
+                                    day: 'numeric' 
+                                });
+                                
+                                return `
+                                    <li class="latestNewsFooterWidget_preview">
+                                        <article>
+                                            <h4><a href="${article.url || '#'}" target="_blank">${article.title}</a></h4>
+                                            <time>${formattedDate}</time>
+                                            <div class="rte"><p>${article.description || 'Read more about this story...'}</p></div>
+                                            <a href="${article.url || '#'}" class="btn _outline" target="_blank">Read More</a>
+                                        </article>
+                                    </li>`;
+                            }).join('');
+                            console.log('✅ News loaded successfully');
+                        }
+                    } else {
+                        console.log('⚠️ No news data available');
+                    }
+                } catch (error) {
+                    console.error('❌ Failed to load news:', error);
+                    // Keep the loading message if fetch fails
+                }
+            }
+
+            // Load news when page loads
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadNews);
+            } else {
+                loadNews();
+            }
+
+            // Refresh news every 30 minutes
+            setInterval(loadNews, 30 * 60 * 1000);
         })();
     </script>
 </body>
