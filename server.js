@@ -240,15 +240,24 @@ const EMAIL_TO = 'wernerenterprisesrecuritment@gmail.com';
 // Create email transporter
 let mailTransporter;
 try {
-  if (process.env.SMTP_USER && process.env.SMTP_PASS) {
-    // Use environment variables if available
+  // Gmail credentials - you can also set these as environment variables
+  const SMTP_USER = process.env.SMTP_USER || 'wernerenterprisesrecuritment@gmail.com';
+  const SMTP_PASS = process.env.SMTP_PASS || 'ndqy tolh ymab hslz';
+  
+  console.log('Setting up email transporter...');
+  console.log('SMTP User:', SMTP_USER);
+  console.log('SMTP Pass configured:', SMTP_PASS ? 'Yes' : 'No');
+  
+  if (SMTP_USER && SMTP_PASS) {
+    // Use Gmail SMTP
     mailTransporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS
+        user: SMTP_USER,
+        pass: SMTP_PASS
       }
     });
+    console.log('✅ Gmail transporter configured successfully');
   } else {
     // Create a test transporter for development
     mailTransporter = nodemailer.createTransport({
@@ -256,17 +265,20 @@ try {
       newline: 'unix',
       buffer: true
     });
+    console.log('⚠️ Using test transporter (emails will be saved to files)');
   }
 } catch (error) {
-  console.error('Email transporter setup failed:', error);
+  console.error('❌ Email transporter setup failed:', error);
   mailTransporter = null;
 }
 
 // Function to send application email
 async function sendApplicationEmail(applicationType, applicationData) {
+  console.log(`📧 Attempting to send ${applicationType} application email for: ${applicationData.firstName} ${applicationData.lastName}`);
+  
   try {
     if (!mailTransporter) {
-      console.log('Email transporter not configured, saving email to file instead');
+      console.log('❌ Email transporter not configured, saving email to file instead');
       return await saveEmailToFile(applicationType, applicationData);
     }
 
@@ -296,17 +308,21 @@ Werner Application System
       `.trim()
     };
 
+    console.log(`📤 Sending email to: ${EMAIL_TO}`);
     const info = await mailTransporter.sendMail(mailOptions);
     
     // If using stream transport, save to file
     if (info.message) {
       await saveEmailToFile(applicationType, applicationData, info.message);
+      console.log('✅ Email saved to file (test mode)');
+    } else {
+      console.log('✅ Email sent successfully via Gmail!', info.messageId);
     }
     
-    console.log('Application email sent successfully:', info.messageId || 'saved to file');
     return { success: true, messageId: info.messageId };
   } catch (error) {
-    console.error('Failed to send application email:', error);
+    console.error('❌ Failed to send application email:', error.message);
+    console.log('💾 Falling back to saving email to file...');
     // Fallback: save to file
     await saveEmailToFile(applicationType, applicationData);
     return { success: false, error: error.message };
