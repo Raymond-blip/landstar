@@ -38,7 +38,15 @@
             <button class="btn" onclick="refreshNews()">Refresh News Now</button>
             <button class="btn secondary" onclick="viewCurrentNews()">View Current News</button>
             <button class="btn secondary" onclick="testNewsAPI()">Test News API</button>
+            <button class="btn secondary" onclick="testPushNotification()">Test Push Notification</button>
             <div id="statusMessage"></div>
+        </div>
+
+        <div class="section">
+            <h2>🔔 Push Notifications</h2>
+            <div id="pushStats">Loading...</div>
+            <button class="btn" onclick="sendTestNotification()">Send Test Notification</button>
+            <button class="btn secondary" onclick="checkPushStatus()">Check Status</button>
         </div>
 
         <div class="grid">
@@ -138,20 +146,56 @@
             }
         }
 
-        // Test news API
-        async function testNewsAPI() {
+        // Test push notification
+        async function testPushNotification() {
             try {
-                showStatus('🧪 Testing news API...', 'info');
-                const response = await fetch('/api/news');
+                showStatus('🧪 Testing push notifications...', 'info');
+                const response = await fetch('/api/push/test', { method: 'POST' });
                 const data = await response.json();
                 
                 if (data.ok) {
-                    showStatus(`✅ API working! Found ${data.news.length} articles`, 'success');
+                    showStatus(`✅ Test notification sent! ${data.result.sent} delivered, ${data.result.failed} failed`, 'success');
                 } else {
-                    showStatus('❌ API test failed', 'error');
+                    showStatus('❌ Push notification test failed', 'error');
                 }
             } catch (error) {
-                showStatus('❌ API Error: ' + error.message, 'error');
+                showStatus('❌ Push Error: ' + error.message, 'error');
+            }
+        }
+
+        // Send test notification
+        async function sendTestNotification() {
+            try {
+                showStatus('📤 Sending test notification...', 'info');
+                const response = await fetch('/api/push/test', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.ok) {
+                    showStatus(`✅ Notification sent to ${data.result.sent} subscribers!`, 'success');
+                } else {
+                    showStatus('❌ Failed to send notification', 'error');
+                }
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        // Check push notification status
+        async function checkPushStatus() {
+            try {
+                showStatus('🔍 Checking push notification status...', 'info');
+                const response = await fetch('/api/push/vapid-public-key');
+                const data = await response.json();
+                
+                document.getElementById('pushStats').innerHTML = `
+                    <p>📱 <strong>Subscribers:</strong> ${data.subscriberCount}</p>
+                    <p>🔑 <strong>VAPID Key:</strong> ${data.publicKey.substring(0, 20)}...</p>
+                    <p>✅ <strong>Status:</strong> Active</p>
+                `;
+                
+                showStatus(`✅ Push system active with ${data.subscriberCount} subscribers`, 'success');
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'error');
             }
         }
 
@@ -180,12 +224,14 @@
         // Load initial data
         document.addEventListener('DOMContentLoaded', function() {
             viewCurrentNews();
+            checkPushStatus();
             
             // Update stats
             document.getElementById('newsStats').innerHTML = `
                 <p>✅ News system active</p>
                 <p>🔄 Auto-refresh: Every 30 minutes</p>
-                <p>📡 Source: Fallback news (no API key)</p>
+                <p>📡 Source: Live NewsAPI.org</p>
+                <p>🔔 Push notifications: Enabled</p>
                 <p>⏰ Last updated: ${new Date().toLocaleString()}</p>
             `;
         });

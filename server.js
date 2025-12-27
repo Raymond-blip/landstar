@@ -6,6 +6,7 @@ const crypto = require('crypto');
 const sqlite3 = require('sqlite3').verbose();
 const nodemailer = require('nodemailer');
 const NewsFetcher = require('./news-fetcher');
+const PushNotificationManager = require('./push-notifications');
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 8002;
@@ -412,6 +413,7 @@ function collectBody(req) {
 
 let db;
 const newsFetcher = new NewsFetcher();
+const pushManager = new PushNotificationManager();
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
@@ -435,9 +437,67 @@ const server = http.createServer(async (req, res) => {
         newsFetcher.newsCache = [];
       }
       const news = await newsFetcher.getNews();
+      
+      // Check for new news and send notifications
+      if (news && news.length > 0) {
+        pushManager.notifyNewNews(news).catch(err => 
+          console.error('Push notification error:', err)
+        );
+      }
+      
       return send(res, 200, { ok: true, news });
     } catch (err) {
       console.error('News API error:', err);
+      return send(res, 500, { ok: false, error: err.message });
+    }
+  }
+
+  // Push notification subscription endpoint
+  if (req.method === 'POST' && url.pathname === '/api/push/subscribe') {
+    try {
+      const raw = await collectBody(req);
+      const subscription = JSON.parse(raw);
+      const result = await pushManager.subscribe(subscription);
+      return send(res, 200, result);
+    } catch (err) {
+      console.error('Push subscribe error:', err);
+      return send(res, 400, { success: false, error: err.message });
+    }
+  }
+
+  // Push notification unsubscribe endpoint
+  if (req.method === 'POST' && url.pathname === '/api/push/unsubscribe') {
+    try {
+      const raw = await collectBody(req);
+      const { endpoint } = JSON.parse(raw);
+      const result = await pushManager.unsubscribe(endpoint);
+      return send(res, 200, result);
+    } catch (err) {
+      console.error('Push unsubscribe error:', err);
+      return send(res, 400, { success: false, error: err.message });
+    }
+  }
+
+  // Get VAPID public key for push notifications
+  if (req.method === 'GET' && url.pathname === '/api/push/vapid-public-key') {
+    return send(res, 200, { 
+      publicKey: pushManager.getVapidPublicKey(),
+      subscriberCount: pushManager.getSubscriberCount()
+    });
+  }
+
+  // Test push notification endpoint
+  if (req.method === 'POST' && url.pathname === '/api/push/test') {
+    try {
+      const result = await pushManager.sendNotification(
+        '🧪 Test Notification',
+        'This is a test notification from Werner News System!',
+        '/',
+        '/media/werner logo.png'
+      );
+      return send(res, 200, { ok: true, result });
+    } catch (err) {
+      console.error('Test push error:', err);
       return send(res, 500, { ok: false, error: err.message });
     }
   }
