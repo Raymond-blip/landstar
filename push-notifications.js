@@ -77,6 +77,7 @@ class PushNotificationManager {
       return { sent: 0, failed: 0 };
     }
 
+    // Mobile-optimized payload
     const payload = JSON.stringify({
       title,
       body,
@@ -84,6 +85,11 @@ class PushNotificationManager {
       badge: '/media/werner logo.png',
       url: url || '/',
       timestamp: Date.now(),
+      tag: 'werner-news', // Helps with notification grouping on mobile
+      renotify: true,
+      requireInteraction: false, // Don't require interaction on mobile
+      silent: false,
+      vibrate: [200, 100, 200], // Mobile vibration pattern
       actions: [
         {
           action: 'view',
@@ -94,7 +100,11 @@ class PushNotificationManager {
           action: 'close',
           title: 'Close'
         }
-      ]
+      ],
+      data: {
+        url: url || '/',
+        timestamp: Date.now()
+      }
     });
 
     let sent = 0;
@@ -103,19 +113,25 @@ class PushNotificationManager {
 
     for (const [endpoint, subscription] of this.subscribers) {
       try {
-        await webpush.sendNotification(subscription, payload, {
-          TTL: 60,
+        // Mobile-optimized push options
+        const options = {
+          TTL: 24 * 60 * 60, // 24 hours for mobile (longer TTL)
           urgency: 'normal',
-          topic: 'werner-news'
-        });
+          topic: 'werner-news',
+          headers: {
+            'Content-Encoding': 'gzip'
+          }
+        };
+
+        await webpush.sendNotification(subscription, payload, options);
         sent++;
-        console.log(`📤 Notification sent successfully`);
+        console.log(`📤 Notification sent successfully to ${endpoint.substring(0, 50)}...`);
       } catch (error) {
         failed++;
         failedEndpoints.push(endpoint);
-        console.error(`❌ Failed to send notification:`, error.statusCode, error.body);
+        console.error(`❌ Failed to send notification to ${endpoint.substring(0, 50)}...`, error.statusCode, error.body);
         
-        // Remove invalid subscriptions
+        // Remove invalid subscriptions (common on mobile when apps are uninstalled)
         if (error.statusCode === 410 || error.statusCode === 404 || error.statusCode === 413) {
           console.log('🗑️ Removing invalid subscription');
           this.subscribers.delete(endpoint);
@@ -129,7 +145,7 @@ class PushNotificationManager {
     }
 
     console.log(`📊 Notifications: ${sent} sent, ${failed} failed`);
-    return { sent, failed };
+    return { sent, failed, failedEndpoints };
   }
 
   async notifyNewNews(newsArticles) {

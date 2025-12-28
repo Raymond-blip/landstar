@@ -90,16 +90,31 @@ class NewsFetcher {
       
       const options = {
         headers: {
-          'User-Agent': 'Werner-News-System/1.0 (https://werner.com)'
-        }
+          'User-Agent': 'Werner-News-System/1.0 (https://werner.com)',
+          'Accept': 'application/json',
+          'Accept-Encoding': 'gzip, deflate'
+        },
+        timeout: 10000 // 10 second timeout for mobile networks
       };
       
-      https.get(url, options, (res) => {
+      const request = https.get(url, options, (res) => {
         let data = '';
-        res.on('data', chunk => data += chunk);
-        res.on('end', () => {
+        
+        // Handle different response encodings
+        if (res.headers['content-encoding'] === 'gzip') {
+          const zlib = require('zlib');
+          const gunzip = zlib.createGunzip();
+          res.pipe(gunzip);
+          gunzip.on('data', chunk => data += chunk);
+          gunzip.on('end', () => processResponse(data));
+        } else {
+          res.on('data', chunk => data += chunk);
+          res.on('end', () => processResponse(data));
+        }
+        
+        function processResponse(responseData) {
           try {
-            const result = JSON.parse(data);
+            const result = JSON.parse(responseData);
             console.log('📊 API Response status:', result.status);
             if (result.status === 'ok' && result.articles) {
               console.log(`✅ Found ${result.articles.length} articles from API`);
@@ -112,8 +127,17 @@ class NewsFetcher {
             console.log('❌ Failed to parse API response:', e.message);
             resolve(null);
           }
-        });
-      }).on('error', (err) => {
+        }
+      });
+      
+      // Set timeout for mobile networks
+      request.setTimeout(10000, () => {
+        console.log('⏰ API request timed out');
+        request.destroy();
+        resolve(null);
+      });
+      
+      request.on('error', (err) => {
         console.log('❌ API request failed:', err.message);
         resolve(null);
       });

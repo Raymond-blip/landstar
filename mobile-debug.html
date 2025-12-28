@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werner Mobile Debug</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .debug-card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .warning { background: #fff3cd; color: #856404; }
+        button {
+            background: #0b63ce;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0a52b0;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 Werner Mobile Debug Tool</h1>
+    
+    <div class="debug-card">
+        <h3>Device Information</h3>
+        <div id="deviceInfo"></div>
+    </div>
+    
+    <div class="debug-card">
+        <h3>Push Notification Tests</h3>
+        <button onclick="testPushSupport()">Test Push Support</button>
+        <button onclick="testVAPIDKey()">Test VAPID Key</button>
+        <button onclick="testSubscription()">Test Subscription</button>
+        <button onclick="sendTestNotification()">Send Test Notification</button>
+        <div id="pushResults"></div>
+    </div>
+    
+    <div class="debug-card">
+        <h3>Network Tests</h3>
+        <button onclick="testAPI()">Test News API</button>
+        <button onclick="testDebugEndpoint()">Test Debug Endpoint</button>
+        <button onclick="testConnection()">Test Connection Speed</button>
+        <div id="networkResults"></div>
+    </div>
+    
+    <div class="debug-card">
+        <h3>Console Logs</h3>
+        <div id="consoleLogs"></div>
+        <button onclick="clearLogs()">Clear Logs</button>
+    </div>
+
+    <script>
+        // Capture console logs
+        const originalLog = console.log;
+        const originalError = console.error;
+        const logs = [];
+        
+        function addLog(type, message) {
+            const timestamp = new Date().toLocaleTimeString();
+            logs.push({ type, message, timestamp });
+            updateLogDisplay();
+        }
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addLog('log', args.join(' '));
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addLog('error', args.join(' '));
+        };
+        
+        function updateLogDisplay() {
+            const container = document.getElementById('consoleLogs');
+            container.innerHTML = logs.slice(-10).map(log => 
+                `<div class="${log.type === 'error' ? 'error' : 'success'}" style="font-size: 12px; margin: 2px 0; padding: 5px;">
+                    [${log.timestamp}] ${log.message}
+                </div>`
+            ).join('');
+        }
+        
+        function clearLogs() {
+            logs.length = 0;
+            updateLogDisplay();
+        }
+        
+        // Display device info
+        function displayDeviceInfo() {
+            const info = {
+                'User Agent': navigator.userAgent,
+                'Platform': navigator.platform,
+                'Language': navigator.language,
+                'Online': navigator.onLine,
+                'Screen Size': `${screen.width}x${screen.height}`,
+                'Viewport': `${window.innerWidth}x${window.innerHeight}`,
+                'Device Pixel Ratio': window.devicePixelRatio,
+                'Touch Support': 'ontouchstart' in window,
+                'Service Worker Support': 'serviceWorker' in navigator,
+                'Push Support': 'PushManager' in window,
+                'Connection Type': navigator.connection ? navigator.connection.effectiveType : 'Unknown'
+            };
+            
+            document.getElementById('deviceInfo').innerHTML = Object.entries(info)
+                .map(([key, value]) => `<div><strong>${key}:</strong> ${value}</div>`)
+                .join('');
+        }
+        
+        async function testAPI() {
+            const results = document.getElementById('networkResults');
+            results.innerHTML = '<div class="warning">Testing News API...</div>';
+            
+            try {
+                const startTime = Date.now();
+                const response = await fetch('/api/news');
+                const endTime = Date.now();
+                const data = await response.json();
+                
+                const status = response.ok ? 'success' : 'error';
+                results.innerHTML = `
+                    <div class="${status}">
+                        <strong>News API Test:</strong><br>
+                        Status: ${response.status}<br>
+                        Response Time: ${endTime - startTime}ms<br>
+                        News Count: ${data.news ? data.news.length : 0}<br>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    </div>
+                `;
+            } catch (error) {
+                results.innerHTML = `<div class="error"><strong>News API Error:</strong> ${error.message}</div>`;
+            }
+        }
+        
+        async function testDebugEndpoint() {
+            const results = document.getElementById('networkResults');
+            results.innerHTML = '<div class="warning">Testing Debug Endpoint...</div>';
+            
+            try {
+                const startTime = Date.now();
+                const response = await fetch('/api/debug');
+                const endTime = Date.now();
+                const data = await response.json();
+                
+                results.innerHTML = `
+                    <div class="success">
+                        <strong>Debug Endpoint Test:</strong><br>
+                        Response Time: ${endTime - startTime}ms<br>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    </div>
+                `;
+            } catch (error) {
+                results.innerHTML = `<div class="error"><strong>Debug Endpoint Error:</strong> ${error.message}</div>`;
+            }
+        }
+        
+        async function testConnection() {
+            const results = document.getElementById('networkResults');
+            results.innerHTML = '<div class="warning">Testing Connection Speed...</div>';
+            
+            const tests = [];
+            
+            // Test multiple small requests
+            for (let i = 0; i < 3; i++) {
+                try {
+                    const startTime = Date.now();
+                    await fetch('/api/debug');
+                    const endTime = Date.now();
+                    tests.push(endTime - startTime);
+                } catch (error) {
+                    tests.push('Failed');
+                }
+            }
+            
+            const avgTime = tests.filter(t => typeof t === 'number').reduce((a, b) => a + b, 0) / tests.length;
+            
+            results.innerHTML = `
+                <div class="success">
+                    <strong>Connection Speed Test:</strong><br>
+                    Test Results: ${tests.join('ms, ')}ms<br>
+                    Average: ${avgTime.toFixed(0)}ms<br>
+                    Connection Quality: ${avgTime < 500 ? 'Good' : avgTime < 1000 ? 'Fair' : 'Slow'}
+                </div>
+            `;
+        }
+        
+        async function testPushSupport() {
+            const results = document.getElementById('pushResults');
+            results.innerHTML = '<div class="warning">Testing Push Support...</div>';
+            
+            const support = {
+                'Service Worker': 'serviceWorker' in navigator,
+                'Push Manager': 'PushManager' in window,
+                'Notifications': 'Notification' in window,
+                'Notification Permission': Notification.permission,
+                'Is Mobile': /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+                'Is iOS': /iPad|iPhone|iPod/.test(navigator.userAgent),
+                'Is Standalone (PWA)': window.navigator.standalone || false,
+                'Is HTTPS': location.protocol === 'https:'
+            };
+            
+            const supportHtml = Object.entries(support)
+                .map(([key, value]) => {
+                    const status = value ? 'success' : 'error';
+                    return `<div class="${status}"><strong>${key}:</strong> ${value}</div>`;
+                })
+                .join('');
+            
+            results.innerHTML = `<div><strong>Push Support Test:</strong><br>${supportHtml}</div>`;
+        }
+        
+        async function testVAPIDKey() {
+            const results = document.getElementById('pushResults');
+            results.innerHTML = '<div class="warning">Testing VAPID Key...</div>';
+            
+            try {
+                const response = await fetch('/api/push/vapid-public-key');
+                const data = await response.json();
+                
+                results.innerHTML = `
+                    <div class="success">
+                        <strong>VAPID Key Test:</strong><br>
+                        Public Key: ${data.publicKey ? data.publicKey.substring(0, 20) + '...' : 'Not found'}<br>
+                        Subscriber Count: ${data.subscriberCount || 0}
+                    </div>
+                `;
+            } catch (error) {
+                results.innerHTML = `<div class="error"><strong>VAPID Key Error:</strong> ${error.message}</div>`;
+            }
+        }
+        
+        async function testSubscription() {
+            const results = document.getElementById('pushResults');
+            results.innerHTML = '<div class="warning">Testing Subscription...</div>';
+            
+            try {
+                if (!('serviceWorker' in navigator)) {
+                    throw new Error('Service Worker not supported');
+                }
+                
+                const registration = await navigator.serviceWorker.register('/sw.js');
+                await navigator.serviceWorker.ready;
+                
+                const subscription = await registration.pushManager.getSubscription();
+                
+                if (subscription) {
+                    results.innerHTML = `
+                        <div class="success">
+                            <strong>Subscription Test:</strong><br>
+                            Status: Active<br>
+                            Endpoint: ${subscription.endpoint.substring(0, 50)}...<br>
+                            Keys: ${subscription.keys ? 'Present' : 'Missing'}
+                        </div>
+                    `;
+                } else {
+                    results.innerHTML = `<div class="warning"><strong>Subscription Test:</strong> No active subscription found</div>`;
+                }
+            } catch (error) {
+                results.innerHTML = `<div class="error"><strong>Subscription Error:</strong> ${error.message}</div>`;
+            }
+        }
+        
+        async function sendTestNotification() {
+            const results = document.getElementById('pushResults');
+            results.innerHTML = '<div class="warning">Sending Test Notification...</div>';
+            
+            try {
+                const response = await fetch('/api/push/test', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                const data = await response.json();
+                
+                if (data.ok) {
+                    results.innerHTML = `
+                        <div class="success">
+                            <strong>Test Notification:</strong><br>
+                            Status: Sent<br>
+                            Result: ${JSON.stringify(data.result, null, 2)}
+                        </div>
+                    `;
+                } else {
+                    results.innerHTML = `<div class="error"><strong>Test Notification Error:</strong> ${data.error}</div>`;
+                }
+            } catch (error) {
+                results.innerHTML = `<div class="error"><strong>Test Notification Error:</strong> ${error.message}</div>`;
+            }
+        }
+        
+        // Initialize
+        displayDeviceInfo();
+        
+        // Auto-test on load
+        setTimeout(() => {
+            console.log('🚀 Starting automatic tests...');
+            testDebugEndpoint();
+        }, 1000);
+    </script>
+</body>
+</html>

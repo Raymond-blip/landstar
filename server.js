@@ -419,24 +419,48 @@ const pushManager = new PushNotificationManager();
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
 
-  // CORS headers
+  // CORS headers - Enhanced for mobile compatibility
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
+  res.setHeader('Access-Control-Max-Age', '86400'); // 24 hours
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
 
   if (req.method === 'OPTIONS') {
     return send(res, 200, '');
   }
 
-  // News API endpoint
+  // Mobile debug endpoint
+  if (req.method === 'GET' && url.pathname === '/api/debug') {
+    const userAgent = req.headers['user-agent'] || 'Unknown';
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+    
+    return send(res, 200, {
+      ok: true,
+      timestamp: new Date().toISOString(),
+      userAgent: userAgent,
+      isMobile: isMobile,
+      headers: req.headers,
+      ip: req.socket.remoteAddress,
+      method: req.method,
+      url: req.url
+    });
+  }
+
+  // News API endpoint - Enhanced for mobile
   if (req.method === 'GET' && url.pathname === '/api/news') {
     try {
+      console.log('📱 News API request from:', req.headers['user-agent']?.substring(0, 50) || 'Unknown');
+      
       const refresh = url.searchParams.get('refresh') === 'true';
       if (refresh) {
         // Force refresh by clearing cache
         newsFetcher.lastFetch = null;
         newsFetcher.newsCache = [];
       }
+      
       const news = await newsFetcher.getNews();
       
       // Check for new news and send notifications
@@ -446,10 +470,46 @@ const server = http.createServer(async (req, res) => {
         );
       }
       
-      return send(res, 200, { ok: true, news });
+      // Add mobile-friendly headers
+      res.setHeader('Content-Type', 'application/json; charset=utf-8');
+      res.setHeader('X-Content-Type-Options', 'nosniff');
+      
+      return send(res, 200, { ok: true, news, timestamp: Date.now() });
     } catch (err) {
       console.error('News API error:', err);
-      return send(res, 500, { ok: false, error: err.message });
+      return send(res, 500, { 
+        ok: false, 
+        error: err.message,
+        fallback: true,
+        news: [
+          {
+            title: "Transportation Industry Update",
+            description: "Stay informed with the latest transportation and logistics news.",
+            publishedAt: new Date().toISOString(),
+            source: { name: "Werner News" },
+            url: "#"
+          }
+        ]
+      });
+    }
+  }
+
+  // Test push subscription endpoint
+  if (req.method === 'POST' && url.pathname === '/api/push/test-subscription') {
+    try {
+      const raw = await collectBody(req);
+      const { endpoint } = JSON.parse(raw);
+      
+      // Simple test - just check if endpoint exists in our subscribers
+      const exists = pushManager.subscribers.has(endpoint);
+      
+      return send(res, exists ? 200 : 404, { 
+        valid: exists,
+        message: exists ? 'Subscription is valid' : 'Subscription not found'
+      });
+    } catch (err) {
+      console.error('Test subscription error:', err);
+      return send(res, 400, { valid: false, error: err.message });
     }
   }
 
