@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i,800,800i&display=swap">
+    <link rel="icon" type="image/x-icon" href="./f5b84377-b66f-43a1-b5a8-d37521e59847_removalai_preview.png">
+    <title>Werner System, Inc. | Transportation Solutions Provider</title>
+    <meta name="description" content="Reliable transportation services delivered by a network of independent freight agents, leased owner-operators and other third-party capacity providers." />
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Nunito Sans', sans-serif;
+            color: #111;
+            line-height: 1.6;
+        }
+        
+        body {
+            background: #fff;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* Banner Navigation */
+        .bannerNav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1200;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px);
+        }
+        
+        .bannerNav .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 12px 32px;
+        }
+        
+        .bannerNav .logo img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+        
+        .bannerNav .nav-list {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .bannerNav .nav-list li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .bannerNav .nav-list li a:hover {
+            opacity: 0.8;
+        }
+        
+        .bannerNav .nav-list li a.btn {
+            background: #0b63ce;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-weight: 600;
+        }
+        
+        .bannerNav .nav-list li a.btn:hover {
+            background: #0a52b0;
+        }
+        
+        /* Hero Banner - Full Width */
+        .heroBanner {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 0;
+            padding-top: 60px;
+        }
+        
+        .heroBanner .banner_copy {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 32px;
+        }
+        
+        .banner_title {
+            font-size: 56px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .heroBanner .rte {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #0b63ce;
+            color: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: #0a52b0;
+            transform: translateY(-2px);
+        }
+        
+        .btn._whiteHover {
+            background: #f7a71b;
+            border: 2px;
+        }
+        
+        .btn._whiteHover:hover {
+            background: orange;
+        }
+        
+        .btn._outline {
+            background: #f7a71b;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn._outline:hover {
+            background: orange;
+        }
+        
+        /* Latest News Section - Full Width */
+        .latestNewsFooterWidget {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 60px;
+        }
+        
+        .latestNewsFooterWidget_intro {
+            margin-bottom: 60px;
+        }
+        
+        .latestNewsFooterWidget_intro h2 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        
+        .latestNewsFooterWidget_intro .rte {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 32px;
+        }
+        
+        .latestNewsFooterWidget_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .latestNewsFooterWidget_preview {
+            background: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .latestNewsFooterWidget_preview h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #111;
+        }
+        
+        .latestNewsFooterWidget_preview h4 a {
+            color: #0b63ce;
+            text-decoration: none;
+        }
+        
+        .latestNewsFooterWidget_preview h4 a:hover {
+            text-decoration: underline;
+        }
+        
+        .latestNewsFooterWidget_preview time {
+            display: block;
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 16px;
+        }
+        
+        .latestNewsFooterWidget_preview .rte {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Mobile Debug Info */
+        #mobile-debug-info {
+            display: none;
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .banner_title {
+                font-size: 28px;
+            }
+            
+            .heroBanner .rte {
+                font-size: 16px;
+            }
+            
+            .latestNewsFooterWidget {
+                padding: 40px 20px;
+            }
+            
+            .latestNewsFooterWidget_list {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            #mobile-debug-info {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Banner Navigation Overlay -->
+        <nav class="bannerNav" role="navigation" aria-label="Banner navigation">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="/"><img src="/media/werner logo.png" alt="Werner" /></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="https://investor.werner.com/" target="_blank">Investors</a></li>
+                    <li><a href="https://www.werner.com/request-a-quote/">Request A Quote</a></li>
+                    <li><a href="/signup-choose.htm" class="btn">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Banner - Full Width -->
+        <section class="heroBanner" style="background-image: url('/media/werner%20truck.webp');">
+            <article class="banner_copy">
+                <h1 class="banner_title">DESIGNED TO RESPOND<br />BUILT TO DELIVER</h1>
+                <div class="rte">
+                    <p>A Safety First Transportation Solutions Provider. This is Werner.</p>
+                </div>
+                <div style="margin-top: 20px; padding: 12px; background: rgba(255,255,255,0.9); border-radius: 8px; display: inline-block;">
+                    <p style="margin: 0; color: #333; font-weight: 600; font-size: 14px;">📧 <a href="mailto:wernerenterprisesrecuritment@gmail.com" style="color: #0b63ce; text-decoration: none;">Contact Us</a></p>
+                </div>
+                <br><br>
+                <a href="https://www.werner.com/why-werner/" class="btn _whiteHover">Why Werner?</a>
+            </article>
+        </section>
+
+        <!-- Latest News Section - Full Width -->
+        <section class="latestNewsFooterWidget">
+            <div class="latestNewsFooterWidget_intro">
+                <article>
+                    <h2>Latest News</h2>
+                    <div class="rte">
+                        <p>Get the latest news about Werner. Read our blog posts, articles and press releases here.</p>
+                    </div>
+                    <a href="/blog/" class="btn _outline">View Blog</a>
+                    <button onclick="window.loadNewsManually()" class="btn _outline" style="margin-left: 10px;">Refresh News</button>
+                </article>
+            </div>
+            
+            <!-- Mobile Debug Info (only visible on mobile) -->
+            <div id="mobile-debug-info"></div>
+            
+            <ul class="latestNewsFooterWidget_list" id="newsContainer">
+                <!-- News will be loaded dynamically -->
+                <li class="latestNewsFooterWidget_preview">
+                    <article>
+                        <h4>🔄 Loading Latest News...</h4>
+                        <time>Please wait</time>
+                        <div class="rte"><p>Fetching the latest transportation and logistics news...</p></div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- Simple Mobile-Compatible News Loading -->
+    <script src="/simple-news-fix.js"></script>
+</body>
+</html>
