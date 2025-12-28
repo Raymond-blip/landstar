@@ -463,6 +463,18 @@
                     body: JSON.stringify(data)
                 });
 
+                // Log response details for debugging
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                
+                // Check if response is actually JSON
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    const textResponse = await response.text();
+                    console.error('Non-JSON response received:', textResponse);
+                    throw new Error('Server returned non-JSON response. Please try again or contact support.');
+                }
+
                 const result = await response.json();
                 
                 if (result.ok) {
@@ -474,6 +486,7 @@
                     throw new Error(result.error || 'Submission failed');
                 }
             } catch (error) {
+                console.error('Submission error:', error);
                 document.getElementById('errorMessage').textContent = 'Error: ' + error.message;
                 document.getElementById('errorMessage').style.display = 'block';
                 document.getElementById('successMessage').style.display = 'none';
