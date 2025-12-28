@@ -10,6 +10,7 @@ const PushNotificationManager = require('./push-notifications');
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 8002;
+const NODE_ENV = process.env.NODE_ENV || 'development';
 const DATA_DIR = path.join(ROOT, 'data');
 const DB_FILE = path.join(DATA_DIR, 'submissions.db');
 
@@ -698,12 +699,18 @@ const server = http.createServer(async (req, res) => {
 initDatabase()
   .then((database) => {
     db = database;
-    server.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}/`);
-      console.log(`Serving from ${ROOT}`);
-      console.log(`Database: ${DB_FILE}`);
-      console.log(`POST /api/applicant and /api/immigrant to capture submissions`);
-      console.log(`GET /api/submissions?type=applicant|immigrant|all&limit=50 to view submissions`);
+    const host = NODE_ENV === 'production' ? '0.0.0.0' : '0.0.0.0';
+    server.listen(PORT, host, () => {
+      console.log(`🚀 Server running in ${NODE_ENV} mode`);
+      console.log(`📍 Local: http://localhost:${PORT}/`);
+      if (NODE_ENV === 'development') {
+        console.log(`📱 Network: http://10.243.113.156:${PORT}/`);
+      }
+      console.log(`📁 Serving from ${ROOT}`);
+      console.log(`💾 Database: ${DB_FILE}`);
+      console.log(`📧 Email: ${process.env.SMTP_USER ? 'Configured' : 'Not configured'}`);
+      console.log(`📰 News API: ${process.env.NEWS_API_KEY ? 'Active' : 'Using fallback'}`);
+      console.log(`🔔 Push notifications: Ready`);
     });
   })
   .catch((err) => {

@@ -103,16 +103,21 @@ class PushNotificationManager {
 
     for (const [endpoint, subscription] of this.subscribers) {
       try {
-        await webpush.sendNotification(subscription, payload);
+        await webpush.sendNotification(subscription, payload, {
+          TTL: 60,
+          urgency: 'normal',
+          topic: 'werner-news'
+        });
         sent++;
-        console.log(`📤 Notification sent to subscriber`);
+        console.log(`📤 Notification sent successfully`);
       } catch (error) {
         failed++;
         failedEndpoints.push(endpoint);
-        console.error(`❌ Failed to send notification:`, error.message);
+        console.error(`❌ Failed to send notification:`, error.statusCode, error.body);
         
         // Remove invalid subscriptions
-        if (error.statusCode === 410 || error.statusCode === 404) {
+        if (error.statusCode === 410 || error.statusCode === 404 || error.statusCode === 413) {
+          console.log('🗑️ Removing invalid subscription');
           this.subscribers.delete(endpoint);
         }
       }
