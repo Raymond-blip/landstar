@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .news-item { border: 1px solid #ccc; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .loading { color: #666; font-style: italic; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>News API Test</h1>
+    <div id="status" class="loading">Loading news...</div>
+    <div id="newsContainer"></div>
+
+    <script>
+        async function testNews() {
+            const statusDiv = document.getElementById('status');
+            const newsContainer = document.getElementById('newsContainer');
+            
+            try {
+                console.log('🧪 Testing news API...');
+                statusDiv.textContent = 'Fetching news from API...';
+                
+                const response = await fetch('/api/news');
+                console.log('📡 Response received:', response.status);
+                
+                const data = await response.json();
+                console.log('📊 Data received:', data);
+                
+                if (data.ok && data.news && data.news.length > 0) {
+                    statusDiv.textContent = `✅ Success! Found ${data.news.length} news articles`;
+                    statusDiv.className = 'success';
+                    
+                    newsContainer.innerHTML = data.news.map((article, index) => {
+                        console.log(`📰 Article ${index + 1}:`, article.title);
+                        
+                        const date = new Date(article.publishedAt);
+                        const formattedDate = date.toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        });
+                        
+                        return `
+                            <div class="news-item">
+                                <h3>${article.title}</h3>
+                                <p><strong>Date:</strong> ${formattedDate}</p>
+                                <p><strong>Description:</strong> ${article.description || 'No description available'}</p>
+                                <p><strong>URL:</strong> <a href="${article.url || '#'}" target="_blank">${article.url || 'No URL'}</a></p>
+                                <p><strong>Source:</strong> ${article.source?.name || 'Unknown'}</p>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    console.log('✅ News displayed successfully');
+                } else {
+                    statusDiv.textContent = '❌ No news data received';
+                    statusDiv.className = 'error';
+                    console.error('❌ Invalid data:', data);
+                }
+            } catch (error) {
+                statusDiv.textContent = '❌ Error: ' + error.message;
+                statusDiv.className = 'error';
+                console.error('❌ News loading error:', error);
+            }
+        }
+
+        // Run test when page loads
+        document.addEventListener('DOMContentLoaded', testNews);
+    </script>
+</body>
+</html>
