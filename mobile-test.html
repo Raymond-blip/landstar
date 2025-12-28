@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile News Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .warning { background: #fff3cd; color: #856404; }
+        button {
+            background: #0b63ce;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #newsResults {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .news-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 Mobile News Loading Test</h1>
+    
+    <div class="test-card">
+        <h3>Device Info</h3>
+        <div id="deviceInfo"></div>
+    </div>
+    
+    <div class="test-card">
+        <h3>News Loading Test</h3>
+        <button onclick="testNewsLoading()">Test News API</button>
+        <button onclick="testWithMobileHeaders()">Test with Mobile Headers</button>
+        <button onclick="clearResults()">Clear Results</button>
+        <div id="testResults"></div>
+    </div>
+    
+    <div class="test-card">
+        <h3>News Results</h3>
+        <div id="newsResults"></div>
+    </div>
+
+    <script>
+        // Display device info
+        function displayDeviceInfo() {
+            const info = {
+                'User Agent': navigator.userAgent,
+                'Is Mobile': /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+                'Screen Size': `${screen.width}x${screen.height}`,
+                'Viewport': `${window.innerWidth}x${window.innerHeight}`,
+                'Online': navigator.onLine,
+                'Connection': navigator.connection ? navigator.connection.effectiveType : 'Unknown',
+                'Fetch Support': typeof fetch !== 'undefined',
+                'AbortController Support': typeof AbortController !== 'undefined'
+            };
+            
+            document.getElementById('deviceInfo').innerHTML = Object.entries(info)
+                .map(([key, value]) => `<div><strong>${key}:</strong> ${value}</div>`)
+                .join('');
+        }
+        
+        async function testNewsLoading() {
+            const results = document.getElementById('testResults');
+            const newsResults = document.getElementById('newsResults');
+            
+            results.innerHTML = '<div class="warning">Testing news loading...</div>';
+            newsResults.innerHTML = '';
+            
+            try {
+                console.log('🗞️ Starting news test...');
+                
+                // Test with timeout like the main site
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => {
+                    console.log('⏰ Request timed out');
+                    controller.abort();
+                }, 15000);
+                
+                const startTime = Date.now();
+                const response = await fetch('/api/news', {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Cache-Control': 'no-cache'
+                    },
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                const endTime = Date.now();
+                
+                console.log('📊 Response received:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log('📰 News data:', data);
+                
+                // Display results
+                results.innerHTML = `
+                    <div class="success">
+                        <strong>✅ News API Test Successful!</strong><br>
+                        Response Time: ${endTime - startTime}ms<br>
+                        Status: ${response.status}<br>
+                        News Count: ${data.news ? data.news.length : 0}<br>
+                        Data OK: ${data.ok}
+                    </div>
+                `;
+                
+                // Display news items
+                if (data.ok && data.news && data.news.length > 0) {
+                    const newsHTML = data.news.map((article, index) => {
+                        const date = new Date(article.publishedAt);
+                        const formattedDate = date.toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        });
+                        
+                        return `
+                            <div class="news-item">
+                                <h4>${article.title}</h4>
+                                <p><strong>Date:</strong> ${formattedDate}</p>
+                                <p><strong>Source:</strong> ${article.source?.name || 'Unknown'}</p>
+                                <p>${article.description || 'No description'}</p>
+                                <a href="${article.url || '#'}" target="_blank">Read More</a>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    newsResults.innerHTML = newsHTML;
+                } else {
+                    newsResults.innerHTML = '<div class="warning">No news data received</div>';
+                }
+                
+            } catch (error) {
+                console.error('❌ News test failed:', error);
+                
+                results.innerHTML = `
+                    <div class="error">
+                        <strong>❌ News API Test Failed!</strong><br>
+                        Error: ${error.message}<br>
+                        Type: ${error.name}<br>
+                        Stack: ${error.stack ? error.stack.substring(0, 200) + '...' : 'Not available'}
+                    </div>
+                `;
+            }
+        }
+        
+        async function testWithMobileHeaders() {
+            const results = document.getElementById('testResults');
+            results.innerHTML = '<div class="warning">Testing with mobile headers...</div>';
+            
+            try {
+                const response = await fetch('/api/news', {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
+                        'Cache-Control': 'no-cache',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+                
+                const data = await response.json();
+                
+                results.innerHTML = `
+                    <div class="success">
+                        <strong>✅ Mobile Headers Test Successful!</strong><br>
+                        Status: ${response.status}<br>
+                        News Count: ${data.news ? data.news.length : 0}
+                    </div>
+                `;
+                
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="error">
+                        <strong>❌ Mobile Headers Test Failed!</strong><br>
+                        Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        function clearResults() {
+            document.getElementById('testResults').innerHTML = '';
+            document.getElementById('newsResults').innerHTML = '';
+        }
+        
+        // Initialize
+        displayDeviceInfo();
+        
+        // Auto-test on load
+        setTimeout(() => {
+            console.log('🚀 Starting automatic test...');
+            testNewsLoading();
+        }, 1000);
+    </script>
+</body>
+</html>
