@@ -457,6 +457,10 @@
             }
 
             try {
+                // Log the data being sent for debugging
+                console.log('Sending data:', data);
+                console.log('Request URL:', '/api/immigrant');
+                
                 const response = await fetch('/api/immigrant', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -465,17 +469,21 @@
 
                 // Log response details for debugging
                 console.log('Response status:', response.status);
-                console.log('Response headers:', response.headers);
+                console.log('Response URL:', response.url);
+                console.log('Response headers:', Object.fromEntries(response.headers.entries()));
                 
                 // Check if response is actually JSON
                 const contentType = response.headers.get('content-type');
+                console.log('Content-Type:', contentType);
+                
                 if (!contentType || !contentType.includes('application/json')) {
                     const textResponse = await response.text();
-                    console.error('Non-JSON response received:', textResponse);
-                    throw new Error('Server returned non-JSON response. Please try again or contact support.');
+                    console.error('Non-JSON response received:', textResponse.substring(0, 500) + '...');
+                    throw new Error('Server returned non-JSON response. Please check the console for details and contact support.');
                 }
 
                 const result = await response.json();
+                console.log('Parsed result:', result);
                 
                 if (result.ok) {
                     document.getElementById('successMessage').style.display = 'block';
